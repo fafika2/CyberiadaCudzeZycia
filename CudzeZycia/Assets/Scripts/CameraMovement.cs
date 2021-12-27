@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
 
    
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         Offset = new Vector3(-Distance, Height, -Distance);
         Vector3 DistancePosition = Target.position + Offset;
