@@ -5,16 +5,19 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rigidbody;
-    [SerializeField] public float _speed = 5;
+    [SerializeField] public float _speed = 2;
+    [SerializeField] public float _RunSpeed = 4;
+    private float mainSpeed = 2;
     //[SerializeField] public float _TurnSpeed = 360;
     [SerializeField] public float _SpeedRotate = 5;
     private float _inputHorizontal;
     private float _inputVertical;
+    private bool ShiftCheck;
     private Vector3 _input;
-   
+    public Animator anim;
+
     void Start()
     {
-        
     }
 
 
@@ -22,6 +25,7 @@ public class CharacterMovement : MonoBehaviour
     {
         _inputHorizontal = Input.GetAxisRaw("Horizontal");
         _inputVertical = Input.GetAxisRaw("Vertical");
+        ShiftCheck = Input.GetKey(KeyCode.LeftShift);
     }
 
     private void FixedUpdate()
@@ -49,22 +53,46 @@ public class CharacterMovement : MonoBehaviour
 
     void Move()
     {
-        if(_inputVertical != 0)
-        _rigidbody.MovePosition(transform.position + (transform.forward * _inputVertical ) * _speed * Time.deltaTime);
-    }
+        
 
-    /*void GatherInput()
-    {
-        _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-    }*/
-
-    void Rotate()
-    {
-        if (_inputHorizontal != 0)
+        if (_inputVertical != 0)
         {
-            transform.Rotate(0, _SpeedRotate * _inputHorizontal, 0);
+            if (ShiftCheck == true)
+            {
+                mainSpeed = _RunSpeed;
+                anim.SetBool("Run", true);
+                anim.SetInteger("_Speed", 2);
+            }
+            else if (ShiftCheck == false)
+            {
+                mainSpeed = _speed;
+                anim.SetBool("Run", false);
+                anim.SetInteger("_Speed", 1);
+            }
+            _rigidbody.MovePosition(transform.position + (transform.forward * _inputVertical) * mainSpeed * Time.deltaTime);
+            anim.SetBool("Walk", true);
         }
+        else if(_inputVertical == 0)
+        {
+            anim.SetInteger("_Speed", 0);
+            anim.SetBool("Walk", false);
+        }
+        
+       
+        }
+
+        /*void GatherInput()
+        {
+            _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        }*/
+
+        void Rotate()
+        {
+            if (_inputHorizontal != 0)
+            {
+                transform.Rotate(0, _SpeedRotate * _inputHorizontal, 0);
+            }
+        }
+
     }
 
-
-}
