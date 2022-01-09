@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59771629e8fc3f9438ed13351e567473, type: 3}
-  m_Name: PAPAJ TEST
+  m_Name: NPC test 1
   m_EditorClassIdentifier: 
-  name: PAPAJ2137
+  name: yes
   dialogue:
   - dlaczego papiez nie moze zjesc hamburgera
   - a mozna jak najabardziej
