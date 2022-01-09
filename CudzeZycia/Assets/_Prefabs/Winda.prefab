@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9152464394581565843}
   m_LocalRotation: {x: 0, y: 0.9961106, z: -0.08811195, w: 0}
-  m_LocalPosition: {x: 0, y: 23, z: -15.9}
+  m_LocalPosition: {x: 0, y: 23, z: -15.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75,11 +75,11 @@ Light:
   m_GameObject: {fileID: 9152464394581565843}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 0
+  m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.875, b: 0, a: 1}
-  m_Intensity: 16.055605
-  m_Range: 3.22
+  m_Intensity: 7.957747
+  m_Range: 3.5
   m_SpotAngle: 179
   m_InnerSpotAngle: 165.81194
   m_CookieSize: 10
@@ -126,7 +126,7 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
+  m_ShadowRadius: 1
   m_ShadowAngle: 0
 --- !u!114 &3950142146612589000
 MonoBehaviour:
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
   m_AspectRatio: 1
-  m_ShapeRadius: 0.025
+  m_ShapeRadius: 1
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
