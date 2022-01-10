@@ -15,13 +15,28 @@ public class DialogueManager : MonoBehaviour
     public Text npcName;
     public Text npcDialogueBox;
     public Text playerResponse;
+    public bool IsPlayerInRange = false;
 
     // Start is called before the first frame update
     void Start()
     {
         dialogueUI.SetActive(false);
     }
-    private void OnMouseOver() {
+    public void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag.Equals("Player")) {
+            IsPlayerInRange = true;
+
+
+        }
+    }
+    public void OnTriggerExit(Collider other) {
+        if (other.gameObject.tag.Equals("Player")) {
+            IsPlayerInRange = false;
+            EndDialogue();
+
+        }
+    }
+   /* private void OnMouseOver() {
         distance = Vector3.Distance(player.transform.position, this.transform.position);
         if (distance <= 2.5f) {
             if(Input.GetAxis("Mouse ScrollWheel") < 0f) {
@@ -63,7 +78,7 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
     void StartConversation() {
         isTalking = true;
         curResponseTracker = 0;
@@ -79,6 +94,45 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (IsPlayerInRange == true) {
+            if (Input.GetAxis("Mouse ScrollWheel") < 0f) {
+                curResponseTracker++;
+                if (curResponseTracker >= npc.playerDialogue.Length - 1) {
+                    curResponseTracker = npc.playerDialogue.Length - 1;
+
+                }
+                else if (Input.GetAxis("Mouse ScrollWheel") > 0f) {
+                    curResponseTracker--;
+                    if (curResponseTracker < 0) {
+                        curResponseTracker = 0;
+
+                    }
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.E) && isTalking == false) {
+                StartConversation();
+            }
+            else if (Input.GetKeyDown(KeyCode.E) && isTalking == true) {
+                EndDialogue();
+            }
+            if (curResponseTracker == 0 && npc.playerDialogue.Length >= 0) {
+                playerResponse.text = npc.playerDialogue[0];
+                if (Input.GetKeyDown(KeyCode.Return)) {
+                    npcDialogueBox.text = npc.dialogue[1];
+                }
+            }
+            else if (curResponseTracker == 1 && npc.playerDialogue.Length >= 1) {
+                playerResponse.text = npc.playerDialogue[1];
+                if (Input.GetKeyDown(KeyCode.Return)) {
+                    npcDialogueBox.text = npc.dialogue[2];
+                }
+            }
+            else if (curResponseTracker == 2 && npc.playerDialogue.Length >= 2) {
+                playerResponse.text = npc.playerDialogue[2];
+                if (Input.GetKeyDown(KeyCode.Return)) {
+                    npcDialogueBox.text = npc.dialogue[3];
+                }
+            }
+        }
     }
 }
