@@ -726,6 +726,7 @@ MonoBehaviour:
   _RunSpeed: 5
   _SpeedRotate: 5
   anim: {fileID: 5779606873735677651}
+  StartPosition: {fileID: 11400000, guid: 9c20ced4ab7072c49ad62b4ec67f7298, type: 2}
 --- !u!1 &7750984263478610617
 GameObject:
   m_ObjectHideFlags: 0

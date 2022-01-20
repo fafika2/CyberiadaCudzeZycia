@@ -15,9 +15,12 @@ public class CharacterMovement : MonoBehaviour
     private bool ShiftCheck;
     private Vector3 _input;
     public Animator anim;
+    public VectorValue StartPosition;
 
     void Start()
     {
+        transform.position = StartPosition.initialValue;
+        transform.Rotate(new Vector3(0, StartPosition.playerRotation, 0));
     }
 
 
@@ -26,6 +29,11 @@ public class CharacterMovement : MonoBehaviour
         _inputHorizontal = Input.GetAxisRaw("Horizontal");
         _inputVertical = Input.GetAxisRaw("Vertical");
         ShiftCheck = Input.GetKey(KeyCode.LeftShift);
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            StartPosition.playerRotation = transform.eulerAngles.y;
+        }
     }
 
     private void FixedUpdate()
