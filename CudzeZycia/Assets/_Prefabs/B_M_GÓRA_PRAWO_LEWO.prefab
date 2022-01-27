@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &201249871503939876
 Transform:
@@ -86,6 +86,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 178f8316d25e7894a905db673ae8516c, type: 3}
       propertyPath: m_Name
       value: "B_M_G\xD3RA_PRAWO_LEWO"
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 178f8316d25e7894a905db673ae8516c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178f8316d25e7894a905db673ae8516c, type: 3}

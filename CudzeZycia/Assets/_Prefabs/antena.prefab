@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7918088293669732156
 Transform:
@@ -29,7 +29,6 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7667389517951309243}
-  - {fileID: 7918088293728887705}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -267,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f01c3ba255b751d44a4a6f439704d6bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f01c3ba255b751d44a4a6f439704d6bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -304,6 +303,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f01c3ba255b751d44a4a6f439704d6bd, type: 3}
       propertyPath: m_Name
       value: antena_tv
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f01c3ba255b751d44a4a6f439704d6bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f01c3ba255b751d44a4a6f439704d6bd, type: 3}
