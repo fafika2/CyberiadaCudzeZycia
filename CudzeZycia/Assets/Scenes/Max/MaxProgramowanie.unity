@@ -4786,18 +4786,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1540396745747454406, guid: a3f0c28f7f089354c9ccf9e80dffd962, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1540396745747454406, guid: a3f0c28f7f089354c9ccf9e80dffd962, type: 3}
-      propertyPath: m_ScreenMatchMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1540396745747454407, guid: a3f0c28f7f089354c9ccf9e80dffd962, type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f0c28f7f089354c9ccf9e80dffd962, type: 3}
 --- !u!1001 &2419551527050222487
