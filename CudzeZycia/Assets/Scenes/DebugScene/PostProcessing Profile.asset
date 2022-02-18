@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8bcdf71d7fafa419fca1ed162f5fc9, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   postExposure:
     m_OverrideState: 0
     m_Value: 0.11
@@ -259,10 +259,10 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.274
+    m_Value: 0.135
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.435
+    m_Value: 0.239
   roundness:
     m_OverrideState: 1
     m_Value: 1
