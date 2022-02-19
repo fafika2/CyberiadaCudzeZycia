@@ -7,29 +7,24 @@ public class ExampleDialogTrigger : MonoBehaviour
 {
     public SphereCollider triggerSphereCollider; // z tego gameobject do ktorego jest przypisany
     public Canvas DialogCanvas; // gameobject (canvas) ktory ma Dialog Window
+    public DialogGraph dialogGraph; // dialog ktory ma sie pokazac
 
     private DialogWindow dialogWindowScript;
 
     void Start()
     {
-        triggerSphereCollider.isTrigger = true;
-        DialogCanvas.gameObject.SetActive(false);
+        triggerSphereCollider.isTrigger = true; // upewnienie siê ¿e jest to trigger
         dialogWindowScript = DialogCanvas.GetComponent<DialogWindow>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Open dialog");
+        dialogWindowScript.activeDialog = dialogGraph;
         DialogCanvas.gameObject.SetActive(true);
-        dialogWindowScript.Setup();
-
-        // todo: ustawianie jaki dialog ma siê wyœwietlaæ
-        // dialogWindowScript.activeDialog 
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        Debug.Log("Close dialog.");
         DialogCanvas.gameObject.SetActive(false);
     }
 }

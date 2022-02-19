@@ -1,10 +1,11 @@
 using UnityEditorInternal;
 using UnityEngine;
 using XNode;
+using UnityEditor;
 using XNodeEditor;
 
 /// <summary>
-/// Dziêki temu mo¿na zmieniaæ wygl¹d nodów
+/// Edytor nodów (mo¿na tutaj zrobiæ custom wygl¹d)
 /// </summary>
 
 namespace Scripts.DialogSystem.Editor
@@ -14,6 +15,10 @@ namespace Scripts.DialogSystem.Editor
     {
         public override void OnBodyGUI()
         {
+            base.OnBodyGUI();
+            return;
+
+            /*
             serializedObject.Update();
 
             var segment = serializedObject.targetObject as DialogSegment;
@@ -26,6 +31,11 @@ namespace Scripts.DialogSystem.Editor
             {
                 GUILayout.MinHeight(50),
             });
+
+            // display place to edit avatar
+            GUILayout.Label("Avatar Texture");
+
+            GUILayout.Label(new GUIContent(segment.AvatarImage));
 
             // Dynamic List with answers
             NodeEditorGUILayout.DynamicPortList(
@@ -45,9 +55,10 @@ namespace Scripts.DialogSystem.Editor
             }
 
             serializedObject.ApplyModifiedProperties();
+            */
         }
 
-        void OnCreateReorderableList(ReorderableList list)
+        /*void OnCreateReorderableList(ReorderableList list)
         {
             /// <summary>
             /// Renderowanie odpowiedzi w edytorze
@@ -73,6 +84,6 @@ namespace Scripts.DialogSystem.Editor
                     NodeEditorGUILayout.PortField(pos, port);
                 }
             };
-        }
+        }*/
     }
 }

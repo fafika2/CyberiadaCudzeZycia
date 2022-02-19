@@ -3,26 +3,20 @@ using System.Collections.Generic;
 using XNode;
 using UnityEngine;
 
-/*
-S³u¿y do tworzenia Nodów (bloków) w grafie z dialogami 
-*/
 
 namespace Scripts.DialogSystem
 {
-    [Serializable]
-    public struct Connection { }
 
-    [NodeWidth(250)]
-    public class DialogSegment : Node
+    public class SimpleDialog : Node
     {
         [Input]
         public Connection input; // wejscie do bloku
 
         // opcje bloku
         [TextArea(4, 500)]
-        public string DialogText = "Wiadomoœæ";
+        public string DialogText;
 
-        public string AvatarName = "Tajemniczy Nieznajomy";
+        public string AvatarName;
         public Texture AvatarImage;
 
         public enum Sides
@@ -33,9 +27,8 @@ namespace Scripts.DialogSystem
         public Sides AvatarPosition = Sides.Right;
 
 
-        // wyjscia z bloku (i opcje które s¹ w Answers)
-        [Output(dynamicPortList = true, connectionType = ConnectionType.Override)]
-        public List<DialogAnswer> Answers;
+        [Output]
+        public Connection Output;
 
 
         public override object GetValue(NodePort port)

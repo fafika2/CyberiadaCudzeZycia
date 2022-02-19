@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// To dodajesz w grze ¿eby dodaæ dialogi
+/// Kontroler okna z dialogiem w grze
 /// </summary>
 
 namespace Scripts.DialogSystem
@@ -20,9 +20,21 @@ namespace Scripts.DialogSystem
 
         private DialogSegment activeSegment;
 
-        void Start()
+
+        void OnEnable()
         {
+            Debug.Log("Open Dialog");
             Setup();
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        void OnDisable()
+        {
+            Debug.Log("Close Dialog");
+            Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         public void Setup()
@@ -33,17 +45,10 @@ namespace Scripts.DialogSystem
                 if (!node.GetInputPort("input").IsConnected)
                 {
                     UpdateDialog(node);
-                    // do usuniecia
-                    // Time.timeScale = 0;
-                    // blokada = true;
-                    // pasueobject.SetActive(true);
-                    Cursor.lockState = CursorLockMode.None;
-                    Cursor.visible = true;
-
                     return;
                 }
             }
-            Debug.LogWarning("Dialog startowy nie zostal znaleziony");
+            Debug.LogWarning("Dialog startowy nie zostal znaleziony!");
         }
 
         public void AnswerClicked(int clickedIndex)
@@ -68,7 +73,7 @@ namespace Scripts.DialogSystem
             foreach (var answer in newSegment.Answers)
             {
                 var btn = Instantiate(buttonPrefab, buttonParent);
-                btn.GetComponentInChildren<Text>().text = answer;
+                btn.GetComponentInChildren<Text>().text = answer.Message;
 
                 var index = answerIndex;
                 btn.GetComponentInChildren<Button>().onClick.AddListener((() => { AnswerClicked(index); }));
