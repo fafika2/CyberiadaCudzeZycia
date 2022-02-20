@@ -35,5 +35,19 @@ namespace Scripts.DialogSystem
         {
             return null;
         }
+
+        public Node GetNextDialog()
+        {
+            var port = GetPort("Output");
+            if (port.IsConnected)
+            {
+                var node = port.Connection.node;
+                return node;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

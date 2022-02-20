@@ -18,12 +18,11 @@ namespace Scripts.DialogSystem
 
         public Transform buttonParent;
 
-        private DialogSegment activeSegment;
+        private XNode.Node activeSegment;
 
 
         void OnEnable()
         {
-            Debug.Log("Open Dialog");
             Setup();
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
@@ -31,7 +30,6 @@ namespace Scripts.DialogSystem
         }
         void OnDisable()
         {
-            Debug.Log("Close Dialog");
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
@@ -39,25 +37,74 @@ namespace Scripts.DialogSystem
 
         public void Setup()
         {
-            // Znajdz pocz¹tek dialogu (pierwszy bez inputa)
-            foreach (DialogSegment node in activeDialog.nodes)
+            FindDialogStart();
+        }
+
+        private void FindDialogStart()
+        {
+            // Znajdz pocz¹tek dialogu (DialogStart)
+            foreach (var node in activeDialog.nodes)
+            {
+                if (node.GetType() == typeof(DialogStart))
+                {
+                    var port = node.GetPort("Output");
+                    if (port.IsConnected)
+                    {
+                        EazyUpdateDialog(port.Connection.node);
+                        return;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("DialogStart nie jest do niczego podlaczony");
+                    }
+                }
+            }
+            // Awaryjnie znajdz pocz¹tek dialogu (pierwszy bez inputa)
+            foreach (XNode.Node node in activeDialog.nodes)
             {
                 if (!node.GetInputPort("input").IsConnected)
                 {
-                    UpdateDialog(node);
+                    EazyUpdateDialog(node);
                     return;
                 }
             }
             Debug.LogWarning("Dialog startowy nie zostal znaleziony!");
         }
 
-        public void AnswerClicked(int clickedIndex)
+
+        private void EazyUpdateDialog(XNode.Node newSegment)
         {
-            var port = activeSegment.GetPort("Answers " + clickedIndex);
-            if (port.IsConnected)
-                UpdateDialog(port.Connection.node as DialogSegment);
-            else
+            if (newSegment == null)
                 gameObject.SetActive(false);
+            else if (newSegment.GetType() == typeof(DialogSegment))
+                UpdateDialog(newSegment as DialogSegment);
+            else if (newSegment.GetType() == typeof(SimpleDialog))
+                UpdateDialog(newSegment as SimpleDialog);
+            else
+            {
+                gameObject.SetActive(false);
+                Debug.LogWarning("Unknown Dialog type");
+            }
+        }
+
+        private void UpdateDialog(SimpleDialog newSegment)
+        {
+            activeSegment = newSegment;
+            dialogText.text = newSegment.DialogText;
+            foreach (Transform child in buttonParent)
+            {
+                Destroy(child.gameObject);
+            }
+
+            var btn = Instantiate(buttonPrefab, buttonParent);
+            btn.GetComponentInChildren<Text>().text = "Dalej...";
+            btn.GetComponentInChildren<Button>().onClick.AddListener((() => {
+                var nextDialog = newSegment.GetNextDialog();
+                if (nextDialog != null)
+                    EazyUpdateDialog(nextDialog);
+                else
+                    gameObject.SetActive(false);
+            }));
         }
 
         private void UpdateDialog(DialogSegment newSegment)
@@ -76,7 +123,13 @@ namespace Scripts.DialogSystem
                 btn.GetComponentInChildren<Text>().text = answer.Message;
 
                 var index = answerIndex;
-                btn.GetComponentInChildren<Button>().onClick.AddListener((() => { AnswerClicked(index); }));
+                btn.GetComponentInChildren<Button>().onClick.AddListener((() => {
+                    var nextDialog = newSegment.GetNextDialogByAnswerId(index);
+                    if(nextDialog != null)
+                        EazyUpdateDialog(nextDialog);
+                    else
+                        gameObject.SetActive(false);
+                }));
 
                 answerIndex++;
             }
