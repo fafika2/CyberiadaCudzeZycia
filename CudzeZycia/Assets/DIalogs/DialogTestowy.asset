@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7256418558865129507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1c41f85fb2761409eecde353f3f665, type: 3}
+  m_Name: Simple Dialog
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 488, y: 8}
+  ports:
+    keys:
+    - input
+    - Output
+    values:
+    - _fieldName: input
+      _node: {fileID: -7256418558865129507}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: -6562556154625445102}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: -7256418558865129507}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 7569610072442036638}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  DialogText: "Dzi\u0119ki za kase byczq"
+  AvatarName: Gracz
+  AvatarImage: {fileID: 21300000, guid: 69dd95621b628454ab67ee609985549d, type: 3}
+  AvatarPosition: 1
 --- !u!114 &-7129280165564491632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,11 +100,58 @@ MonoBehaviour:
       _dynamic: 1
   DialogText: '*Pokazuje okno handlu*'
   AvatarName: Handlarz
-  AvatarImage: {fileID: 0}
+  AvatarImage: {fileID: 21300000, guid: 359c27ee3aeadc24bab858256434474c, type: 3}
   AvatarPosition: 2
   Answers:
   - Message: 
     IsBright: 0
+--- !u!114 &-6562556154625445102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1c41f85fb2761409eecde353f3f665, type: 3}
+  m_Name: Simple Dialog
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 184, y: -136}
+  ports:
+    keys:
+    - input
+    - Output
+    values:
+    - _fieldName: input
+      _node: {fileID: -6562556154625445102}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Answers 1
+        node: {fileID: -2082374719473850589}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: -6562556154625445102}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -7256418558865129507}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  DialogText: "Bla bla zabi\u0142em potwora *dostajesz golda*"
+  AvatarName: Handlarz
+  AvatarImage: {fileID: 21300000, guid: 359c27ee3aeadc24bab858256434474c, type: 3}
+  AvatarPosition: 1
 --- !u!114 &-2082374719473850589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +217,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 4279241578913803218}
+        node: {fileID: -6562556154625445102}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -143,7 +237,7 @@ MonoBehaviour:
       _dynamic: 1
   DialogText: "Co poda\u0107?"
   AvatarName: Handlarz
-  AvatarImage: {fileID: 0}
+  AvatarImage: {fileID: 21300000, guid: 359c27ee3aeadc24bab858256434474c, type: 3}
   AvatarPosition: 2
   Answers:
   - Message: "Poka\u017C mi swoje towary"
@@ -194,7 +288,7 @@ MonoBehaviour:
       _dynamic: 0
   DialogText: "Niech ci Freja b\u0142ogos\u0142awi"
   AvatarName: Handlarz
-  AvatarImage: {fileID: 0}
+  AvatarImage: {fileID: 21300000, guid: 359c27ee3aeadc24bab858256434474c, type: 3}
   AvatarPosition: 2
 --- !u!114 &11400000
 MonoBehaviour:
@@ -210,12 +304,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -2082374719473850589}
-  - {fileID: 4279241578913803218}
   - {fileID: -7129280165564491632}
   - {fileID: 90914239186094441}
   - {fileID: 5275806824698405854}
   - {fileID: 7569610072442036638}
   - {fileID: -1045267667372152493}
+  - {fileID: -7256418558865129507}
+  - {fileID: -6562556154625445102}
 --- !u!114 &90914239186094441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,70 +341,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
---- !u!114 &4279241578913803218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986feb02d9df7794392a2ab22be97f66, type: 3}
-  m_Name: Dialog Segment
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 120, y: -152}
-  ports:
-    keys:
-    - input
-    - Answers
-    - Answers 0
-    values:
-    - _fieldName: input
-      _node: {fileID: 4279241578913803218}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Answers 1
-        node: {fileID: -2082374719473850589}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Answers
-      _node: {fileID: 4279241578913803218}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Scripts.DialogSystem.DialogAnswer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Answers 0
-      _node: {fileID: 4279241578913803218}
-      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 7569610072442036638}
-        reroutePoints:
-        - {x: 432, y: 160}
-        - {x: 176, y: 224}
-        - {x: -80, y: 208}
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 1
-  DialogText: "Bla bla zabi\u0142em potwora *dostajesz golda*"
-  AvatarName: Handlarz
-  AvatarImage: {fileID: 0}
-  AvatarPosition: 2
-  Answers:
-  - Message: 
-    IsBright: 0
 --- !u!114 &5275806824698405854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +386,7 @@ MonoBehaviour:
       _dynamic: 0
   DialogText: "Poka\u017C mi co tam masz za szynkwasem"
   AvatarName: Gracz
-  AvatarImage: {fileID: 0}
+  AvatarImage: {fileID: 21300000, guid: 69dd95621b628454ab67ee609985549d, type: 3}
   AvatarPosition: 1
 --- !u!114 &7569610072442036638
 MonoBehaviour:
@@ -381,8 +412,8 @@ MonoBehaviour:
       _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: Answers 0
-        node: {fileID: 4279241578913803218}
+      - fieldName: Output
+        node: {fileID: -7256418558865129507}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -407,5 +438,5 @@ MonoBehaviour:
       _dynamic: 0
   DialogText: "Niech ci freja b\u0142ogos\u0142awi"
   AvatarName: Handlarz
-  AvatarImage: {fileID: 0}
+  AvatarImage: {fileID: 21300000, guid: 359c27ee3aeadc24bab858256434474c, type: 3}
   AvatarPosition: 2

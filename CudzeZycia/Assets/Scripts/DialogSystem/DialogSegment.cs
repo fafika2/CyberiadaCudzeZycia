@@ -23,7 +23,7 @@ namespace Scripts.DialogSystem
         public string DialogText = "Wiadomoœæ";
 
         public string AvatarName = "Tajemniczy Nieznajomy";
-        public Texture AvatarImage;
+        public Sprite AvatarImage;
 
         public enum Sides
         {
