@@ -112,14 +112,14 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 25
   directionalTransmissionMultiplier:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   cascadeShadowSplitCount:
     m_OverrideState: 1
     m_Value: 2
   cascadeShadowSplit0:
-    m_OverrideState: 0
-    m_Value: 0.05
+    m_OverrideState: 1
+    m_Value: 0.50072205
   cascadeShadowSplit1:
     m_OverrideState: 0
     m_Value: 0.15
