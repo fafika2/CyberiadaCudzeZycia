@@ -10,18 +10,20 @@ namespace Scripts.DialogSystem
 {
     public class DialogWindow : MonoBehaviour
     {
-        public DialogGraph activeDialog;
         public TMP_Text dialogText;
+
+        public DialogGraph activeDialog;
+
         public GameObject buttonPrefab;
+
         public Transform buttonParent;
-        public Image AvatarImage;
 
         private XNode.Node activeSegment;
 
 
         void OnEnable()
         {
-            FindDialogStart();
+            Setup();
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -31,6 +33,11 @@ namespace Scripts.DialogSystem
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+        }
+
+        public void Setup()
+        {
+            FindDialogStart();
         }
 
         private void FindDialogStart()
@@ -84,12 +91,6 @@ namespace Scripts.DialogSystem
         {
             activeSegment = newSegment;
             dialogText.text = newSegment.DialogText;
-
-            if (newSegment.AvatarImage != null)
-                AvatarImage.sprite = newSegment.AvatarImage;
-            else
-                AvatarImage.sprite = null;
-
             foreach (Transform child in buttonParent)
             {
                 Destroy(child.gameObject);
@@ -110,11 +111,6 @@ namespace Scripts.DialogSystem
         {
             activeSegment = newSegment;
             dialogText.text = newSegment.DialogText;
-            if (newSegment.AvatarImage != null)
-                AvatarImage.sprite = newSegment.AvatarImage;
-            else
-                AvatarImage.sprite = null;
-
             int answerIndex = 0;
             foreach (Transform child in buttonParent)
             {

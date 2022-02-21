@@ -17,7 +17,7 @@ namespace Scripts.DialogSystem
         public string DialogText;
 
         public string AvatarName;
-        public Sprite AvatarImage;
+        public Texture AvatarImage;
 
         public enum Sides
         {

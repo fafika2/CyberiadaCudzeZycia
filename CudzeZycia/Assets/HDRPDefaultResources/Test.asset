@@ -17,13 +17,13 @@ MonoBehaviour:
     supportSSR: 0
     supportSSRTransparent: 0
     supportSSAO: 1
-    supportSSGI: 1
+    supportSSGI: 0
     supportSubsurfaceScattering: 1
     sssSampleBudget:
       m_Values: 140000002800000050000000
       m_SchemaId:
         m_Id: With3Levels
-    supportVolumetrics: 0
+    supportVolumetrics: 1
     supportVolumetricClouds: 0
     supportLightLayers: 0
     supportDistortion: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
     customBufferFormat: 12
     supportedLitShaderMode: 2
     planarReflectionResolution:
-      m_Values: 000100000004000000040000
+      m_Values: 000100000004000000080000
       m_SchemaId:
         m_Id: With3Levels
     supportDecals: 1
@@ -68,12 +68,12 @@ MonoBehaviour:
         m_Bits: 0
       supportFabricConvolution: 0
       maxDirectionalLightsOnScreen: 16
-      maxPunctualLightsOnScreen: 256
+      maxPunctualLightsOnScreen: 512
       maxAreaLightsOnScreen: 64
       maxEnvLightsOnScreen: 64
-      maxDecalsOnScreen: 216
+      maxDecalsOnScreen: 512
       maxPlanarReflectionOnScreen: 16
-      maxLightsPerClusterCell: 6
+      maxLightsPerClusterCell: 8
       maxLocalVolumetricFogSize: 32
       maxLocalVolumetricFogOnScreen: 64
     hdShadowInitParams:
@@ -109,9 +109,9 @@ MonoBehaviour:
       maxScreenSpaceShadowSlots: 4
       screenSpaceShadowBufferFormat: 48
     decalSettings:
-      drawDistance: 100
-      atlasWidth: 2048
-      atlasHeight: 2048
+      drawDistance: 1000
+      atlasWidth: 4096
+      atlasHeight: 4096
       perChannelMask: 0
     postProcessSettings:
       m_LutSize: 32
