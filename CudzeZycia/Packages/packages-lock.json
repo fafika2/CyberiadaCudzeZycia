@@ -8,10 +8,11 @@
       "url": "https://packages.unity.com"
     },
     "com.github.siccity.xnode": {
-      "version": "file:D:/Pobrane/xNode-master/xNode-master",
+      "version": "https://github.com/siccity/xNode.git",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "286b9a167a539efdedd6c3d131b049edd0019d41"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
