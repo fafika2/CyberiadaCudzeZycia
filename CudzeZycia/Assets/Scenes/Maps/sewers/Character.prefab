@@ -722,8 +722,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 5779606873735677654}
-  _speed: 2
-  _RunSpeed: 5
+  _speed: 1.5
+  _RunSpeed: 3.5
   _SpeedRotate: 5
   anim: {fileID: 5779606873735677651}
   StartPosition: {fileID: 11400000, guid: 9c20ced4ab7072c49ad62b4ec67f7298, type: 2}
