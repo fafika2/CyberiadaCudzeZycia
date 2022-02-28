@@ -6,9 +6,9 @@ using UnityEngine;
 
 namespace Scripts.DialogSystem
 {
+    [NodeTint("#046b30")]
     public class DialogStart : Node
     {
-        
         [Output]
         public Connection Output;
 

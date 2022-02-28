@@ -57,7 +57,7 @@ MonoBehaviour:
   AvatarPosition: 2
   Answers:
   - Message: 
-    IsBright: 0
+    Type: 1
 --- !u!114 &-2082374719473850589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Name: Dialog Segment
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -504, y: -520}
+  position: {x: -584, y: -520}
   ports:
     keys:
     - input
@@ -147,11 +147,11 @@ MonoBehaviour:
   AvatarPosition: 2
   Answers:
   - Message: "Poka\u017C mi swoje towary"
-    IsBright: 0
+    Type: 1
   - Message: Oddaj questa
-    IsBright: 1
+    Type: 2
   - Message: Bywaj
-    IsBright: 0
+    Type: 2
 --- !u!114 &-1045267667372152493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +309,7 @@ MonoBehaviour:
   AvatarPosition: 2
   Answers:
   - Message: 
-    IsBright: 0
+    Type: 1
 --- !u!114 &5275806824698405854
 MonoBehaviour:
   m_ObjectHideFlags: 0

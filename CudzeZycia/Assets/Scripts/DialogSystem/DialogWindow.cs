@@ -18,6 +18,9 @@ namespace Scripts.DialogSystem
 
         public Transform buttonParent;
 
+        public Image LeftAvatarImage;
+        public Image RightAvatarImage;
+
         private XNode.Node activeSegment;
 
 
@@ -95,7 +98,14 @@ namespace Scripts.DialogSystem
         private void UpdateDialog(SimpleDialog newSegment)
         {
             activeSegment = newSegment;
-            dialogText.text = "<color=#777777>Nick:</color> "+ newSegment.DialogText;
+            var avatarName = DialogAvatar.GetAvatarName(newSegment.AvatarName);
+            dialogText.text = "<color=#777777>" + avatarName + ":</color> " + newSegment.DialogText;
+
+            LeftAvatarImage.enabled = (newSegment.AvatarPosition == SimpleDialog.Sides.Left);
+            LeftAvatarImage.sprite = DialogAvatar.GetAvatarSprite(newSegment.AvatarName);
+            RightAvatarImage.sprite = DialogAvatar.GetAvatarSprite(newSegment.AvatarName);
+            RightAvatarImage.enabled = (newSegment.AvatarPosition == SimpleDialog.Sides.Right);
+
             foreach (Transform child in buttonParent)
             {
                 Destroy(child.gameObject);
@@ -115,7 +125,14 @@ namespace Scripts.DialogSystem
         private void UpdateDialog(DialogSegment newSegment)
         {
             activeSegment = newSegment;
-            dialogText.text = "<color=#777777>Nick:</color> " + newSegment.DialogText;
+            var avatarName = DialogAvatar.GetAvatarName(newSegment.AvatarName);
+            dialogText.text = "<color=#777777>" + avatarName + ":</color> " + newSegment.DialogText;
+
+            LeftAvatarImage.enabled = (newSegment.AvatarPosition == DialogSegment.Sides.Left);
+            LeftAvatarImage.sprite = DialogAvatar.GetAvatarSprite(newSegment.AvatarName);
+            RightAvatarImage.sprite = DialogAvatar.GetAvatarSprite(newSegment.AvatarName);
+            RightAvatarImage.enabled = (newSegment.AvatarPosition == DialogSegment.Sides.Right);
+
             int answerIndex = 0;
             foreach (Transform child in buttonParent)
             {
@@ -125,7 +142,9 @@ namespace Scripts.DialogSystem
             foreach (var answer in newSegment.Answers)
             {
                 var btn = Instantiate(buttonPrefab, buttonParent);
-                btn.GetComponentInChildren<Text>().text = answer.Message;
+                var textComponent = btn.GetComponentInChildren<Text>();
+                textComponent.text = answer.Message;
+                textComponent.color = answer.GetTextColor();
 
                 var index = answerIndex;
                 btn.GetComponentInChildren<Button>().onClick.AddListener((() => {
@@ -139,5 +158,6 @@ namespace Scripts.DialogSystem
                 answerIndex++;
             }
         }
+
     }
 }
