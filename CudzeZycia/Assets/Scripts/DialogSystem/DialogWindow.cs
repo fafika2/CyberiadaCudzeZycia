@@ -21,6 +21,11 @@ namespace Scripts.DialogSystem
         private XNode.Node activeSegment;
 
 
+        void Start()
+        {
+            // on start game disable / hide dialog ui
+            gameObject.SetActive(false);
+        }
         void OnEnable()
         {
             Setup();
@@ -90,7 +95,7 @@ namespace Scripts.DialogSystem
         private void UpdateDialog(SimpleDialog newSegment)
         {
             activeSegment = newSegment;
-            dialogText.text = newSegment.DialogText;
+            dialogText.text = "<color=#777777>Nick:</color> "+ newSegment.DialogText;
             foreach (Transform child in buttonParent)
             {
                 Destroy(child.gameObject);
@@ -110,7 +115,7 @@ namespace Scripts.DialogSystem
         private void UpdateDialog(DialogSegment newSegment)
         {
             activeSegment = newSegment;
-            dialogText.text = newSegment.DialogText;
+            dialogText.text = "<color=#777777>Nick:</color> " + newSegment.DialogText;
             int answerIndex = 0;
             foreach (Transform child in buttonParent)
             {
