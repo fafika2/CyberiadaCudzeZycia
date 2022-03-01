@@ -299,7 +299,7 @@ MonoBehaviour:
   DialogText: "W jaki spos\xF3b robisz p\u0142atki?"
   Answers:
   - Message: Najpierw mleko
-    Type: 2
+    Type: 1
   - Message: "Najpierw p\u0142atki"
     Type: 2
 --- !u!114 &6041320549931558838

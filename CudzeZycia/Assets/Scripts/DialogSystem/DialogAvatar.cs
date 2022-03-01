@@ -36,6 +36,17 @@ namespace Scripts.DialogSystem
             return avTexture;
         }
 
+        public static Texture GetAvatarAsTexture(DialogAvatarType dat)
+        {
+            var avTexture = Resources.Load<Texture>(DbFiles[dat]);
+            if (avTexture is null)
+            {
+                avTexture = Resources.Load<Texture>(DbFiles[DialogAvatarType.FoxyDebug]);
+                Debug.LogWarning("Nie znaleziono avatara dla " + dat.ToString() + "!");
+            }
+            return avTexture;
+        }
+
         public static string GetAvatarName(DialogAvatarType dat)
         {
             return DbNames[dat];

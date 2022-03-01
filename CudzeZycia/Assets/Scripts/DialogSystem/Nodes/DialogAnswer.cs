@@ -39,6 +39,7 @@ namespace Scripts.DialogSystem
             return myColor;
         }
 
+
     }
 
 }

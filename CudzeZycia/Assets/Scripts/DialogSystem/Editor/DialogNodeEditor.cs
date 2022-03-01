@@ -1,8 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEditorInternal;
 using UnityEngine;
-using XNode;
 using UnityEditor;
+using XNode;
 using XNodeEditor;
+
 
 /// <summary>
 /// Edytor nodów (mo¿na tutaj zrobiæ custom wygl¹d)
@@ -10,80 +14,131 @@ using XNodeEditor;
 
 namespace Scripts.DialogSystem.Editor
 {
+
     [CustomNodeEditor(typeof(DialogSegment))]
     public class DialogNodeEditor : NodeEditor
     {
         public override void OnBodyGUI()
         {
-            base.OnBodyGUI();
-            return;
+            /* Default render all
+            base.OnBodyGUI(); return;
+            */
 
-            /*
-            serializedObject.Update();
+            serializedObject.Update(); // leave it here
+            NodeEditorWindow.current.titleContent = new GUIContent("Edytor Dialogów");
 
+            // Get data
             var segment = serializedObject.targetObject as DialogSegment;
-
-            NodeEditorGUILayout.PortField(segment.GetPort("input"));
-
-            // display place to edit message
-            GUILayout.Label("Message");
-            segment.DialogText = GUILayout.TextArea(segment.DialogText, new GUILayoutOption[]
-            {
-                GUILayout.MinHeight(50),
+            var avatarTexture = DialogAvatar.GetAvatarAsTexture(segment.AvatarName);
+            var avatarName = DialogAvatar.GetAvatarName(segment.AvatarName);
+            
+            // render preview
+            GUILayout.Label("Preview");
+            var styl = new GUIStyle();
+            if(segment.AvatarPosition == DialogSegment.Sides.Right) { styl.alignment = TextAnchor.MiddleRight; }
+            if(segment.AvatarPosition == DialogSegment.Sides.Left) { styl.alignment = TextAnchor.MiddleLeft; }
+            GUILayout.Label(new GUIContent(avatarTexture, avatarName), styl, new GUILayoutOption[] {
+                GUILayout.Height(80),
             });
 
-            // display place to edit avatar
-            GUILayout.Label("Avatar Texture");
+            // render all inputs etc
+            string[] excludes = { "m_Script", "graph", "position", "ports", "Answers" };
+            SerializedProperty iterator = serializedObject.GetIterator();
+            bool enterChildren = true;
+            while (iterator.NextVisible(enterChildren))
+            {
+                enterChildren = false;
+                if (excludes.Contains(iterator.name)) continue;
+                NodeEditorGUILayout.PropertyField(iterator, true);
+            }
 
-            GUILayout.Label(new GUIContent(segment.AvatarImage));
-
-            // Dynamic List with answers
+            // render answers Dynamic List with answers            
             NodeEditorGUILayout.DynamicPortList(
-                "Answers", // field name
-                typeof(string), // field type
-                serializedObject, // serializable object
-                NodePort.IO.Input, // new port i/o
-                Node.ConnectionType.Override, // new port connection type
+                "Answers",
+                typeof(DialogAnswer),
+                serializedObject,
+                NodePort.IO.Input,
+                Node.ConnectionType.Override,
                 Node.TypeConstraint.None,
-                OnCreateReorderableList); // onCreate override. This is where the magic 
-
-
-            foreach (XNode.NodePort dynamicPort in target.DynamicPorts)
+                NewOnCreateReorderableList
+            );
+            /*foreach (NodePort dynamicPort in target.DynamicPorts)
             {
                 if (NodeEditorGUILayout.IsDynamicPortListPort(dynamicPort)) continue;
                 NodeEditorGUILayout.PortField(dynamicPort);
-            }
+            }*/
 
-            serializedObject.ApplyModifiedProperties();
-            */
+            serializedObject.ApplyModifiedProperties(); // leave it here
         }
 
-        /*void OnCreateReorderableList(ReorderableList list)
+        void NewOnCreateReorderableList(ReorderableList list)
         {
-            /// <summary>
-            /// Renderowanie odpowiedzi w edytorze
-            /// </summary>
+            DialogSegment node = serializedObject.targetObject as DialogSegment;
+            SerializedProperty arrayData = serializedObject.FindProperty("Answers");
 
-            list.elementHeightCallback = (int index) =>
-            {
-                return 60; // wysokoœæ jednej Answer
-            };
+            list.drawElementCallback = (Rect rect, int index, bool isActive, bool isFocused) => {
+                XNode.NodePort port = node.GetPort("Answers " + index);
+                // get old color and set new
+                var oldColor = GUI.backgroundColor;
+                GUI.backgroundColor = node.Answers[index].GetTextColor();
 
-            // Override drawHeaderCallback to display node's name instead
-            list.drawElementCallback = (Rect rect, int index, bool isActive, bool isFocused) =>
-            {
-                var segment = serializedObject.targetObject as DialogSegment;
-
-                NodePort port = segment.GetPort("Answers " + index);
-
-                segment.Answers[index] = GUI.TextArea(rect, segment.Answers[index]);
+                if (arrayData.arraySize <= index)
+                {
+                    EditorGUI.LabelField(rect, "Array[" + index + "] data out of range");
+                    return;
+                }
+                SerializedProperty itemData = arrayData.GetArrayElementAtIndex(index);
+                EditorGUI.PropertyField(rect, itemData, true);
 
                 if (port != null)
                 {
+                    // draw connection
                     Vector2 pos = rect.position + (port.IsOutput ? new Vector2(rect.width + 6, 0) : new Vector2(-36, 0));
                     NodeEditorGUILayout.PortField(pos, port);
                 }
+
+                // rollback color changes
+                GUI.backgroundColor = oldColor;
             };
-        }*/
+        }
+
+    }
+
+    [CustomNodeEditor(typeof(SimpleDialog))]
+    public class DialogNodeEditorForSimpleDialog : NodeEditor
+    {
+        public override void OnBodyGUI()
+        {
+            serializedObject.Update(); // leave it here
+            NodeEditorWindow.current.titleContent = new GUIContent("Edytor Dialogów");
+
+            // Get data
+            var segment = serializedObject.targetObject as SimpleDialog;
+            var avatarTexture = DialogAvatar.GetAvatarAsTexture(segment.AvatarName);
+            var avatarName = DialogAvatar.GetAvatarName(segment.AvatarName);
+
+            // render preview
+            GUILayout.Label("Preview");
+            var styl = new GUIStyle();
+            if (segment.AvatarPosition == SimpleDialog.Sides.Right) { styl.alignment = TextAnchor.MiddleRight; }
+            if (segment.AvatarPosition == SimpleDialog.Sides.Left) { styl.alignment = TextAnchor.MiddleLeft; }
+            GUILayout.Label(new GUIContent(avatarTexture, avatarName), styl, new GUILayoutOption[] {
+                GUILayout.Height(80),
+            });
+
+
+            // render all inputs etc
+            string[] excludes = { "m_Script", "graph", "position", "ports" };
+            SerializedProperty iterator = serializedObject.GetIterator();
+            bool enterChildren = true;
+            while (iterator.NextVisible(enterChildren))
+            {
+                enterChildren = false;
+                if (excludes.Contains(iterator.name)) continue;
+                NodeEditorGUILayout.PropertyField(iterator, true);
+            }
+
+            serializedObject.ApplyModifiedProperties(); // leave it here
+        }
     }
 }
