@@ -5,8 +5,9 @@ using Cinemachine;
 
 public class ShowObject : MonoBehaviour
 {
-    public CinemachineVirtualCamera lockcamera;
-    public CharacterMovement lockmovement;
+    private CinemachineVirtualCamera lockcamera;
+    private CharacterMovement lockmovement;
+    private GameObject _outline;
     public GameObject _ShowObject;
     private bool TurnObject = false;
     private bool isCollide = false;
@@ -18,6 +19,9 @@ public class ShowObject : MonoBehaviour
     private void Start()
     {
         pasue = GameObject.Find("Pause");
+        lockmovement = GameObject.Find("Character").GetComponent<CharacterMovement>();
+        lockcamera = GameObject.Find("Camera").GetComponent<CinemachineVirtualCamera>();
+        _outline = transform.Find("outline").gameObject;
     }
 
 
@@ -26,6 +30,7 @@ public class ShowObject : MonoBehaviour
         if(other.gameObject.tag == "Collider")
         {
             isCollide = true;
+            _outline.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -33,6 +38,7 @@ public class ShowObject : MonoBehaviour
         if (other.gameObject.tag == "Collider")
         {
             isCollide = false;
+            _outline.SetActive(false);
         }
     }
 
@@ -51,35 +57,23 @@ public class ShowObject : MonoBehaviour
 
     void PrzyblizObiekt()
     {
-        TurnObject = true;
+        lockcamera.enabled = false;
+        lockmovement.enabled = false;
         Instantiate(_ShowObject);
         Many = 1;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         pasue.SetActive(false);
     }
 
     void ZamknijObiekt()
     {
-        TurnObject = false;
+        lockcamera.enabled = true;
+        lockmovement.enabled = true;
         Many = 0;
         Cursor.lockState = CursorLockMode.Locked;
         pasue.SetActive(true);
+        Cursor.visible = false;
     }
-
-
-    private void FixedUpdate()
-    {
-        if (TurnObject == true)
-        {
-            lockcamera.enabled = false;
-            lockmovement.enabled = false;
-        }
-        else if (TurnObject == false)
-        {
-            lockcamera.enabled = true;
-            lockmovement.enabled = true;
-        }
-    }
-
 
 }
