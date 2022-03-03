@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using XNode;
 using UnityEngine;
 
+/*
+S³u¿y do tworzenia Nodów (bloków) w grafie z dialogami 
+*/
 
 namespace Scripts.DialogSystem
 {
-    [NodeWidth(250), NodeTint("#40603e")]
-    public class SimpleDialog : DialogNode
+    [NodeWidth(250), NodeTint("#5e603e")]
+    public class DialogQuestion : DialogNode
     {
-        // prosty dialog (wszystko jest w zasadzie w DialogNode)
 
-        [Output]
-        public Connection Output;
+        // wyjscia z bloku (i opcje które s¹ w Answers)
+        [Output(dynamicPortList = true, connectionType = ConnectionType.Override)]
+        public List<DialogAnswer> Answers;
+
 
         public override DialogNode GetNextDialog(int answerId)
-        {
-            var port = GetPort("Output");
+        {         
+            var port = GetPort("Answers " + answerId);
             if (port.IsConnected)
             {
                 var node = port.Connection.node;
