@@ -296,7 +296,8 @@ MonoBehaviour:
       _dynamic: 1
   AvatarName: 0
   AvatarPosition: 2
-  DialogText: "W jaki spos\xF3b robisz p\u0142atki?"
+  DialogText: "W jaki spos\xF3b robisz p\u0142atki? W jaki spos\xF3b robisz p\u0142atki?
+    W jaki spos\xF3b robisz p\u0142atki? W jaki spos\xF3b robisz p\u0142atki? "
   Answers:
   - Message: Najpierw mleko
     Type: 2
