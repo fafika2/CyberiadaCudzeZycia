@@ -86,7 +86,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
-    - _Scale: 1
+    - _Scale: 39.99
     - _Smoothness: 0.37
     - _Speed: 0.2
     - _SrcBlend: 1
