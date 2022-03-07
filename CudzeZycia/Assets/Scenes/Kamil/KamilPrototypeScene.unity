@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2039.9912, g: 2042.3633, b: 2539.6758, a: 1}
+  m_IndirectSpecularColor: {r: 2040.2773, g: 2039.5762, b: 2528.7227, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1316,6 +1316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ecdd8978dd1ff4eae06b6854bcba4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  authorText: {fileID: 77798724}
   dialogText: {fileID: 847024899}
   activeDialog: {fileID: 11400000, guid: c4847ba21a388cb4193cd4a909e3a72e, type: 2}
   buttonPrefab: {fileID: 1031394426091119208, guid: 1e6bb70f7f93be34088bf11ca430eaa9, type: 3}
@@ -2074,11 +2075,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419551526181734528, guid: bfb95a3924eac064aa7d0d9cba25ad12, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0021730447
+      value: -0.0021730126
       objectReference: {fileID: 0}
     - target: {fileID: 2419551526181734528, guid: bfb95a3924eac064aa7d0d9cba25ad12, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00083387556
+      value: 0.00083386316
       objectReference: {fileID: 0}
     - target: {fileID: 2419551526181734528, guid: bfb95a3924eac064aa7d0d9cba25ad12, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
