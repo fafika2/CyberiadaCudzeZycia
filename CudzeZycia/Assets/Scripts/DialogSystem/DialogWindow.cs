@@ -10,6 +10,7 @@ namespace Scripts.DialogSystem
 {
     public class DialogWindow : MonoBehaviour
     {
+        public TMP_Text authorText;
         public TMP_Text dialogText;
 
         public DialogGraph activeDialog;
@@ -86,7 +87,8 @@ namespace Scripts.DialogSystem
         {
             activeSegment = newSegment;
             var avatarName = DialogAvatar.GetAvatarName(newSegment.AvatarName);
-            dialogText.text = "<color=#777777>" + avatarName + ":</color> " + newSegment.DialogText;
+            dialogText.text = newSegment.DialogText;
+            authorText.text = avatarName;
 
             LeftAvatarImage.enabled = (newSegment.AvatarPosition == AvatarPosition.Left);
             LeftAvatarImage.sprite = DialogAvatar.GetAvatarSprite(newSegment.AvatarName);
