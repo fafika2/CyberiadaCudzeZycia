@@ -159,7 +159,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.18510528
+        functionName: StepFootTurnOn
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 3dc26e5fec8394d44aba135eaf01465c, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.65575737
+        functionName: StepFootTurnOn
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 3dc26e5fec8394d44aba135eaf01465c, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -188,7 +202,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.21850368
+        functionName: StepFootTurnOn
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 3dc26e5fec8394d44aba135eaf01465c, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.730272
+        functionName: StepFootTurnOn
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 3dc26e5fec8394d44aba135eaf01465c, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

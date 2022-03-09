@@ -139,7 +139,7 @@ ModelImporter:
       name: Character|Run
       takeName: Character|Run
       internalID: 0
-      firstFrame: 0
+      firstFrame: 20
       lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
