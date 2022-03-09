@@ -8,6 +8,7 @@ namespace Scripts.DialogSystem
     {
         FoxyDebug = 0,
         Skylar = 1,
+        Faint = 2,
     }
 
 
@@ -16,11 +17,13 @@ namespace Scripts.DialogSystem
         private static Dictionary<DialogAvatarType, string> DbFiles = new Dictionary<DialogAvatarType, string>(){
             {DialogAvatarType.FoxyDebug, "DialogAvatars/FoxyDebug"},
             {DialogAvatarType.Skylar, "DialogAvatars/Skylar"},
+            {DialogAvatarType.Faint, "DialogAvatars/Faint"},
 
         };
         private static Dictionary<DialogAvatarType, string> DbNames = new Dictionary<DialogAvatarType, string>(){
             {DialogAvatarType.FoxyDebug, "FoxyDebug"},
             {DialogAvatarType.Skylar, "Skylar"},
+            {DialogAvatarType.Faint, "Faint"},
 
         };
 

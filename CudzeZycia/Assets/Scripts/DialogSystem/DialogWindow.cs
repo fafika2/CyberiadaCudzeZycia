@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,6 +22,10 @@ namespace Scripts.DialogSystem
 
         public Image LeftAvatarImage;
         public Image RightAvatarImage;
+
+        public Sprite btnBgMain;
+        public Sprite btnBgSecondary;
+        public Sprite btnBgGray;
 
         private XNode.Node activeSegment;
 
@@ -82,6 +87,13 @@ namespace Scripts.DialogSystem
             Debug.LogWarning("Dialog startowy nie zostal znaleziony!");
         }
 
+        private Sprite GetDialogAnswerBackground(DialogAnswer.AnswerType answerType) => answerType switch
+        {
+            DialogAnswer.AnswerType.MainQuest => btnBgMain,
+            DialogAnswer.AnswerType.Secondary => btnBgSecondary,
+            DialogAnswer.AnswerType.Gray => btnBgGray,
+            _ => throw new ArgumentOutOfRangeException(nameof(answerType), $"Not expected direction value: {answerType}"),
+        };
 
         private void UpdateDialog(DialogNode newSegment)
         {
@@ -110,9 +122,14 @@ namespace Scripts.DialogSystem
                 foreach (var answer in dialogSegment.Answers)
                 {
                     var btn = Instantiate(buttonPrefab, buttonParent);
+                    // change button background
+                    var imageComponent = btn.GetComponent<Image>();
+                    imageComponent.sprite = GetDialogAnswerBackground(answer.Type);
+        
                     var textComponent = btn.GetComponentInChildren<Text>();
                     textComponent.text = answer.Message;
-                    textComponent.color = answer.GetTextColor();
+                    // we dont change colors now (should be white) but maybe some day we want this again kekw
+                    // textComponent.color = answer.GetTextColor(); 
 
                     var index = answerIndex;
                     btn.GetComponentInChildren<Button>().onClick.AddListener((() => {
@@ -130,6 +147,11 @@ namespace Scripts.DialogSystem
             {
                 // zwyk³e pojedyncze wyjscie
                 var btn = Instantiate(buttonPrefab, buttonParent);
+                var imageComponent = btn.GetComponent<Image>();
+
+                // domyœlnie niebieskie t³o
+                imageComponent.sprite = btnBgSecondary;
+
                 btn.GetComponentInChildren<Text>().text = "Dalej...";
                 btn.GetComponentInChildren<Button>().onClick.AddListener((() => {
                     var nextDialog = newSegment.GetNextDialog(0);
