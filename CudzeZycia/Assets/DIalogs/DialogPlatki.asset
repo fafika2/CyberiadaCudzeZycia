@@ -22,7 +22,7 @@ MonoBehaviour:
     values:
     - _fieldName: input
       _node: {fileID: -316713825202191573}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.Connection, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
@@ -35,8 +35,8 @@ MonoBehaviour:
     - _fieldName: Answers
       _node: {fileID: -316713825202191573}
       _typeQualifiedName: System.Collections.Generic.List`1[[Scripts.DialogSystem.DialogAnswer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        DialogSystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 1
@@ -44,14 +44,14 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Answers 0
       _node: {fileID: -316713825202191573}
-      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 1
-  AvatarName: 0
+  AvatarName: 2
   AvatarPosition: 2
   DialogText: Wypieradalaj zjebje
   Answers:
@@ -78,7 +78,7 @@ MonoBehaviour:
     values:
     - _fieldName: input
       _node: {fileID: -63174692452040150}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.Connection, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Answers 0
@@ -90,7 +90,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -63174692452040150}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.Connection, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
@@ -145,7 +145,7 @@ MonoBehaviour:
     values:
     - _fieldName: input
       _node: {fileID: 91607425414081515}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.Connection, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
@@ -158,8 +158,8 @@ MonoBehaviour:
     - _fieldName: Answers
       _node: {fileID: 91607425414081515}
       _typeQualifiedName: System.Collections.Generic.List`1[[Scripts.DialogSystem.DialogAnswer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        DialogSystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 1
@@ -167,14 +167,14 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Answers 0
       _node: {fileID: 91607425414081515}
-      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 1
-  AvatarName: 0
+  AvatarName: 2
   AvatarPosition: 2
   DialogText: "No i tak to si\u0119 powinno robi\u0107 byczq"
   Answers:
@@ -201,7 +201,7 @@ MonoBehaviour:
     values:
     - _fieldName: input
       _node: {fileID: 3107053362350647505}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.Connection, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Answers 1
@@ -213,7 +213,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 3107053362350647505}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.Connection, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
@@ -250,7 +250,7 @@ MonoBehaviour:
     values:
     - _fieldName: input
       _node: {fileID: 4979765017316381746}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.Connection, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
@@ -263,8 +263,8 @@ MonoBehaviour:
     - _fieldName: Answers
       _node: {fileID: 4979765017316381746}
       _typeQualifiedName: System.Collections.Generic.List`1[[Scripts.DialogSystem.DialogAnswer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        DialogSystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 1
@@ -272,7 +272,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Answers 0
       _node: {fileID: 4979765017316381746}
-      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
@@ -284,7 +284,7 @@ MonoBehaviour:
       _dynamic: 1
     - _fieldName: Answers 1
       _node: {fileID: 4979765017316381746}
-      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.DialogAnswer, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
@@ -294,7 +294,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 1
-  AvatarName: 0
+  AvatarName: 2
   AvatarPosition: 2
   DialogText: "W jaki spos\xF3b robisz p\u0142atki? W jaki spos\xF3b robisz p\u0142atki?
     W jaki spos\xF3b robisz p\u0142atki? W jaki spos\xF3b robisz p\u0142atki? "
@@ -323,7 +323,7 @@ MonoBehaviour:
     values:
     - _fieldName: Output
       _node: {fileID: 6041320549931558838}
-      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: Scripts.DialogSystem.Connection, DialogSystem, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
