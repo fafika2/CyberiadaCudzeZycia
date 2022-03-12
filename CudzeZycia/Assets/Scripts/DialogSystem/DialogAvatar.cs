@@ -7,8 +7,10 @@ namespace Scripts.DialogSystem
     public enum DialogAvatarType
     {
         FoxyDebug = 0,
+        Lektor = 3,
         Skylar = 1,
         Faint = 2,
+        Grey = 4,
     }
 
 
@@ -16,14 +18,18 @@ namespace Scripts.DialogSystem
     {
         private static Dictionary<DialogAvatarType, string> DbFiles = new Dictionary<DialogAvatarType, string>(){
             {DialogAvatarType.FoxyDebug, "DialogAvatars/FoxyDebug"},
+            {DialogAvatarType.Lektor, "DialogAvatars/Lektor"},
             {DialogAvatarType.Skylar, "DialogAvatars/Skylar"},
             {DialogAvatarType.Faint, "DialogAvatars/Faint"},
+            {DialogAvatarType.Grey, "DialogAvatars/Grey"},
 
         };
         private static Dictionary<DialogAvatarType, string> DbNames = new Dictionary<DialogAvatarType, string>(){
             {DialogAvatarType.FoxyDebug, "FoxyDebug"},
+            {DialogAvatarType.Lektor, ""},
             {DialogAvatarType.Skylar, "Skylar"},
             {DialogAvatarType.Faint, "Faint"},
+            {DialogAvatarType.Grey, "Grey"},
 
         };
 
