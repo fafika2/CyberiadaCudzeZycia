@@ -28,6 +28,7 @@ namespace Scripts.DialogSystem
         public Sprite btnBgGray;
 
         private XNode.Node activeSegment;
+        private DialogAvatarManager dialogAvatarManager;
 
 
         void Start()
@@ -47,6 +48,10 @@ namespace Scripts.DialogSystem
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+        }
+        private void Awake()
+        {
+            dialogAvatarManager = DialogAvatarManager.GetResourceDialogAvatarManager();
         }
 
         public void Setup()
@@ -98,13 +103,13 @@ namespace Scripts.DialogSystem
         private void UpdateDialog(DialogNode newSegment)
         {
             activeSegment = newSegment;
-            var avatarName = DialogAvatar.GetAvatarName(newSegment.AvatarName);
+            var avatarName = dialogAvatarManager.GetAvatarName(newSegment.AvatarName);
             dialogText.text = newSegment.DialogText;
             authorText.text = avatarName;
 
             LeftAvatarImage.enabled = (newSegment.AvatarPosition == AvatarPosition.Left);
-            LeftAvatarImage.sprite = DialogAvatar.GetAvatarSprite(newSegment.AvatarName);
-            RightAvatarImage.sprite = DialogAvatar.GetAvatarSprite(newSegment.AvatarName);
+            LeftAvatarImage.sprite = dialogAvatarManager.GetAvatarSprite(newSegment.AvatarName);
+            RightAvatarImage.sprite = dialogAvatarManager.GetAvatarSprite(newSegment.AvatarName);
             RightAvatarImage.enabled = (newSegment.AvatarPosition == AvatarPosition.Right);
 
 

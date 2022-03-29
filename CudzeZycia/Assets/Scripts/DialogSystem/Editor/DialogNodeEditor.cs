@@ -8,6 +8,7 @@ using XNode;
 using XNodeEditor;
 
 
+
 /// <summary>
 /// Edytor nodów (mo¿na tutaj zrobiæ custom wygl¹d)
 /// </summary>
@@ -17,8 +18,11 @@ namespace Scripts.DialogSystem.Editor
     [CustomNodeEditor(typeof(DialogNode))]
     public class DialogNodeEditor : NodeEditor
     {
+
         public override void OnBodyGUI()
         {
+            var dialogAvatarManager = DialogAvatarManager.GetResourceDialogAvatarManager();
+
             /* Default render all
             base.OnBodyGUI(); return;
             */
@@ -28,8 +32,8 @@ namespace Scripts.DialogSystem.Editor
 
             // Get data
             var segment = serializedObject.targetObject as DialogNode;
-            var avatarTexture = DialogAvatar.GetAvatarAsTexture(segment.AvatarName);
-            var avatarName = DialogAvatar.GetAvatarName(segment.AvatarName);
+            var avatarTexture = dialogAvatarManager.GetAvatarAsTexture(segment.AvatarName);
+            var avatarName = dialogAvatarManager.GetAvatarName(segment.AvatarName);
 
             // render preview
             GUILayout.Label("Preview");
