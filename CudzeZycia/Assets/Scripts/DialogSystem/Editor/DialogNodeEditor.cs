@@ -18,11 +18,14 @@ namespace Scripts.DialogSystem.Editor
     [CustomNodeEditor(typeof(DialogNode))]
     public class DialogNodeEditor : NodeEditor
     {
+        DialogAvatarManager dialogAvatarManager;
+        public DialogNodeEditor()
+        {
+            dialogAvatarManager = DialogAvatarManager.GetResourceDialogAvatarManager();
+        }
 
         public override void OnBodyGUI()
         {
-            var dialogAvatarManager = DialogAvatarManager.GetResourceDialogAvatarManager();
-
             /* Default render all
             base.OnBodyGUI(); return;
             */

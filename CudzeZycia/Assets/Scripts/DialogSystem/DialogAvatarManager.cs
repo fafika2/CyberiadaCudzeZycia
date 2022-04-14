@@ -45,6 +45,7 @@ namespace Scripts.DialogSystem
 
         public static DialogAvatarManager GetResourceDialogAvatarManager()
         {
+            // U¿ywane tylko przez node editor, i tylko przez niego ma byæ u¿ywane!
             var res = Resources.Load<DialogAvatarManager>("DialogAvatarManager");
             if(res == null)
             {
