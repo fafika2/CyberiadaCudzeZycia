@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3483483617503670403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1c41f85fb2761409eecde353f3f665, type: 3}
+  m_Name: Simple Dialog
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 12664, y: 5944}
+  ports:
+    keys:
+    - Output
+    - input
+    values:
+    - _fieldName: Output
+      _node: {fileID: -3483483617503670403}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -3483483617503670403}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: -2918937278906606481}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  AvatarName: 1
+  AvatarPosition: 2
+  DialogText: "Tak w og\xF3le\u2026 to dlaczego dostajesz leki poczt\u0105? "
+--- !u!114 &-2918937278906606481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207bdb8652d2bde4083cd66a8165a1c0, type: 3}
+  m_Name: Dialog Start
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 12387.639, y: 6038.775}
+  ports:
+    keys:
+    - Output
+    values:
+    - _fieldName: Output
+      _node: {fileID: -2918937278906606481}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -3483483617503670403}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 522687da48860a043a6de1be036ec924, type: 3}
+  m_Name: 8 W trakcie wychodzenia z kanalow
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -2918937278906606481}
+  - {fileID: -3483483617503670403}
