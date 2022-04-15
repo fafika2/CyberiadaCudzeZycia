@@ -37,7 +37,7 @@ namespace Scripts.DialogSystem.Editor
             var segment = serializedObject.targetObject as DialogNode;
             var avatarTexture = dialogAvatarManager.GetAvatarAsTexture(segment.AvatarName);
             var avatarName = dialogAvatarManager.GetAvatarName(segment.AvatarName);
-
+            
             // render preview
             GUILayout.Label("Preview");
             var styl = new GUIStyle();

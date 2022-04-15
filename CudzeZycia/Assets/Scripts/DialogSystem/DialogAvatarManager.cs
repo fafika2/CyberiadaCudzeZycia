@@ -12,6 +12,13 @@ namespace Scripts.DialogSystem
         Skylar = 1,
         Faint = 2,
         Grey = 4,
+        Ash = 8,
+
+        Zbir_Rick = 5,
+        Zbir_Paul = 6,
+        Zbir_Jack = 7,
+
+        Szef_Kurierow = 9,
     }
 
     [CreateAssetMenu(fileName = "DialogAvatarManager", menuName = "DialogSystem/DialogAvatarManager")]
@@ -30,17 +37,23 @@ namespace Scripts.DialogSystem
 
         public Sprite GetAvatarSprite(DialogAvatarType dat)
         {
-            return Data.FirstOrDefault(x => x.Type == dat).Avatar;
+            var obj = Data.FirstOrDefault(x => x.Type == dat);
+            if (obj == null) { return  Data[0].Avatar; }
+            return obj.Avatar;
         }
 
         public Texture GetAvatarAsTexture(DialogAvatarType dat)
         {
-            return Data.FirstOrDefault(x => x.Type == dat).Avatar.texture;
+            var obj = Data.FirstOrDefault(x => x.Type == dat);
+            if (obj == null) { return Data[0].Avatar.texture; }
+            return obj.Avatar.texture;
         }
 
         public string GetAvatarName(DialogAvatarType dat)
         {
-            return Data.FirstOrDefault(x => x.Type == dat).Name;
+            var obj = Data.FirstOrDefault(x => x.Type == dat);
+            if (obj == null) { return "--MISSING CONFIG--"; }
+            return obj.Name;
         }
 
         public static DialogAvatarManager GetResourceDialogAvatarManager()
