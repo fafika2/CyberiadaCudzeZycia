@@ -28,11 +28,11 @@ Transform:
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 6016050306935935552}
+  - {fileID: 8165200078846883839}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &6122631170518070699
+--- !u!1001 &8564200834090766356
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -49,7 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 38e2373181ee1f044bac16c5c74bc908, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 38e2373181ee1f044bac16c5c74bc908, type: 3}
       propertyPath: m_LocalPosition.z
@@ -87,33 +87,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: boisko_kosz
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 38e2373181ee1f044bac16c5c74bc908, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e2373181ee1f044bac16c5c74bc908, type: 3}
---- !u!4 &6016050306935935552 stripped
+--- !u!4 &8165200078846883839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 38e2373181ee1f044bac16c5c74bc908, type: 3}
-  m_PrefabInstance: {fileID: 6122631170518070699}
+  m_PrefabInstance: {fileID: 8564200834090766356}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6356440881028630778 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 38e2373181ee1f044bac16c5c74bc908, type: 3}
-  m_PrefabInstance: {fileID: 6122631170518070699}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &6122631170518070742
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6356440881028630778}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8096753380578816599, guid: 38e2373181ee1f044bac16c5c74bc908, type: 3}
