@@ -9,13 +9,15 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] public float _RunSpeed = 4;
     private float mainSpeed = 2;
     //[SerializeField] public float _TurnSpeed = 360;
-    [SerializeField] public float _SpeedRotate = 5;
+    //[SerializeField] public float _SpeedRotate = 5;
     private float _inputHorizontal;
+    public Transform CameraRotation;
     private float _inputVertical;
     private bool ShiftCheck;
     private Vector3 _input;
     public Animator anim;
     public VectorValue StartPosition;
+    Vector3 moveDirection;
 
     void Start()
     {
@@ -34,13 +36,16 @@ public class CharacterMovement : MonoBehaviour
         {
             StartPosition.playerRotation = transform.eulerAngles.y;
         }
+        Rotate();
+
     }
 
     private void FixedUpdate()
     {
         Move();
-        Rotate();
+        
     }
+
 
     /*void Look()
     {
@@ -61,10 +66,11 @@ public class CharacterMovement : MonoBehaviour
 
     void Move()
     {
+        moveDirection = transform.forward * _inputVertical + transform.right * _inputHorizontal;
         
-
-        if (_inputVertical != 0)
+        if (_inputVertical != 0 || _inputHorizontal != 0)
         {
+            
             if (ShiftCheck == true)
             {
                 mainSpeed = _RunSpeed;
@@ -77,29 +83,31 @@ public class CharacterMovement : MonoBehaviour
                 anim.SetBool("Run", false);
                 anim.SetInteger("_Speed", 1);
             }
-            _rigidbody.MovePosition(transform.position + (transform.forward * _inputVertical) * mainSpeed * Time.deltaTime);
+            //_rigidbody.MovePosition(transform.position + (transform.forward * _inputVertical) * mainSpeed * Time.deltaTime, transform.position + (transform.right * _inputHorizontal) * mainSpeed * Time.deltaTime);
+            //_rigidbody.AddForce(moveDirection * mainSpeed * Time.deltaTime * 500, ForceMode.Force) ;
+            _rigidbody.velocity = moveDirection * mainSpeed;
             anim.SetBool("Walk", true);
         }
-        else if(_inputVertical == 0)
+        else if(_inputVertical == 0 && _inputHorizontal == 0)
         {
             anim.SetInteger("_Speed", 0);
             anim.SetBool("Walk", false);
         }
+
+
+    }
+
+    /*void GatherInput()
+    {
+        _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+    }*/
+
+    void Rotate()
+        {
         
-       
-        }
+        transform.rotation = Quaternion.Euler(transform.eulerAngles.x, CameraRotation.eulerAngles.y, transform.eulerAngles.z);
+            
 
-        /*void GatherInput()
-        {
-            _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        }*/
-
-        void Rotate()
-        {
-            if (_inputHorizontal != 0)
-            {
-                transform.Rotate(0, _SpeedRotate * _inputHorizontal, 0);
-            }
         }
 
     }
