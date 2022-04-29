@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayAudioSound : MonoBehaviour
 {
+    public float minPitch = 0.9f, maxPitch = 1.1f, minVolume = 0.1f, maxVolume = 0.2f;
     private AudioSource Player;
     void Start()
     {
@@ -12,8 +13,8 @@ public class PlayAudioSound : MonoBehaviour
 
     void StepFootTurnOn()
     {
-        Player.pitch = Random.Range(0.9f, 1.1f);
-        Player.volume = Random.Range(0.4f, 0.6f);
+        Player.pitch = Random.Range(minPitch, maxPitch);
+        Player.volume = Random.Range(minVolume, maxVolume);
         Player.Play();
     }
 }

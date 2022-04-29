@@ -7,6 +7,9 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] public float _speed = 2;
     [SerializeField] public float _RunSpeed = 4;
+    
+    
+
     private float mainSpeed = 2;
     //[SerializeField] public float _TurnSpeed = 360;
     //[SerializeField] public float _SpeedRotate = 5;
@@ -14,6 +17,7 @@ public class CharacterMovement : MonoBehaviour
     public Transform CameraRotation;
     private float _inputVertical;
     private bool ShiftCheck;
+    
     private Vector3 _input;
     public Animator anim;
     public VectorValue StartPosition;
@@ -23,6 +27,7 @@ public class CharacterMovement : MonoBehaviour
     {
         transform.position = StartPosition.initialValue;
         transform.Rotate(new Vector3(0, StartPosition.playerRotation, 0));
+        
     }
 
 
@@ -43,9 +48,10 @@ public class CharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-        
+        _rigidbody.AddForce(-transform.up, ForceMode.VelocityChange);
     }
 
+    
 
     /*void Look()
     {
@@ -86,6 +92,8 @@ public class CharacterMovement : MonoBehaviour
             //_rigidbody.MovePosition(transform.position + (transform.forward * _inputVertical) * mainSpeed * Time.deltaTime, transform.position + (transform.right * _inputHorizontal) * mainSpeed * Time.deltaTime);
             //_rigidbody.AddForce(moveDirection * mainSpeed * Time.deltaTime * 500, ForceMode.Force) ;
             _rigidbody.velocity = moveDirection * mainSpeed;
+            
+            
             anim.SetBool("Walk", true);
         }
         else if(_inputVertical == 0 && _inputHorizontal == 0)
