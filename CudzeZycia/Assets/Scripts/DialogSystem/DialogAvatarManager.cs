@@ -19,6 +19,13 @@ namespace Scripts.DialogSystem
         Zbir_Jack = 7,
 
         Szef_Kurierow = 9,
+
+        Ryan = 10,
+
+        Opiekunka = 11,
+        Armen = 12,
+        Erica = 13,
+
     }
 
     [CreateAssetMenu(fileName = "DialogAvatarManager", menuName = "DialogSystem/DialogAvatarManager")]

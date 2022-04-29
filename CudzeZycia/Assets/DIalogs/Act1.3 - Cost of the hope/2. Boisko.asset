@@ -1,6 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6238396952499908514
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 522687da48860a043a6de1be036ec924, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2725178424388560898}
+  - {fileID: 8741181944831608449}
+--- !u!114 &2725178424388560898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,24 +28,24 @@ MonoBehaviour:
   m_Name: Dialog Start
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 120, y: 136}
+  position: {x: 24, y: 8}
   ports:
     keys:
     - Output
     values:
     - _fieldName: Output
-      _node: {fileID: -6238396952499908514}
+      _node: {fileID: 2725178424388560898}
       _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: -4238459146172539761}
+        node: {fileID: 8741181944831608449}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
---- !u!114 &-4238459146172539761
+--- !u!114 &8741181944831608449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,14 +58,14 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 424, y: 104}
+  position: {x: 312, y: 24}
   ports:
     keys:
     - Output
     - input
     values:
     - _fieldName: Output
-      _node: {fileID: -4238459146172539761}
+      _node: {fileID: 8741181944831608449}
       _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections: []
@@ -59,32 +74,20 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: input
-      _node: {fileID: -4238459146172539761}
+      _node: {fileID: 8741181944831608449}
       _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
-        node: {fileID: -6238396952499908514}
+        node: {fileID: 2725178424388560898}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  AvatarName: 8
-  AvatarPosition: 1
-  DialogText: Okej, siadaj na fotelu.
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522687da48860a043a6de1be036ec924, type: 3}
-  m_Name: 3 Po znalezieniu apteczki
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: -6238396952499908514}
-  - {fileID: -4238459146172539761}
+  AvatarName: 3
+  AvatarPosition: 2
+  DialogText: "Po\u015Br\xF3d licznych, sztucznych \u015Bwiate\u0142 to ona o\u015Blepia\u0142a
+    ci\u0119 najbardziej. A gdy tylko ca\u0142kowicie ujrza\u0142e\u015B jej swawoln\u0105
+    postur\u0119 goni\u0105c\u0105 za \u0142aciat\u0105 pi\u0142k\u0105, twe serce
+    zaskoczy\u0142o rytmem jak alarmy po\u017Carowe w spopielon\u0105 noc. \r\n"

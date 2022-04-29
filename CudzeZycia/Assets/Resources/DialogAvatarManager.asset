@@ -28,3 +28,15 @@ MonoBehaviour:
   - Type: 4
     Avatar: {fileID: 21300000, guid: 611f166b1e411d54b88a93b814b8c285, type: 3}
     Name: Grey
+  - Type: 10
+    Avatar: {fileID: 21300000, guid: 9ddac3aee672ae243b1423fe0f84c408, type: 3}
+    Name: Ryan
+  - Type: 11
+    Avatar: {fileID: 21300000, guid: 9ddac3aee672ae243b1423fe0f84c408, type: 3}
+    Name: Opiekunka
+  - Type: 12
+    Avatar: {fileID: 21300000, guid: 9ddac3aee672ae243b1423fe0f84c408, type: 3}
+    Name: Armen
+  - Type: 13
+    Avatar: {fileID: 21300000, guid: 9ddac3aee672ae243b1423fe0f84c408, type: 3}
+    Name: Erica
