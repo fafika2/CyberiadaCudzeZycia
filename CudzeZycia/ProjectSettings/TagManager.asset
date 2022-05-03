@@ -41,6 +41,12 @@ TagManager:
   - MiniMap
   - Rotator
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2024037637
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Top
+    uniqueID: 904022453
     locked: 0
