@@ -7,6 +7,7 @@ public class MovmentCharacterMinigameCar : MonoBehaviour
     public Transform TopRoad, MidRoad, BottomRoad;
     public Animator _animation;
     public Animation _Roadspeed;
+    public SpriteRenderer SR;
 
     private float t;
     private int position;
@@ -17,6 +18,8 @@ public class MovmentCharacterMinigameCar : MonoBehaviour
         position = 0;
         transform.position = MidRoad.position;
         _start = true;
+        SR.sortingOrder = -1;
+        
     }
 
     // Update is called once per frame
@@ -25,10 +28,13 @@ public class MovmentCharacterMinigameCar : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.DownArrow) && position != 1)
         {
             position += 1;
+            SR.sortingOrder += 1;
+            
         }
         else if(Input.GetKeyDown(KeyCode.UpArrow) && position != -1)
         {
             position -= 1;
+            SR.sortingOrder -= 1;
         }
 
         if(_start == true)
@@ -69,4 +75,7 @@ public class MovmentCharacterMinigameCar : MonoBehaviour
             _Roadspeed["LoopRoad"].speed = Mathf.Lerp(0,1,t);
         }
     }
+
+
+    
 }

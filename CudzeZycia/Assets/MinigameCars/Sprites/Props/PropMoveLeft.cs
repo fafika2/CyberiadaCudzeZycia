@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class PropMoveLeft : MonoBehaviour
 {
-    public float LeftSpeed = 10f
-        ;
-    
-   
+    private float LeftSpeed;
 
-    private void FixedUpdate()
+    public bool isCar, isProp;
+
+    private void Start()
+    {
+        if(isCar)
+        {
+            LeftSpeed = Random.Range(11, 13);
+        }
+        else if(isProp)
+        {
+            LeftSpeed = 10.5f;
+        }
+    }
+
+    private void Update()
     {
         transform.position += new Vector3(-LeftSpeed*Time.deltaTime, 0, 0);
+        Destroy(gameObject, 7);
     }
+
+    
+
 }
