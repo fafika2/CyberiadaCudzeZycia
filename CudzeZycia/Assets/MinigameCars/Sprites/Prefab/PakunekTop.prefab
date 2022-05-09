@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4762158044519324881}
   - component: {fileID: 2516174216830428105}
   - component: {fileID: 387470833578207106}
+  - component: {fileID: 6457836898794574380}
   m_Layer: 0
   m_Name: PakunekTop
   m_TagString: Untagged
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8dcccae816cb94c9f7cde00563693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
   isCar: 0
   isProp: 1
 --- !u!61 &387470833578207106
@@ -74,6 +76,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95217705, y: 0.52176404}
   m_EdgeRadius: 0
+--- !u!114 &6457836898794574380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6560292692933357188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a94cb668b520d449d943a84b53ebaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddPoint: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
 --- !u!1 &8009697962031377692
 GameObject:
   m_ObjectHideFlags: 0

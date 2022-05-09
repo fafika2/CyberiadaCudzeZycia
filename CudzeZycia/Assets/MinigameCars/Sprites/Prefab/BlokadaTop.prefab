@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5474997728352524478}
   - component: {fileID: 4542074326702773781}
   - component: {fileID: 1236545242222521835}
+  - component: {fileID: 671517653954110336}
   m_Layer: 0
   m_Name: BlokadaTop
   m_TagString: Untagged
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8dcccae816cb94c9f7cde00563693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
   isCar: 0
   isProp: 1
 --- !u!61 &1236545242222521835
@@ -74,6 +76,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.73, y: 1.18}
   m_EdgeRadius: 0
+--- !u!114 &671517653954110336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3215976295838668467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ec5d218443ff84681fbe0d103162ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dead: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
 --- !u!1 &6712911498777444927
 GameObject:
   m_ObjectHideFlags: 0

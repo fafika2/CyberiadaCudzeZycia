@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7254719115271793155}
   - component: {fileID: 1179478546780611752}
   - component: {fileID: 4503598169713041238}
+  - component: {fileID: 8374747396180934865}
   m_Layer: 0
   m_Name: BlokadaMid
   m_TagString: Untagged
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8dcccae816cb94c9f7cde00563693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
   isCar: 0
   isProp: 1
 --- !u!61 &4503598169713041238
@@ -74,6 +76,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.73, y: 1.18}
   m_EdgeRadius: 0
+--- !u!114 &8374747396180934865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285864857751610382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ec5d218443ff84681fbe0d103162ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dead: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
 --- !u!1 &8250564303166697602
 GameObject:
   m_ObjectHideFlags: 0

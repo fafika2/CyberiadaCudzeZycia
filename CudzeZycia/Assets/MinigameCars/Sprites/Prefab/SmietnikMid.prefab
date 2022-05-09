@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5280820535313878786}
   - component: {fileID: 8309928024355922560}
   - component: {fileID: 6596233414531727037}
+  - component: {fileID: 7235209204806579305}
   m_Layer: 0
   m_Name: SmietnikMid
   m_TagString: Untagged
@@ -130,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8dcccae816cb94c9f7cde00563693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
   isCar: 0
   isProp: 1
 --- !u!61 &6596233414531727037
@@ -158,3 +160,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97476006, y: 0.7980944}
   m_EdgeRadius: 0
+--- !u!114 &7235209204806579305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336574793786535753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ec5d218443ff84681fbe0d103162ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dead: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}

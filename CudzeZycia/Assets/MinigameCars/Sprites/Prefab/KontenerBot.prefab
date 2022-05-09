@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 6437134806130041175}
   - component: {fileID: 9072540721192974572}
   - component: {fileID: -5758809454189322261}
+  - component: {fileID: -4933488773901316517}
   m_Layer: 0
   m_Name: KontenerBot
   m_TagString: Untagged
@@ -156,5 +157,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8dcccae816cb94c9f7cde00563693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
   isCar: 0
   isProp: 1
+--- !u!114 &-4933488773901316517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928410176775585044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ec5d218443ff84681fbe0d103162ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dead: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}

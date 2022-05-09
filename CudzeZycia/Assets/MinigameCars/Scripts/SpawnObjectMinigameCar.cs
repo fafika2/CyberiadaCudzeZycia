@@ -10,13 +10,13 @@ public class SpawnObjectMinigameCar : MonoBehaviour
     private int PropType;
     private float _time;
     private bool couritneExe = false;
+    public ScoreCounter Poziom;
 
-
-    [Range(0, 12)]
+   /* [Range(0, 12)]
     public float MaxTimer;
 
     [Range(0, 12)]
-    public float MinTimer;
+    public float MinTimer;*/
 
     void Start()
     {
@@ -26,11 +26,13 @@ public class SpawnObjectMinigameCar : MonoBehaviour
     
     void Update()
     {
-        if(_anim["LoopRoad"].speed >= 1)
+        if(_anim["LoopRoad"].speed >= 1 && Poziom.Dead == false)
         {
             StartCoroutine(_SpawnObject());
         }
     }
+
+   
 
     IEnumerator _SpawnObject()
     {
@@ -41,7 +43,8 @@ public class SpawnObjectMinigameCar : MonoBehaviour
 
         couritneExe = true;
 
-        _time = Random.Range(MinTimer, MaxTimer);
+        //_time = Random.Range(MinTimer, MaxTimer);
+        PoziomTrudnosci(Poziom.poziom);
         yield return new WaitForSeconds(_time);
         randomnumber = Random.Range(0, 10);
 
@@ -61,5 +64,31 @@ public class SpawnObjectMinigameCar : MonoBehaviour
         
 
         couritneExe = false;
+    }
+
+
+
+    void PoziomTrudnosci(int Poziom)
+    {
+        if (Poziom == 1)
+        {
+            _time = Random.Range(2f, 6);
+        }
+        else if(Poziom == 2)
+        {
+            _time = Random.Range(1f, 5);
+        }
+        else if (Poziom == 3)
+        {
+            _time = Random.Range(0.7f, 4);
+        }
+        else if (Poziom == 4)
+        {
+            _time = Random.Range(0.7f, 3);
+        }
+        else
+        {
+            _time = Random.Range(0.7f, 2f);
+        }
     }
 }

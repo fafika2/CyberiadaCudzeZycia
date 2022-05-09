@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8188710930094147154}
   - component: {fileID: 7420203741901325169}
   - component: {fileID: 1004843219155101203}
+  - component: {fileID: 4093114535040124850}
   m_Layer: 0
   m_Name: tirBot
   m_TagString: Untagged
@@ -145,5 +146,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8dcccae816cb94c9f7cde00563693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
   isCar: 1
   isProp: 0
+--- !u!114 &4093114535040124850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4740262541143700802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ec5d218443ff84681fbe0d103162ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dead: {fileID: 11400000, guid: 9f9d76c62d86660488713a50d0c9a486, type: 2}
