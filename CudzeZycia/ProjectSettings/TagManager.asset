@@ -8,6 +8,7 @@ TagManager:
   - Rotator
   - MainCharacter
   - Breaker
+  - Pause
   layers:
   - Default
   - TransparentFX

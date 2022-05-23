@@ -5,24 +5,28 @@ using Cinemachine;
 
 public class ShowObject : MonoBehaviour
 {
-    private CinemachineVirtualCamera lockcamera;
-    private CharacterMovement lockmovement;
+    private FirstPersonLook lockcamera;
+    private FirstPersonMovement lockmovement;
     private GameObject _outline;
     public GameObject _ShowObject;
-    private bool TurnObject = false;
     private bool isCollide = false;
     private int Many = 0;
-    private GameObject pasue;
+    private GameObject _pause;
+    private GameObject _pauseOpen;
+    private AudioSource _audio;
 
 
 
     private void Start()
     {
-        pasue = GameObject.Find("Pause");
-        lockmovement = GameObject.Find("Character").GetComponent<CharacterMovement>();
-        lockcamera = GameObject.Find("Camera").GetComponent<CinemachineVirtualCamera>();
+        _audio = GameObject.Find("Character").GetComponent<AudioSource>();
+        _pause = GameObject.Find("Pause");
+        _pauseOpen = _pause.transform.GetChild(1).gameObject;
+        lockmovement = GameObject.Find("Character").GetComponent<FirstPersonMovement>();
+        lockcamera = GameObject.Find("Camera").GetComponent<FirstPersonLook>();
         _outline = transform.Find("outline").gameObject;
     }
+
 
 
     private void OnTriggerStay(Collider other)
@@ -44,13 +48,16 @@ public class ShowObject : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isCollide == true && Many == 0)
+
+        if (Input.GetKeyDown(KeyCode.E) && isCollide == true && Many == 0 && !_pauseOpen.activeSelf)
         {
             PrzyblizObiekt();
+            
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && isCollide == true)
+        else if (Input.GetKeyDown(KeyCode.Escape) && isCollide == true && !_pauseOpen.activeSelf)
         {
             ZamknijObiekt();
+            
         }
     }
 
@@ -63,7 +70,8 @@ public class ShowObject : MonoBehaviour
         Many = 1;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        pasue.SetActive(false);
+        _pause.SetActive(false);
+        _audio.enabled = false;
     }
 
     void ZamknijObiekt()
@@ -72,8 +80,9 @@ public class ShowObject : MonoBehaviour
         lockmovement.enabled = true;
         Many = 0;
         Cursor.lockState = CursorLockMode.Locked;
-        pasue.SetActive(true);
+        _pause.SetActive(true);
         Cursor.visible = false;
+        _audio.enabled = true;
     }
 
 }

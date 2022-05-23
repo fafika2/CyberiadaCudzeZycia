@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class pausemenu : MonoBehaviour
 {
+    private FirstPersonLook lockcamera;
+    private FirstPersonMovement lockmovement;
     bool blokada = false;
     public GameObject pasueobject;
 
+    private void Start()
+    {
+        lockmovement = GameObject.Find("Character").GetComponent<FirstPersonMovement>();
+        lockcamera = GameObject.Find("Camera").GetComponent<FirstPersonLook>();
+    }
 
     void Update()
     {
@@ -30,7 +37,8 @@ public class pausemenu : MonoBehaviour
         pasueobject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-
+        lockcamera.enabled = false;
+        lockmovement.enabled = false;
     }
 
     public void ResumeGame()
@@ -40,5 +48,7 @@ public class pausemenu : MonoBehaviour
         pasueobject.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        lockcamera.enabled = true;
+        lockmovement.enabled = true;
     }
 }
