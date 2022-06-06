@@ -6,35 +6,39 @@ public class pausemenu : MonoBehaviour
 {
     private FirstPersonLook lockcamera;
     private FirstPersonMovement lockmovement;
-    bool blokada = false;
-    public GameObject pasueobject; // canvas with pause menu (resume btn, close game, etc)
+    public GameObject pauseObject; // canvas with pause menu (resume btn, close game, etc)
+    
+    public bool isGamePaused = false; // used by exteranal scripts (for example ShowObjects.cs)
+    public bool openIsBlocked = false; // used to block open pause menu (for example ShowObjects.cs block pause when preview object)
 
     private void Start()
     {
+        pauseObject.SetActive(false);
         lockmovement = GameObject.Find("Character").GetComponent<FirstPersonMovement>();
         lockcamera = GameObject.Find("Camera").GetComponent<FirstPersonLook>();
     }
 
     void Update()
     {
-        
-
-        if (Input.GetKeyDown(KeyCode.Escape) && blokada == true)
+        if (!openIsBlocked)
         {
-            ResumeGame();
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape) && blokada == false)
-        {
-            PasueGame();
+            if (Input.GetKeyDown(KeyCode.Escape) && isGamePaused == true)
+            {
+                ResumeGame();
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape) && isGamePaused == false)
+            {
+                PauseGame();
+            }
         }
     }
 
 
-    void PasueGame()
+    public void PauseGame()
     {
+        isGamePaused = true;
         Time.timeScale = 0;
-        blokada = true;
-        pasueobject.SetActive(true);
+        pauseObject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         lockcamera.enabled = false;
@@ -43,12 +47,13 @@ public class pausemenu : MonoBehaviour
 
     public void ResumeGame()
     {
+        isGamePaused = false;
         Time.timeScale = 1;
-        blokada = false;
-        pasueobject.SetActive(false);
+        pauseObject.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         lockcamera.enabled = true;
         lockmovement.enabled = true;
     }
+
 }
