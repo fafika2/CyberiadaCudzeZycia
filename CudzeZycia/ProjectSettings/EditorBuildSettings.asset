@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/MainGame/Scenes/Max/Home.unity
     guid: 75310af02886f584fbc8e770fc1c7fa1
-  - enabled: 0
+  - enabled: 1
     path: Assets/MainGame/Scenes/Max/MaxProgramowanie.unity
     guid: 9ae92dd7f47f9ce45a1e97e9caebe0ff
-  - enabled: 0
+  - enabled: 1
     path: Assets/MainGame/Scenes/MainMenu.unity
     guid: 328e38d3ac8a16944aef7f1976264336
   - enabled: 1

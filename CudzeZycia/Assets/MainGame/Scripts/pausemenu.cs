@@ -7,7 +7,7 @@ public class pausemenu : MonoBehaviour
     private FirstPersonLook lockcamera;
     private FirstPersonMovement lockmovement;
     bool blokada = false;
-    public GameObject pasueobject;
+    public GameObject pasueobject; // canvas with pause menu (resume btn, close game, etc)
 
     private void Start()
     {
