@@ -2,14 +2,74 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    [Header("Buttons")]
+    public MenuButton NewGameBtn;
+    public MenuButton LoadGameBtn;
+    public MenuButton SettingsBtn;
+    public MenuButton CreditsBtn;
+    public MenuButton ExitBtn;
+
+
+    [Header("Containers")]
+    public GameObject SettingsContainer;
+    public GameObject CreditsContainer;
+
+    private MenuButton? selectedButton = null;
+
+    public void Start() {
+        NewGameBtn.OnSelectToggle.AddListener((newState) => { OnMenuClick(newState, NewGameBtn); });
+        LoadGameBtn.OnSelectToggle.AddListener((newState) => { OnMenuClick(newState, LoadGameBtn); });
+        SettingsBtn.OnSelectToggle.AddListener((newState) => { OnMenuClick(newState, SettingsBtn); });
+        CreditsBtn.OnSelectToggle.AddListener((newState) => { OnMenuClick(newState, CreditsBtn); });
+        ExitBtn.OnSelectToggle.AddListener((newState) => { OnMenuClick(newState, ExitBtn); });
+    }
+
+    private void OnMenuClick(bool newState, MenuButton thisBtn)
+    {
+        if(newState == false)
+        {
+            selectedButton = null;
+            ChangeContainerDisplay();
+            return;
+        }
+        else
+        {
+            selectedButton = thisBtn;
+            // deselect all but not selectedButton
+            var _t = new List<MenuButton>() { NewGameBtn, LoadGameBtn, SettingsBtn, CreditsBtn, ExitBtn };
+            _t.ForEach((e) => {
+                if (e != selectedButton) { e.isSelected = false; }
+            });
+            ChangeContainerDisplay();
+            HandleBtnClick(thisBtn);
+        }
+    }
+
+    private void ChangeContainerDisplay()
+    {
+        SettingsContainer.SetActive((selectedButton == SettingsBtn));
+        CreditsContainer.SetActive((selectedButton == CreditsBtn));
+    }
+
+    private void HandleBtnClick(MenuButton thisBtn)
+    {
+        if (thisBtn == NewGameBtn) PlayGame();
+        if (thisBtn == LoadGameBtn) PlayGame();
+        if (thisBtn == ExitBtn) QuitGame();
+    }
+
+
     public void PlayGame() {
         SceneManager.LoadScene("MaxProgramowanie");
     }
     public void GoToSettingsMenu() {
-        SceneManager.LoadScene("SettingsMenu");
+        // OptionsContainer.SetActive(true);
+
+        // SceneManager.LoadScene("SettingsMenu");
     }
     public void GoToCreditsMenu() {
         SceneManager.LoadScene("CreditsMenu");
