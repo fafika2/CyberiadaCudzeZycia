@@ -960,8 +960,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -59.5}
-  m_SizeDelta: {x: 1178.0938, y: 446.0482}
+  m_AnchoredPosition: {x: 82.8, y: -68}
+  m_SizeDelta: {x: 1041.7, y: 446.0482}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &786331805
 MonoBehaviour:
@@ -1136,8 +1136,8 @@ MonoBehaviour:
     Owczarski - For mentoring and support \r\nNouran - For the soundtrack of the
     game \r"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ef7c354e266e6d34993cde210f0744c8, type: 2}
+  m_sharedMaterial: {fileID: -6416046022913282027, guid: ef7c354e266e6d34993cde210f0744c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1161,8 +1161,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.35
-  m_fontSizeBase: 17.35
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1527,7 +1527,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000030517578}
-  m_SizeDelta: {x: 500, y: -0.0001}
+  m_SizeDelta: {x: 697.2366, y: -0.0001}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &1679001481
 GameObject:
@@ -1589,8 +1589,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Autorzy
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ef7c354e266e6d34993cde210f0744c8, type: 2}
+  m_sharedMaterial: {fileID: -6416046022913282027, guid: ef7c354e266e6d34993cde210f0744c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2065,6 +2065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingsMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 7044544830137654030, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7044544830137654031, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2131,7 +2135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7044544830137654031, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000091552734
+      value: 0.00012207031
       objectReference: {fileID: 0}
     - target: {fileID: 7044544830137654031, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2149,5 +2153,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7044544830217717441, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044544830217717441, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044544830217717441, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044544831026433872, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044544831026433872, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044544831419986855, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ef7c354e266e6d34993cde210f0744c8, type: 2}
+    - target: {fileID: 7044544831419986855, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6416046022913282027, guid: ef7c354e266e6d34993cde210f0744c8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
