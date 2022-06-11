@@ -15,7 +15,7 @@ GameObject:
   m_Layer: 0
   m_Name: NPCSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53879d0001d84014b8ce747838627e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 120
-  minTime: 60
+  maxTime: 30
+  minTime: 10
   _GO: {fileID: 2872733387159574418, guid: 4fafc02b7d4b1cc4ebd7d4eb7f489536, type: 3}
 --- !u!135 &5452628089017344527
 SphereCollider:

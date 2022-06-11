@@ -6,6 +6,7 @@ public class NPCSpawner : MonoBehaviour
 {
     public float maxTime, minTime;
     private float _timer = 0.0f;
+    private float _timerBeforeSpawn = 2.5f;
     public GameObject _GO;
     private bool IsVisible = false;
 
@@ -14,7 +15,21 @@ public class NPCSpawner : MonoBehaviour
         if(other.tag == "Spawner")
         {
             if(IsVisible == false)
-            SpawnNPC();
+            {
+                if(_timerBeforeSpawn > 0)
+                {
+                    _timerBeforeSpawn -= Time.deltaTime;
+                }
+                else
+                {
+                    SpawnNPC();
+                }
+            }
+            else
+            {
+                _timerBeforeSpawn = 2.5f;
+            }
+            
         }
     }
 
@@ -42,5 +57,7 @@ public class NPCSpawner : MonoBehaviour
     {
         IsVisible = false;
     }
+
+    
 
 }
