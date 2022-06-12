@@ -468,7 +468,7 @@ MonoBehaviour:
   agent: {fileID: 5344334340790775609}
   floorMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 268435457
 --- !u!136 &1532979730
 CapsuleCollider:
   m_ObjectHideFlags: 0
