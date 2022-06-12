@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class RandomColorObject : MonoBehaviour
 {
-    private Material _mat;
+    private MaterialPropertyBlock _mat;
+    private Renderer _renderer;
     public GenerateRandomNumbers GRN;
     public bool boots, pants, chest, hair = false;
     void Start()
     {
-        _mat = GetComponent<MeshRenderer>().sharedMaterial;
+        _mat = new MaterialPropertyBlock();
+        _renderer = GetComponent<Renderer>();
+
+
+        _renderer.GetPropertyBlock(_mat);
+
+
         if (boots == true)
         {
             _mat.SetFloat("_RandomColor", GRN.BootsColor);
@@ -30,6 +37,8 @@ public class RandomColorObject : MonoBehaviour
             _mat.SetFloat("_RandomColor", GRN.HairColor);
             _mat.SetFloat("_RandomMultiply", GRN.HairColorMultiply);
         }
+
+        _renderer.SetPropertyBlock(_mat);
     }
 
     
