@@ -2065,10 +2065,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingsMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 7044544830137654030, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7044544830137654031, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2153,33 +2149,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7044544830217717441, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7044544830217717441, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7044544830217717441, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7044544831026433872, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7044544831026433872, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7044544831419986855, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: ef7c354e266e6d34993cde210f0744c8, type: 2}
-    - target: {fileID: 7044544831419986855, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -6416046022913282027, guid: ef7c354e266e6d34993cde210f0744c8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8c21ccc1cd6de1458232d6716286f53, type: 3}
