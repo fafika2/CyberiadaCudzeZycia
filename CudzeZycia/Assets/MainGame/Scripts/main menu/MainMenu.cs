@@ -19,8 +19,10 @@ public class MainMenu : MonoBehaviour
     public GameObject CreditsContainer;
 
     private MenuButton? selectedButton = null;
+    private AudioManager audioManager;
 
     public void Start() {
+        audioManager = FindObjectOfType<AudioManager>();
         NewGameBtn.OnSelectToggle.AddListener((newState) => { OnMenuClick(newState, NewGameBtn); });
         LoadGameBtn.OnSelectToggle.AddListener((newState) => { OnMenuClick(newState, LoadGameBtn); });
         SettingsBtn.OnSelectToggle.AddListener((newState) => { OnMenuClick(newState, SettingsBtn); });
@@ -30,7 +32,9 @@ public class MainMenu : MonoBehaviour
 
     private void OnMenuClick(bool newState, MenuButton thisBtn)
     {
-        if(newState == false)
+        audioManager.Play("MenuClick");
+
+        if (newState == false)
         {
             selectedButton = null;
             ChangeContainerDisplay();

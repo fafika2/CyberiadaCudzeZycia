@@ -200,37 +200,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &5756165656002306507
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6415980962677406831}
-  m_Layer: 5
-  m_Name: PauseMenuScripts
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6415980962677406831
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5756165656002306507}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -558.69446, y: -305.4401, z: -19.779701}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5756165657125262613}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5756165656020534274
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +519,7 @@ RectTransform:
   - {fileID: 3816129938321734327}
   - {fileID: 5756165657352469379}
   m_Father: {fileID: 5756165657125262613}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -678,7 +647,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 996765270}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: GoToMainMenu
         m_Mode: 1
@@ -811,7 +780,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 996765270}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -836,7 +805,6 @@ GameObject:
   - component: {fileID: 5756165657125262611}
   - component: {fileID: 5756165657125262610}
   - component: {fileID: 996765271}
-  - component: {fileID: 996765270}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -856,7 +824,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6415980962677406831}
   - {fileID: 5756165656862738349}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -942,25 +909,6 @@ MonoBehaviour:
   pauseObject: {fileID: 5756165656862738348}
   isGamePaused: 0
   openIsBlocked: 0
---- !u!114 &996765270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5756165657125262609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f2df12db5420247b029923614f405a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NewGameBtn: {fileID: 0}
-  LoadGameBtn: {fileID: 0}
-  SettingsBtn: {fileID: 0}
-  CreditsBtn: {fileID: 0}
-  ExitBtn: {fileID: 0}
-  SettingsContainer: {fileID: 0}
-  CreditsContainer: {fileID: 0}
 --- !u!1 &5756165657259804628
 GameObject:
   m_ObjectHideFlags: 0

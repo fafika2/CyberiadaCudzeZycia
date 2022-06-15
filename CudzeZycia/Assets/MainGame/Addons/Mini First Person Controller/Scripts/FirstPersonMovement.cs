@@ -16,7 +16,7 @@ public class FirstPersonMovement : MonoBehaviour
     [Header("EditedByMax")]
     public Animator anim;
     public VectorValue StartPosition;
-    private GameObject _pause;
+    // private GameObject _pause;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
 
@@ -25,9 +25,16 @@ public class FirstPersonMovement : MonoBehaviour
 
     void Start()
     {
-        transform.position = StartPosition.initialValue;
-        transform.Rotate(new Vector3(0, StartPosition.playerRotation, 0));
-        _pause = GameObject.Find("Pause");
+        if (StartPosition)
+        {
+            transform.position = StartPosition.initialValue;
+            transform.Rotate(new Vector3(0, StartPosition.playerRotation, 0));
+        }
+        else
+        {
+            Debug.LogWarning("Nie ustawiono pozycji startowej (StartPosition), gracz rozpoczyna grę w miejscu gdzie został pozostawiony GameObject Character");
+        }
+        // _pause = GameObject.Find("Pause");
     }
 
     void Awake()

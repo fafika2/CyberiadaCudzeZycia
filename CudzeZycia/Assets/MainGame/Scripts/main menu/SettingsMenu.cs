@@ -11,10 +11,12 @@ public class SettingsMenu : MonoBehaviour
     public Toggle fullscreenToggle;
 
     private Resolution[] resolutions;
-
+    private AudioManager audioManager;
 
     void Start()
     {
+        audioManager = FindObjectOfType<AudioManager>();
+
         // set options in resolutionDropdown and set default resolution
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
