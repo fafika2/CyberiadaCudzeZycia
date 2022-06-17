@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pausemenu : MonoBehaviour
 {
@@ -54,6 +53,17 @@ public class pausemenu : MonoBehaviour
         Cursor.visible = false;
         lockcamera.enabled = true;
         lockmovement.enabled = true;
+    }
+
+    public void GoToMainMenu()
+    {
+        // copy from MainMenu.cs
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void QuitGame()
+    {
+        // copy from MainMenu.cs
+        Application.Quit();
     }
 
 }

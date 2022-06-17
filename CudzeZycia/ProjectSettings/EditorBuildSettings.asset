@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/MainGame/Scenes/Max/Home.unity
     guid: 75310af02886f584fbc8e770fc1c7fa1
   - enabled: 1
