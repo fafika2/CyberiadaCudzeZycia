@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: MenuTheme
-    clip: {fileID: 8300000, guid: 40c18f860224ff149bf5c78ee0008aae, type: 3}
-    volume: 0.3
+    clip: {fileID: 8300000, guid: e14fc3175412d7441b2526ada576b133, type: 3}
+    volume: 0.1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0

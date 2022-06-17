@@ -2013,6 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   songName: MenuTheme
+  isAmbientOrBackgroundSong: 1
 --- !u!1 &2058983107
 GameObject:
   m_ObjectHideFlags: 0
