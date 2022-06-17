@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5831614256173618305}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.41, y: -10.21, z: 0.14}
+  m_LocalPosition: {x: -0.41, y: -14.9999895, z: 0.14}
   m_LocalScale: {x: 6.6666675, y: 6.6666703, z: 6.6666703}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,11 +44,11 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.882353, g: 0.8078432, b: 0.61960787, a: 1}
-  m_Intensity: 67.50531
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 933.799
   m_Range: 8
-  m_SpotAngle: 103
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 163
+  m_InnerSpotAngle: 14
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -107,10 +107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 160.1098
+  m_Intensity: 5000
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
-  m_InnerSpotPercent: 4.8
+  m_InnerSpotPercent: 46.1
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_ShapeRadius: 0.1
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
-  m_CustomSpotLightShadowCone: 30
+  m_CustomSpotLightShadowCone: 1
   m_MaxSmoothness: 0.99
   m_ApplyRangeAttenuation: 1
   m_DisplayAreaLightEmissiveMesh: 0
@@ -300,6 +300,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1a1b16ddfe43bff4fb3facedf3886820, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1a1b16ddfe43bff4fb3facedf3886820, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1a1b16ddfe43bff4fb3facedf3886820, type: 3}
       propertyPath: m_Name
