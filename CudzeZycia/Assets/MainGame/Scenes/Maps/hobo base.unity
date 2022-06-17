@@ -8,8 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 2
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 75c5e9c2130704d42af12f9599e42562
-  m_OcclusionCullingData: {fileID: 36300000, guid: fb71ed8b97bb75f4fb408c0fbcc98986, type: 2}
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -4541,10 +4541,6 @@ PrefabInstance:
     - target: {fileID: 5099230677883302927, guid: f1b3b7404a8b40848871e251417ffd26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5838229623515223217, guid: f1b3b7404a8b40848871e251417ffd26, type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1b3b7404a8b40848871e251417ffd26, type: 3}
@@ -17222,7 +17218,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh34832
+  m_Name: pb_Mesh747072
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20559,6 +20555,14 @@ PrefabInstance:
     - target: {fileID: 4757982151193421427, guid: d8e6ec85c899d1743b76f1635d9560b9, type: 3}
       propertyPath: m_Name
       value: DZWI_BRAMA_OTWARTA (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757982151193421427, guid: d8e6ec85c899d1743b76f1635d9560b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676460085592487693, guid: d8e6ec85c899d1743b76f1635d9560b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 6180673921336202968, guid: d8e6ec85c899d1743b76f1635d9560b9, type: 3}
       propertyPath: m_ScaleInLightmap
