@@ -44,7 +44,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Witaj w Drunk City, mie\u015Bcie ska\u017Conym przez radioaktywn\u0105
     fabryk\u0119, kt\xF3ra odebra\u0142a nam jasno\u015B\u0107. "
 --- !u!114 &-6313706163698109963
@@ -91,7 +91,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 4
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Albo te implanty ju\u017C nawalaj\u0105, albo mam co\u015B nie tak
     z oczami. Dlaczego nie wida\u0107 s\u0142o\u0144ca? "
 --- !u!114 &-981131220837460666
@@ -135,7 +135,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Okej, wi\u0119c zr\xF3bmy to jeszcze raz. "
 --- !u!114 &-699350576923904201
 MonoBehaviour:
@@ -251,7 +251,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Oczywi\u015Bcie, \u017Ce nie. To taka\u2026 metafora, ca\u0142kiem
     trafna zreszt\u0105. "
 --- !u!114 &7617432509595557321
@@ -298,7 +298,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 4
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "To miasto naprawd\u0119 tak si\u0119 nazywa? "
 --- !u!114 &9177698203948170604
 MonoBehaviour:

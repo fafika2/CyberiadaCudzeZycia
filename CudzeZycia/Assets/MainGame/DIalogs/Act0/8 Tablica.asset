@@ -23,7 +23,10 @@ MonoBehaviour:
       _node: {fileID: -8405675596887846289}
       _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -2368075213547970782}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -41,8 +44,9 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
-  DialogText: "By\u0142e\u015B psem, wi\u0119cej wiedzie\u0107 nie musia\u0142em. "
+  AvatarPosition: 2
+  DialogText: "Trzeba ci przyzna\u0107, w \u015Bledztwach by\u0142e\u015B niez\u0142ym
+    zi\xF3\u0142kiem. "
 --- !u!114 &-5047131367826718418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,10 +90,11 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  AvatarName: 2
+  AvatarName: 3
   AvatarPosition: 1
-  DialogText: "Trzeba ci przyzna\u0107, w \u015Bledztwach by\u0142e\u015B niez\u0142ym
-    zi\xF3\u0142kiem. \r"
+  DialogText: "Spogl\u0105dasz na tablic\u0119, do kt\xF3rej przypi\u0119tych jest
+    mn\xF3stwo wydruk\xF3w zdj\u0119\u0107 jak i po\u017C\xF3\u0142k\u0142ych ju\u017C
+    kartek."
 --- !u!114 &-3954178037783371863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +125,52 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+--- !u!114 &-2368075213547970782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1c41f85fb2761409eecde353f3f665, type: 3}
+  m_Name: Simple Dialog
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 5368, y: 4312}
+  ports:
+    keys:
+    - Output
+    - input
+    values:
+    - _fieldName: Output
+      _node: {fileID: -2368075213547970782}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 2606976271578910685}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -2368075213547970782}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: -8405675596887846289}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  AvatarName: 4
+  AvatarPosition: 1
+  DialogText: " By\u0142em w ko\u0144cu policjantem czy \u015Bledczym? "
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +188,8 @@ MonoBehaviour:
   - {fileID: -5047131367826718418}
   - {fileID: -8405675596887846289}
   - {fileID: 2464790515722773211}
+  - {fileID: -2368075213547970782}
+  - {fileID: 2606976271578910685}
 --- !u!114 &2464790515722773211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +233,51 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  AvatarName: 4
+  AvatarName: 3
   AvatarPosition: 2
-  DialogText: "By\u0142em w ko\u0144cu policjantem czy \u015Bledczym? "
+  DialogText: "Niew\u0105tpliwie staromodne podej\u015Bcie, my\u015Blisz sobie, ale
+    przynajmniej mo\u017Ce uda ci si\u0119 dowiedzie\u0107 co\u015B o swojej przesz\u0142o\u015Bci
+    dzi\u0119ki temu."
+--- !u!114 &2606976271578910685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1c41f85fb2761409eecde353f3f665, type: 3}
+  m_Name: Simple Dialog
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 5640, y: 4312}
+  ports:
+    keys:
+    - Output
+    - input
+    values:
+    - _fieldName: Output
+      _node: {fileID: 2606976271578910685}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 2606976271578910685}
+      _typeQualifiedName: Scripts.DialogSystem.Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: -2368075213547970782}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  AvatarName: 2
+  AvatarPosition: 1
+  DialogText: "By\u0142e\u015B psem, wi\u0119cej wiedzie\u0107 nie musia\u0142em. "

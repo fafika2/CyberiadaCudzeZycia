@@ -44,7 +44,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nie s\u0142ysza\u0142em, \u017Ceby\u015B kiedykolwiek pisa\u0142 pami\u0119tniki"
 --- !u!114 &-8374009141937523041
 MonoBehaviour:
@@ -90,7 +90,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 4
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: 'Nie, to tylko sterta starych skarpetek. '
 --- !u!114 &-3954178037783371863
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 4
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: 'Stary, masz pralnie pod mieszkaniem. '
 --- !u!114 &2464790515722773211
 MonoBehaviour:
@@ -227,5 +227,5 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 4
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Pod poduszk\u0105 co\u015B jest.\r"

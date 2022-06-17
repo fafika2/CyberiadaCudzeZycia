@@ -92,7 +92,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Fabryka, kt\xF3ra by\u0142a sercem tego ca\u0142ego przedsi\u0119wzi\u0119cia
     wzi\u0119\u0142a i pierdynk\u0119\u0142a.\r"
 --- !u!114 &-7677107107836601333
@@ -139,7 +139,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 4
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Ta? Nie wygl\u0105da mi to na \u201Cmiasto przysz\u0142o\u015Bci.\u201D"
 --- !u!114 &-7062763970013626264
 MonoBehaviour:
@@ -262,7 +262,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Sektor B jest znacznie czystszy ni\u017C te slumsy\u2026 o co w sumie
     nie trudno. "
 --- !u!114 &-4537853420909225808
@@ -309,7 +309,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "W\u0142a\u015Bnie mia\u0142em si\u0119 za to zabiera\u0107! No to
     tak, mamy jeszcze sektory B i A."
 --- !u!114 &-4497847460047925535
@@ -356,7 +356,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Cho\u0107 je\u015Bli o mnie chodzi to totalnie zawalili z t\u0105
     nazw\u0105. Powinni je nazwa\u0107 \u201CBorosowo\u201D, albo \u201CZadupie Wy\u017Csze\u201D."
 --- !u!114 &-4374976186034339442
@@ -403,7 +403,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Tak wi\u0119c, nasze \u201Cwspania\u0142e\u201D miasto, Ion Town (tym
     razem nazwa na serio), podobno mia\u0142o by\u0107 pionierem \u201Cnowej infrastruktury
     aka miastem przysz\u0142o\u015Bci.\u201D\r"
@@ -451,7 +451,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Ale! Na ich plus, ubieraj\u0105 si\u0119 nieco lepiej ni\u017C ci
     nudziarze z B."
 --- !u!114 &-4072825744874595812
@@ -498,7 +498,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "\u2026po gangi, kt\xF3re b\u0119d\u0105 na Ciebie polowa\u0107, bo
     masz tylko troch\u0119 lepiej lub wi\u0119cej od nich. Naprawd\u0119 przytulne
     miejsce."
@@ -546,7 +546,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Witam w przytulnym Sektorze C Ion Town. Miejscu najbardziej dotkni\u0119tym
     przez wielkie pierdykni\u0119cie."
 --- !u!114 &-2579181074221940267
@@ -639,7 +639,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Albo Kwiatuszkoland. O! Musz\u0119 sobie to zapisa\u0107!"
 --- !u!114 &-878950018938440993
 MonoBehaviour:
@@ -685,7 +685,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Masz tam w sumie standardow\u0105 fars\u0119. Pracownicy korporacji
     mieszkaj\u0105 w wystarczaj\u0105co wygodnych mieszkaniach, kupuj\u0105 wystarczaj\u0105co
     dobre jedzenie i bawi\u0105 si\u0119 w wystarczaj\u0105co dobrych klubach.\r\n"
@@ -733,7 +733,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Tak czy inaczej, jest tam na pewno bezpieczniej ni\u017C tutaj"
 --- !u!114 &11400000
 MonoBehaviour:
@@ -821,7 +821,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Ale ubiera\u0107 to si\u0119 tam za choler\u0119 nie potrafi\u0105.
     Wszyscy w uniformach sztywnego Johna. Co si\u0119 sta\u0142o z ukazywaniem wewn\u0119trznego
     ja?!*chlip*."
@@ -869,7 +869,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Znajdziesz tu wszelkie wspania\u0142o\u015Bci, od toksycznych opar\xF3w,
     kt\xF3re gwarantuj\u0105 d\u0142ug\u0105 i bolesn\u0105 \u015Bmier\u0107\u2026"
 --- !u!114 &738581020412689966
@@ -916,7 +916,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "W sumie to niewiele o nim wiem. Mieszkaj\u0105 tam typy, kt\xF3re
     by\u0142yby w stanie wykupi\u0107 to ca\u0142e miasto ze trzy razy, odpicowa\u0107
     je, a potem sprzeda\u0107 z zyskiem."
@@ -964,7 +964,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Ano widzisz, to dlatego, \u017Ce ten ich plan troszeczk\u0119 nie
     wypali\u0142. Tak ociupink\u0119.\r"
 --- !u!114 &1961863910309578641
@@ -1011,7 +1011,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 4
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Ta\u2026. jak wygl\u0105da sytuacja z pozosta\u0142ymi sektorami?"
 --- !u!114 &2937733787727283273
 MonoBehaviour:
@@ -1057,7 +1057,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "A, no i na ko\u0144cu masz oczywi\u015Bcie szczyt tego \u015Bmierdzido\u0142ka.
     Sektor A"
 --- !u!114 &2991458674371560977
@@ -1104,7 +1104,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Zawsze powtarzam, chcesz bawi\u0107 si\u0119 chemi\u0105, zawsze bierz
     ze sob\u0105 diler\xF3w. My to wiemy jak najlepiej wykr\u0119ci\u0107 proporcje.  "
 --- !u!114 &3461935414023166646
@@ -1151,7 +1151,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Wi\u0119c masz teraz takie ma\u0142e korpo-miasto z otaczaj\u0105cymi
     slumsami tak w sumie. "
 --- !u!114 &3611011413262200069
@@ -1198,7 +1198,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "A i mamy tu absolutnie najlepszych diler\xF3w, zw\u0142aszcza Kwiatuszka,
     polecam j\u0105 z ca\u0142ego serca. Przeka\u017C znajomym i tak dalej."
 --- !u!114 &3943608813603152409
@@ -1245,7 +1245,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "W skr\xF3cie typy, kt\xF3rym nigdy nic nie zabraknie i z kt\xF3rymi
     najlepiej nie zadziera\u0107. Innymi s\u0142owy s\u0105 poza nasz\u0105 lig\u0105. "
 --- !u!114 &7020993222061063225
@@ -1289,7 +1289,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Troch\u0119 fioletu tutaj, troch\u0119 r\xF3\u017Cu tam, okazjonalny
     odcie\u0144 zieleni i od razu \u017Cycie staje si\u0119 lepsze! (Zw\u0142aszcza
     je\u015Bli te odcienie s\u0105 kupowane ode mnie)"
@@ -1337,7 +1337,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Przynajmniej tak s\u0142ysza\u0142em."
 --- !u!114 &9209308862088563088
 MonoBehaviour:
@@ -1383,6 +1383,6 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 2
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Tak czy inaczej, pewnie ju\u017C si\u0119 domy\u015Bli\u0142e\u015B,
     \u017Ce w\u0142a\u015Bnie znajdujemy si\u0119 w slumsach."
