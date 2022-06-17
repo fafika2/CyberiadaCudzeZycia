@@ -43,6 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3052261536255382173}
   - component: {fileID: 6584976366918035111}
+  - component: {fileID: 5398219930290723092}
   m_Layer: 0
   m_Name: Faint-9
   m_TagString: Untagged
@@ -85,7 +86,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6384811551620637775, guid: 7ebffb77d659b7d4eb9d71e4aff8dc56, type: 3}
+  - {fileID: 2100000, guid: bd95f042ecf91e54ca7fb4d6d2e2c3b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -135,6 +136,23 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.011790901, y: 0.01645206, z: 0.0005256771}
     m_Extent: {x: 0.00396629, y: 0.007130411, z: 0.0052226773}
   m_DirtyAABB: 0
+--- !u!114 &5398219930290723092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345894418319603952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2318a9232abd43b4cbe0f74409219112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GRN: {fileID: 1158100003317905734}
+  boots: 0
+  pants: 0
+  chest: 1
+  hair: 0
 --- !u!1 &541048951089881312
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148284230424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.22, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.23, y: 0.23, z: 0.23}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -329,6 +347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2610682067441272923}
   - component: {fileID: 1690530345211946380}
+  - component: {fileID: 411642610891419693}
   m_Layer: 0
   m_Name: Faint-6
   m_TagString: Untagged
@@ -371,7 +390,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3023349029237908449, guid: 7ebffb77d659b7d4eb9d71e4aff8dc56, type: 3}
+  - {fileID: 2100000, guid: bd95f042ecf91e54ca7fb4d6d2e2c3b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -421,6 +440,23 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.012006811, y: 0.0017990386, z: -0.0030298245}
     m_Extent: {x: 0.0039662896, y: 0.008798941, z: 0.0048312033}
   m_DirtyAABB: 0
+--- !u!114 &411642610891419693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275284786928983905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2318a9232abd43b4cbe0f74409219112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GRN: {fileID: 1158100003317905734}
+  boots: 0
+  pants: 0
+  chest: 1
+  hair: 0
 --- !u!1 &2872733387159574418
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4247110523809201122}
   - component: {fileID: 7158765844089851101}
+  - component: {fileID: 1497883273447085650}
   m_Layer: 0
   m_Name: Faint-7
   m_TagString: Untagged
@@ -621,7 +658,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2432149286581523428, guid: 7ebffb77d659b7d4eb9d71e4aff8dc56, type: 3}
+  - {fileID: 2100000, guid: bd95f042ecf91e54ca7fb4d6d2e2c3b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -671,6 +708,23 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.01200681, y: 0.016505413, z: -0.0007913718}
     m_Extent: {x: 0.0039662854, y: 0.007068459, z: 0.005091712}
   m_DirtyAABB: 0
+--- !u!114 &1497883273447085650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929726484391577613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2318a9232abd43b4cbe0f74409219112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GRN: {fileID: 1158100003317905734}
+  boots: 0
+  pants: 0
+  chest: 1
+  hair: 0
 --- !u!1 &3322257890480729671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7866427794726036243}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: -0.2, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1354,6 +1408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5405565679539795580}
   - component: {fileID: 5570750107830551975}
+  - component: {fileID: 4789150514791871848}
   m_Layer: 0
   m_Name: Faint-8
   m_TagString: Untagged
@@ -1396,7 +1451,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6602696856066411303, guid: 7ebffb77d659b7d4eb9d71e4aff8dc56, type: 3}
+  - {fileID: 2100000, guid: bd95f042ecf91e54ca7fb4d6d2e2c3b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1446,6 +1501,23 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.011790904, y: 0.0032785637, z: 0.0065724915}
     m_Extent: {x: 0.0039662896, y: 0.008961249, z: 0.0085256}
   m_DirtyAABB: 0
+--- !u!114 &4789150514791871848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8607061762444989729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2318a9232abd43b4cbe0f74409219112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GRN: {fileID: 1158100003317905734}
+  boots: 0
+  pants: 0
+  chest: 1
+  hair: 0
 --- !u!1 &8621692604412863173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +1956,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10a090d1d8831cb48b6229f01bf5ce80, type: 3}
+--- !u!1 &5469713366297928329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8303006050945578520, guid: 10a090d1d8831cb48b6229f01bf5ce80, type: 3}
+  m_PrefabInstance: {fileID: 4094448607613375633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4879550479379775597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5469713366297928329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2318a9232abd43b4cbe0f74409219112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GRN: {fileID: 1158100003317905734}
+  boots: 0
+  pants: 0
+  chest: 1
+  hair: 0
 --- !u!4 &7375711594489442305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6812167008506258576, guid: 10a090d1d8831cb48b6229f01bf5ce80, type: 3}
