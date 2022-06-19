@@ -68,7 +68,7 @@ public class MainMenu : MonoBehaviour
 
 
     public void PlayGame() {
-        SceneManager.LoadScene("MaxProgramowanie");
+        SceneManager.LoadScene("Hospital");
     }
     public void GoToSettingsMenu() {
         // OptionsContainer.SetActive(true);

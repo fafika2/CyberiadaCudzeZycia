@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading.Tasks;
 
 /// <summary>
 /// Kontroler okna z dialogiem w grze
@@ -11,6 +12,8 @@ namespace Scripts.DialogSystem
 {
     public class DialogWindow : MonoBehaviour
     {
+        public GameObject DialogUiGameObject;
+
         public TMP_Text authorText;
         public TMP_Text dialogText;
 
@@ -29,35 +32,58 @@ namespace Scripts.DialogSystem
 
         private XNode.Node activeSegment;
         private DialogAvatarManager dialogAvatarManager;
+        private bool dialogIsActive = false;
 
 
         void Start()
         {
-            // on start game disable / hide dialog ui
-            gameObject.SetActive(false);
+            // on start hide dialog ui
+            DialogUiGameObject.SetActive(false);
+            dialogIsActive = false;
         }
-        void OnEnable()
+
+        private void Awake()
         {
-            Setup();
+            dialogAvatarManager = DialogAvatarManager.GetResourceDialogAvatarManager(); // informacje o avatarach (tekstury imiona itd)
+        }
+
+        public void OpenDialog(DialogGraph dialogGraph)
+        {
+            activeDialog = dialogGraph;
+
+            // freeze game
             Time.timeScale = 0;
+
+            // show cursor
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+
+            DialogUiGameObject.SetActive(true); // show UI
+            dialogIsActive = true;
+            FindDialogStart(); // build UI
         }
-        void OnDisable()
+
+        public async Task OpenDialogAndWaitForClose(DialogGraph dialogGraph)
+        {
+            OpenDialog(dialogGraph);
+
+            // wait for dialog close
+            while (dialogIsActive)
+            {
+                await Task.Delay(500);
+            }
+            return;
+        }
+
+        public void CloseDialog()
         {
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-        }
-        private void Awake()
-        {
-            dialogAvatarManager = DialogAvatarManager.GetResourceDialogAvatarManager();
+            DialogUiGameObject.SetActive(false);
+            dialogIsActive = false;
         }
 
-        public void Setup()
-        {
-            FindDialogStart();
-        }
 
         private void FindDialogStart()
         {
@@ -142,7 +168,7 @@ namespace Scripts.DialogSystem
                         if (nextDialog != null)
                             UpdateDialog(nextDialog);
                         else
-                            gameObject.SetActive(false);
+                            CloseDialog();
                     }));
 
                     answerIndex++;
@@ -163,7 +189,7 @@ namespace Scripts.DialogSystem
                     if (nextDialog != null)
                         UpdateDialog(nextDialog);
                     else
-                        gameObject.SetActive(false);
+                        CloseDialog();
                 }));
             }
             
