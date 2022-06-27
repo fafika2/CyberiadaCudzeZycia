@@ -28,7 +28,6 @@ public class FirstPersonMovement : MonoBehaviour
         if (StartPosition)
         {
             transform.position = StartPosition.initialValue;
-            transform.Rotate(new Vector3(0, StartPosition.playerRotation, 0));
         }
         else
         {
@@ -69,10 +68,10 @@ public class FirstPersonMovement : MonoBehaviour
         }
 
         //Zapisuje Rotacje gracza po kliknięciu na E Sluzy to do przejscia miedzy pomieszczeniami 
-        if (Input.GetKeyDown(KeyCode.E))
+        /*if (Input.GetKeyDown(KeyCode.E))
         {
             StartPosition.playerRotation = transform.eulerAngles.y;
-        }
+        }*/
     }
 
     void FixedUpdate()

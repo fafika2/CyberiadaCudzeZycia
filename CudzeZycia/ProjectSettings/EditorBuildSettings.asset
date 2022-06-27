@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/MainGame/Scenes/Max/MaxProgramowanie.unity
     guid: 9ae92dd7f47f9ce45a1e97e9caebe0ff
   - enabled: 1
+    path: Assets/MainGame/Scenes/Maps/MainMap.unity
+    guid: da41ba95e871afc4f9d9226ba8d13bbe
+  - enabled: 1
     path: Assets/MinigameCars/MiniGame1.unity
     guid: a6dc13fbb21c79e48b46dcad38c198d1
   m_configObjects: {}
