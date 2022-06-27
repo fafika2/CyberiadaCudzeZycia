@@ -38,6 +38,7 @@ public class ContentTrigger : MonoBehaviour
     private DialogWindow dialogWindow;
     private QuestManager qm;
     private bool wasExecuted = false;
+    public bool isComplete = false;
 
     void Start()
     {
@@ -98,6 +99,7 @@ public class ContentTrigger : MonoBehaviour
         }
 
         Debug.Log("ContentTrigger (" + gameObject.name + ") Done!");
+        isComplete = true;
         gameObject.SetActive(false);
     }
 }

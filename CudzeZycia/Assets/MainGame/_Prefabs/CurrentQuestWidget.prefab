@@ -249,4 +249,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027e205975585e5458bc28285a856ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentQuest: {fileID: 5735442727185387253}
+  currentQuestTMP_Text: {fileID: 5735442727185387253}
+  currentQuest: 

@@ -30,6 +30,13 @@ public class pausemenu : MonoBehaviour
                 PauseGame();
             }
         }
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.F5))
+        {
+            Debug.Log("DEBUG f5 save game");
+            SaveGame();
+        }
+#endif
     }
 
 
@@ -66,4 +73,8 @@ public class pausemenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void SaveGame()
+    {
+        SaveLoadGame.SaveGame();
+    }
 }

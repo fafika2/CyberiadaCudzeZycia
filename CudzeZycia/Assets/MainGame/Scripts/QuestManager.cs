@@ -6,15 +6,17 @@ using TMPro;
 
 public class QuestManager : MonoBehaviour
 {
-    public TMP_Text currentQuest;
+    public TMP_Text currentQuestTMP_Text;
+    public string currentQuest;
 
     void Start()
     {
-        UpdateCurrentQuestText("Obudü starego pijanego");
+        UpdateCurrentQuestText(""); // clean up on start
     }
 
     public void UpdateCurrentQuestText(string text)
     {
-        currentQuest.SetText(text);
+        currentQuestTMP_Text.SetText(text);
+        currentQuest = text;
     }
 }

@@ -62,13 +62,16 @@ public class MainMenu : MonoBehaviour
     private void HandleBtnClick(MenuButton thisBtn)
     {
         if (thisBtn == NewGameBtn) PlayGame();
-        if (thisBtn == LoadGameBtn) PlayGame();
+        if (thisBtn == LoadGameBtn) LoadGameFromSave();
         if (thisBtn == ExitBtn) QuitGame();
     }
 
 
     public void PlayGame() {
         SceneManager.LoadScene("Hospital");
+    }
+    public void LoadGameFromSave() {
+        SaveLoadGame.LoadGame();
     }
     public void GoToSettingsMenu() {
         // OptionsContainer.SetActive(true);
