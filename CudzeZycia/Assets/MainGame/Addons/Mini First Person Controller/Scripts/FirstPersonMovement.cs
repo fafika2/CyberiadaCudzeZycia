@@ -28,6 +28,7 @@ public class FirstPersonMovement : MonoBehaviour
         if (StartPosition)
         {
             transform.position = StartPosition.initialValue;
+            transform.eulerAngles = new Vector3(0, StartPosition.playerRotation, 0);
         }
         else
         {

@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
     public GameObject SettingsContainer;
     public GameObject CreditsContainer;
 
-    private MenuButton? selectedButton = null;
+    private MenuButton selectedButton = null;
     private AudioManager audioManager;
 
     public void Start() {
