@@ -44,7 +44,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Spr\xF3buj przej\u015B\u0107 obok nich niezauwa\u017Calnie."
 --- !u!114 &-4781486640002703650
 MonoBehaviour:
@@ -90,7 +90,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Je\u015Bli nas z\u0142api\u0105 to b\u0119dziemy do ko\u0144ca dnia
     zmywa\u0107 szlam z but\xF3w Ricka. "
 --- !u!114 &-4756863099119869313
@@ -185,7 +185,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Chcia\u0142aby\u015B? "
 --- !u!114 &-1834920160029683356
 MonoBehaviour:
@@ -231,7 +231,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Goni\u0105 nas a\u017C tutaj? Maj\u0105 tupet."
 --- !u!114 &11400000
 MonoBehaviour:
@@ -302,7 +302,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nigdy nie s\u0105dzi\u0142am, \u017Ce w kana\u0142ach poczuj\u0119
     zapach pizzy."
 --- !u!114 &3449889920398478300
@@ -349,7 +349,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Zaraz\u2026 czujesz to? "
 --- !u!114 &3898718140022648102
 MonoBehaviour:
@@ -392,7 +392,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Nie mam najmniejszego zamiaru.
 --- !u!114 &4746940036366301283
 MonoBehaviour:
@@ -438,7 +438,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "To znaczy, \u017Ce jest st\u0105d inne wyj\u015Bcie. "
 --- !u!114 &5170497824604768717
 MonoBehaviour:
@@ -514,7 +514,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "D\u0142ugo tu nie postoimy."
 --- !u!114 &9187818406294343288
 MonoBehaviour:
@@ -560,5 +560,5 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Racja

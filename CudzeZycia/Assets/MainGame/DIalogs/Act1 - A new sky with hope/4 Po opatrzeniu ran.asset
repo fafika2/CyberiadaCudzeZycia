@@ -41,7 +41,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Dobra Sky. Wyja\u015Bni\u0119 ci jeszcze raz jak powiniene\u015B dostarcza\u0107
     towar do skrzynek. "
 --- !u!114 &-8688843691119457231
@@ -88,7 +88,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 9
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nie b\u0119d\u0119 ryzykowa\u0107, \u017Ce dzieciak znowu wpadnie
     w r\u0119ce zbij\xF3w i uszkodzi towar."
 --- !u!114 &-8516620870562056331
@@ -233,7 +233,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Szybka akcja operacja.
 --- !u!114 &-4470244367020692999
 MonoBehaviour:
@@ -279,7 +279,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Sknera.
 --- !u!114 &-4423409273879509544
 MonoBehaviour:
@@ -325,7 +325,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "P\u0142atnych chocia\u017C? "
 --- !u!114 &-4233356942480067319
 MonoBehaviour:
@@ -374,7 +374,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Gotowe.
 --- !u!114 &-2882382335156613585
 MonoBehaviour:
@@ -420,7 +420,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 9
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Masz go pilnowa\u0107, wi\u0119c zostajesz na nadgodzinach. "
 --- !u!114 &-2810747911609762828
 MonoBehaviour:
@@ -614,7 +614,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: 
   Answers:
   - Message: "Sko\u0144czy\u0142a\u015B mo\u017Ce jaki\u015B kurs ratunkowy?"
@@ -699,7 +699,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nie, dlaczego mia\u0142abym?"
 --- !u!114 &3734130593067568888
 MonoBehaviour:
@@ -745,7 +745,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 9
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Jeszcze dzisiaj macie to dostarczy\u0107. "
 --- !u!114 &4450779963612843425
 MonoBehaviour:
@@ -791,7 +791,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Simp
 --- !u!114 &4733893249576248990
 MonoBehaviour:
@@ -837,7 +837,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 9
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "W sam\u0105 por\u0119 si\u0119 uwin\u0119li\u015Bcie. "
 --- !u!114 &6686981672968884128
 MonoBehaviour:
@@ -883,7 +883,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: My?
 --- !u!114 &7511655252562627705
 MonoBehaviour:
@@ -976,7 +976,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "I pierwsz\u0105, kt\xF3ra tak okrutnie u\u017Cywa sarkazmu. "
 --- !u!114 &8619495581584659618
 MonoBehaviour:
@@ -1022,6 +1022,6 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Tylko bez p\u0142aczu, bo mo\u017Ce omskn\u0105\u0107 mi si\u0119
     r\u0119ka. "

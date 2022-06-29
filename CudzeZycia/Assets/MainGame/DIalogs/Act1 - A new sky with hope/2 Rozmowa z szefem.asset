@@ -41,7 +41,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Szukasz tej apteczki, czy chcesz choroby zaka\u017Anej dosta\u0107? "
 --- !u!114 &-7548778162989941005
 MonoBehaviour:
@@ -373,7 +373,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Poszukaj jej, a ja spr\xF3buj\u0119 wyrwa\u0107 troch\u0119 spirytusu
     z barku Johna."
 --- !u!114 &11400000
@@ -480,7 +480,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: 'To robota Ricka. '
 --- !u!114 &1775526562165498736
 MonoBehaviour:
@@ -572,7 +572,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Szef. Nie jest kim\u015B mega z\u0142ym. Zwyczajnie nie ma lekko przez
     kolor sk\xF3ry, wi\u0119c zapija \u017Cale wszystkim co ma wysoki procent. "
 --- !u!114 &5258284612960182509
@@ -619,7 +619,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 9
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Psiama\u0107. Nigdy si\u0119 temu ma\u0142olatowi nie znudzi. "
 --- !u!114 &6644992376202035618
 MonoBehaviour:
@@ -759,7 +759,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 9
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "No nareszcie! Ile\u017C mo\u017Cna na was czeka\u0107. "
 --- !u!114 &9215758262657431850
 MonoBehaviour:
@@ -805,5 +805,5 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Gdzie\u015B na p\xF3\u0142kach powinna by\u0107 apteczka."

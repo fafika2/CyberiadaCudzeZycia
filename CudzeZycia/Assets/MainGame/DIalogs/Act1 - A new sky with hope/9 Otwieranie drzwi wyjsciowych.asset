@@ -91,8 +91,8 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
-  DialogText: "Zamkni\u0119te"
+  AvatarPosition: 2
+  DialogText: "Zamkni\u0119te."
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nie wiem, ale si\u0119 dowiem. "
 --- !u!114 &5170497824604768717
 MonoBehaviour:
@@ -228,5 +228,5 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Jest jakie\u015B inne przej\u015Bcie? "

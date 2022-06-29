@@ -87,7 +87,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Brakuje przesy\u0142ki do Pana Hawkinsa. "
 --- !u!114 &-6682193298118051344
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "O co dok\u0142adniej chodzi? "
 --- !u!114 &-4656619771448788723
 MonoBehaviour:
@@ -487,7 +487,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Czekaj Ash! Dok\u0105d ty idziesz? "
 --- !u!114 &5703205634144661896
 MonoBehaviour:
@@ -611,7 +611,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: Ash... Mamy problem...
 --- !u!114 &7479246079300615428
 MonoBehaviour:
@@ -657,7 +657,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "To si\u0119 \u017Ale sko\u0144czy. "
 --- !u!114 &7528477717696588467
 MonoBehaviour:
@@ -750,5 +750,5 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Znowu to samo\u2026 "

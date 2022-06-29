@@ -91,7 +91,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Masz nie\u017Ale popaprane \u017Cycie."
 --- !u!114 &-7224834940536276218
 MonoBehaviour:
@@ -137,7 +137,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "To nie tak\u2026"
 --- !u!114 &-6691544164439450355
 MonoBehaviour:
@@ -230,7 +230,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: Bezpieczni?
 --- !u!114 &-5886543391974820769
 MonoBehaviour:
@@ -276,7 +276,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Zniszczy\u0142 mi \u017Cycie, ale... nie jestem w stanie tak po prostu
     odwr\xF3ci\u0107 wzroku i pozwoli\u0107 im go zabi\u0107. To nie w porz\u0105dku..."
 --- !u!114 &-4460003741758695021
@@ -323,7 +323,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Zwyci\u0119\u017Cyli\u015Bmy i to si\u0119 liczy. "
 --- !u!114 &-3871071334163084765
 MonoBehaviour:
@@ -369,7 +369,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Rick \u017Cyczy twojemu ojcu \u015Bmierci?"
 --- !u!114 &-3650801110204260467
 MonoBehaviour:
@@ -463,7 +463,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Znaczy\u2026 ja mu te\u017C tego \u017Cycz\u0119 z pe\u0142n\u0105
     premedytacj\u0105."
 --- !u!114 &-2575612752834316771
@@ -507,7 +507,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Chod\u017Amy st\u0105d, nie mam ochoty si\u0119 macza\u0107 w tych
     bagnach do rana."
 --- !u!114 &-2434957212226255072
@@ -646,7 +646,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Okej, jeste\u015Bmy bezpieczni. "
 --- !u!114 &-1497838162698553465
 MonoBehaviour:
@@ -738,7 +738,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Napij si\u0119 szlamu to cho\u0107 na chwile przestaniesz narzeka\u0107."
 --- !u!114 &-106243756284291001
 MonoBehaviour:
@@ -784,7 +784,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Co to w og\xF3le jest?"
 --- !u!114 &11400000
 MonoBehaviour:
@@ -917,7 +917,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Jeste\u015Bmy w jakich\u015B \u015Bciekach. Przemoczeni, bez opatrunk\xF3w,
     jedzenia, czy chocia\u017Cby picia. To nazywasz bycie bezpiecznym? "
 --- !u!114 &4913132611749047651
@@ -1041,7 +1041,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "W\u0142a\u015Bnie po to ryzykowali\u015Bmy \u017Cycie walcz\u0105c
     z jakimi\u015B psychopatami?!"
 --- !u!114 &7871355236868426654
@@ -1134,7 +1134,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nie jestem do ko\u0144ca z tego dumna."
 --- !u!114 &7984258419474957563
 MonoBehaviour:

@@ -90,7 +90,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Je\u015Bli ju\u017C musisz wiedzie\u0107, ja i Rick wychowali\u015Bmy
     si\u0119 na tym samym osiedlu."
 --- !u!114 &-8803628720833147841
@@ -137,7 +137,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nie traktuj mnie jakbym tylko si\u0142\u0105 potrafi\u0142a si\u0119
     porozumie\u0107. "
 --- !u!114 &-8676981728169708809
@@ -184,7 +184,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: 'Dalej idziesz sam! '
 --- !u!114 &-8634954932702297954
 MonoBehaviour:
@@ -230,7 +230,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Serio? Posz\u0142a\u015B na wojn\u0119 z ca\u0142ym gangiem zbir\xF3w
     maj\u0105cych bro\u0144 paln\u0105, a boisz si\u0119 kilku szczur\xF3w? \r"
 --- !u!114 &-8311651210946198591
@@ -323,7 +323,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Do mafiozy ci obecnie daleko, ale przecie\u017C zawsze mo\u017Cesz
     kontynuowa\u0107 t\u0119 drug\u0105 cz\u0119\u015B\u0107 marzenia. "
 --- !u!114 &-6458356531663028233
@@ -370,7 +370,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Pff.
 --- !u!114 &-6305438736234200963
 MonoBehaviour:
@@ -416,7 +416,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: 'Ambitnie. '
 --- !u!114 &-6201608574557206678
 MonoBehaviour:
@@ -509,7 +509,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Wypluj to albo sko\u0144czysz za rynn\u0105. "
 --- !u!114 &-1471562141253920906
 MonoBehaviour:
@@ -579,7 +579,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Co\u015B ty si\u0119 tak tego Ricka uczepi\u0142? "
   Answers:
   - Message: "Niewa\u017Cne."
@@ -630,7 +630,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Bardziej ni\u017C Rick? "
 --- !u!114 &-818885527919711538
 MonoBehaviour:
@@ -676,7 +676,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "a, d\u0142ugo historia. O tym jak chcia\u0142am zmieni\u0107 \u015Bwiat
     i zosta\u0107 wielkim mafioz\u0105."
 --- !u!114 &-428577746514595054
@@ -723,7 +723,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Ale przy nich\u2026 faktycznie tak robisz. "
 --- !u!114 &-58330580741132958
 MonoBehaviour:
@@ -769,7 +769,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: 'Bez przesady. '
 --- !u!114 &11400000
 MonoBehaviour:
@@ -862,7 +862,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Mniej.
 --- !u!114 &1188878387013549109
 MonoBehaviour:
@@ -1048,7 +1048,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nie trzeba. Pomog\u0119. "
 --- !u!114 &2305290770789065275
 MonoBehaviour:
@@ -1094,7 +1094,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Niezupe\u0142nie."
 --- !u!114 &3433267683375555776
 MonoBehaviour:
@@ -1140,7 +1140,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "W takim razie nie dziwi\u0119 si\u0119, \u017Ce czuje respekt, kiedy
     od dzieciaka obrywa\u0142 w w\u0105trob\u0119. "
 --- !u!114 &5589700045918990074
@@ -1187,7 +1187,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: Tak?
 --- !u!114 &5753319362799685446
 MonoBehaviour:
@@ -1236,7 +1236,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Zrobi\u0119 to za ciebie. "
 --- !u!114 &5768592400771428030
 MonoBehaviour:
@@ -1405,7 +1405,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "To-to\u2026 to nie tak! One s\u0105 po prostu takie obrzydliwe i pe\u0142ne
     posklejanych k\u0142ak\xF3w\u2026 Ohyda"
 --- !u!114 &8451086368276220116
@@ -1545,7 +1545,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: Sky.
 --- !u!114 &8958303923839560245
 MonoBehaviour:
@@ -1591,7 +1591,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Dobra, dobra, nie musisz od razu reagowa\u0107 agresj\u0105. "
 --- !u!114 &9106132622494460868
 MonoBehaviour:
@@ -1637,5 +1637,5 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "N-no okej\u2026 "

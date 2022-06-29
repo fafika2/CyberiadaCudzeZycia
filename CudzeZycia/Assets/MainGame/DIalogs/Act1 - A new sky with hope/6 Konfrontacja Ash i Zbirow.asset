@@ -138,7 +138,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 6
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Och, czy mnie oczy myl\u0105? Czy to jednak kuriereczka zmierza w
     naszym kierunku? "
 --- !u!114 &-8334810491765770630
@@ -185,7 +185,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 7
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: 'Haha! No tak. '
 --- !u!114 &-8230318822356563716
 MonoBehaviour:
@@ -281,7 +281,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 5
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "A wi\u0119c Ash, b\u0119dziesz tutaj tak sta\u0142a czy jednak si\u0119
     do nas przy\u0142\u0105czysz?"
 --- !u!114 &-7485631321363437556
@@ -328,7 +328,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 7
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Sk\u0105d wiesz, \u017Ce ju\u017C nie \u015Bwiadczy takich us\u0142ug
     na tej beznadziejnej kurierce."
 --- !u!114 &-6759408332940871197
@@ -421,7 +421,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Chod\u017Amy ju\u017C st\u0105d. \r"
 --- !u!114 &-5791790768587337245
 MonoBehaviour:
@@ -514,7 +514,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 6
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Ach, tak to ta, kt\xF3ra mia\u0142a by\u0107 szefow\u0105, ale\u2026
     co\u015B si\u0119 nie uda\u0142o\u2026"
 --- !u!114 &-5364478146217710931
@@ -613,7 +613,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Nie b\u0105d\u017A pizd\u0105, poradzimy sobie. "
 --- !u!114 &-4833187739299887901
 MonoBehaviour:
@@ -659,7 +659,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: I co z tego?
 --- !u!114 &-4758404941229828335
 MonoBehaviour:
@@ -753,7 +753,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 7
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "A co mog\u0142aby tu robi\u0107? Roznosi\u0107 butelki z piwem?"
 --- !u!114 &-3999794617725861990
 MonoBehaviour:
@@ -846,7 +846,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Ach, zapomnia\u0142abym."
 --- !u!114 &-2599232856702130252
 MonoBehaviour:
@@ -916,7 +916,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
   AvatarName: 4
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: 
   Answers:
   - Message: "[Poddaj si\u0119]"
@@ -967,7 +967,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 6
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Bo z tego co widz\u0119 to zaraz nam si\u0119 rozp\u0142acze! "
 --- !u!114 &-1772418296468370006
 MonoBehaviour:
@@ -1106,7 +1106,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Tak tylko wtr\u0105ci\u0142em, bo wiesz\u2026 jest ich pi\u0119\u0107
     razy wi\u0119cej i w\u0142a\u015Bnie nas okr\u0105\u017Caj\u0105. "
 --- !u!114 &11400000
@@ -1249,7 +1249,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 6
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Ej Rick! Czy\u017Cby\u015B znowu zabra\u0142 ksi\u0119\u017Cniczce
     paczk\u0119 dla ojca?"
 --- !u!114 &159014574095723929
@@ -1296,7 +1296,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Wasze zakute pa\u0142y nie s\u0105 w stanie poj\u0105\u0107 tak trudnych
     poj\u0119\u0107. Pozw\xF3lcie wi\u0119c, \u017Ce wyt\u0142umacz\u0119 wam to
     tak, \u017Ceby\u015Bcie byli w stanie zrozumie\u0107."
@@ -1439,7 +1439,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 6
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "S\u0142yszeli\u015Bcie co typ powiedzia\u0142? "
 --- !u!114 &718615417156493942
 MonoBehaviour:
@@ -1579,7 +1579,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Ja planuje kiedy\u015B si\u0119 st\u0105d wyrwa\u0107 i co\u015B w
     \u017Cyciu osi\u0105gn\u0105\u0107. Wy natomiast b\u0119dziecie tkwi\u0107 w
     tym g\xF3wnie do ko\u0144ca waszych dni!. "
@@ -1722,7 +1722,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Oddajecie paczk\u0119 i si\u0119 \u017Cegnamy. "
 --- !u!114 &2454028055034461071
 MonoBehaviour:
@@ -1935,7 +1935,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: 
   Answers:
   - Message: "Zdajesz sobie spraw\u0119, i\u017C czasami jeste\u015B zbyt impulsywna?"
@@ -1989,7 +1989,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Dosy\u0107 tego!"
 --- !u!114 &5574939203981483153
 MonoBehaviour:
@@ -2035,7 +2035,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: 'Nie ma mowy. '
 --- !u!114 &5588550985265856027
 MonoBehaviour:
@@ -2081,7 +2081,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Kurwa Sky! Maj\u0105 bro\u0144 paln\u0105! "
 --- !u!114 &5670983263880027569
 MonoBehaviour:
@@ -2127,7 +2127,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 7
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Co\u015B ty powiedzia\u0142a lafiryndo?"
 --- !u!114 &7290877326379514028
 MonoBehaviour:
@@ -2219,7 +2219,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Moja praca jest przynajmniej uczciwa i realnie p\u0142atna."
 --- !u!114 &7559856006161360208
 MonoBehaviour:
@@ -2265,7 +2265,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 7
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: 'Stary, jaka siara! '
 --- !u!114 &7564053368528608630
 MonoBehaviour:
@@ -2355,7 +2355,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 7
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "A mi si\u0119 wydawa\u0142o, \u017Ce widz\u0119 dziewczyn\u0119 Ricka. "
 --- !u!114 &7888163314049522640
 MonoBehaviour:
@@ -2425,7 +2425,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: 
   Answers:
   - Message: To nie jest jego dziewczyna!
@@ -2523,7 +2523,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 6
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "Rickowi najpewniej by wystarczy\u0142o jakby przynosi\u0142a siebie
     na noc."
 --- !u!114 &8403787824417751437
@@ -2570,7 +2570,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 8
-  AvatarPosition: 1
+  AvatarPosition: 2
   DialogText: "S\u0142uchaj brudasie. "
 --- !u!114 &9164030169137562369
 MonoBehaviour:
@@ -2616,5 +2616,5 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   AvatarName: 1
-  AvatarPosition: 2
+  AvatarPosition: 1
   DialogText: "Zd\u0105\u017Cy\u0142em zauwa\u017Cy\u0107! "
