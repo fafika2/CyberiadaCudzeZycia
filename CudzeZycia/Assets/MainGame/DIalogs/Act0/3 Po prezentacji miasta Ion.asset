@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4408, y: 3784}
+  position: {x: 1704, y: 888}
   ports:
     keys:
     - Output
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3288, y: 3304}
+  position: {x: 584, y: 408}
   ports:
     keys:
     - Output
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4200, y: 2808}
+  position: {x: 1496, y: -104}
   ports:
     keys:
     - Output
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3912, y: 2808}
+  position: {x: 1208, y: -104}
   ports:
     keys:
     - Output
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Name: Dialog Start
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2744, y: 2952}
+  position: {x: 40, y: 40}
   ports:
     keys:
     - Output
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3912, y: 4200}
+  position: {x: 1208, y: 1304}
   ports:
     keys:
     - Output
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3624, y: 4200}
+  position: {x: 920, y: 1304}
   ports:
     keys:
     - Output
@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3352, y: 2808}
+  position: {x: 648, y: -104}
   ports:
     keys:
     - Output
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3048, y: 2808}
+  position: {x: 344, y: -104}
   ports:
     keys:
     - Output
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4792, y: 4648}
+  position: {x: 2088, y: 1752}
   ports:
     keys:
     - Output
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3816, y: 3784}
+  position: {x: 1112, y: 888}
   ports:
     keys:
     - Output
@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3240, y: 3784}
+  position: {x: 536, y: 888}
   ports:
     keys:
     - Output
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 5352, y: 4200}
+  position: {x: 2648, y: 1304}
   ports:
     keys:
     - Output
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3640, y: 2808}
+  position: {x: 936, y: -104}
   ports:
     keys:
     - Output
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4200, y: 4200}
+  position: {x: 1496, y: 1304}
   ports:
     keys:
     - Output
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4760, y: 4200}
+  position: {x: 2056, y: 1304}
   ports:
     keys:
     - Output
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 5048, y: 4200}
+  position: {x: 2344, y: 1304}
   ports:
     keys:
     - Output
@@ -838,7 +838,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3528, y: 3784}
+  position: {x: 824, y: 888}
   ports:
     keys:
     - Output
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4248, y: 4648}
+  position: {x: 1544, y: 1752}
   ports:
     keys:
     - Output
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2984, y: 3304}
+  position: {x: 280, y: 408}
   ports:
     keys:
     - Output
@@ -980,7 +980,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4712, y: 3784}
+  position: {x: 2008, y: 888}
   ports:
     keys:
     - Output
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3960, y: 4632}
+  position: {x: 1256, y: 1720}
   ports:
     keys:
     - Output
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3880, y: 3304}
+  position: {x: 1176, y: 408}
   ports:
     keys:
     - Output
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3576, y: 3304}
+  position: {x: 872, y: 408}
   ports:
     keys:
     - Output
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4104, y: 3784}
+  position: {x: 1400, y: 888}
   ports:
     keys:
     - Output
@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4520, y: 4648}
+  position: {x: 1816, y: 1752}
   ports:
     keys:
     - Output
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 5064, y: 4648}
+  position: {x: 2360, y: 1752}
   ports:
     keys:
     - Output
@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4472, y: 4200}
+  position: {x: 1768, y: 1304}
   ports:
     keys:
     - Output
@@ -1352,7 +1352,7 @@ MonoBehaviour:
   m_Name: Simple Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2952, y: 3784}
+  position: {x: 248, y: 888}
   ports:
     keys:
     - Output
