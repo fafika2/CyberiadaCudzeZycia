@@ -515,7 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 466345991873840555, guid: 1256ef3ba315970458c5788b2194b488, type: 3}
       propertyPath: m_Name
-      value: Doors
+      value: Doors to MainMap
       objectReference: {fileID: 0}
     - target: {fileID: 466345991873840556, guid: 1256ef3ba315970458c5788b2194b488, type: 3}
       propertyPath: sceneToLoad
@@ -3004,7 +3004,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76414
+  m_Name: pb_Mesh1190160
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4919,7 +4919,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76294
+  m_Name: pb_Mesh1190042
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5187,7 +5187,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76090
+  m_Name: pb_Mesh1189838
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5930,7 +5930,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76252
+  m_Name: pb_Mesh1190000
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6104,7 +6104,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76218
+  m_Name: pb_Mesh1189966
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15153,7 +15153,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76204
+  m_Name: pb_Mesh1189952
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15488,7 +15488,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76436
+  m_Name: pb_Mesh1190182
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16366,6 +16366,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1453648028193009514, guid: 8e1cb4894ddc5fd4c9ea4627ea38fdf6, type: 3}
   m_PrefabInstance: {fileID: 1010562674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1625284958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 466345991873840555, guid: 1256ef3ba315970458c5788b2194b488, type: 3}
+  m_PrefabInstance: {fileID: 206217660}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1650219475 stripped
 Transform:
@@ -18404,6 +18409,12 @@ MonoBehaviour:
     newObjective: "Wr\xF3\u0107 do domu (wyjdz z szpitala)"
     targetGameObject: {fileID: 0}
     newActiveState: 0
+  - ContentType: 3
+    videoClip: {fileID: 32900000, guid: f696ff448ac90724bb63a6aa82e580f5, type: 3}
+    dialogGraph: {fileID: 11400000, guid: 16a293c310b51d349b0b6115040e7420, type: 2}
+    newObjective: "Wr\xF3\u0107 do domu (wyjdz z szpitala)"
+    targetGameObject: {fileID: 1625284958}
+    newActiveState: 1
   isComplete: 0
 --- !u!65 &2053325161
 BoxCollider:
@@ -19065,6 +19076,12 @@ MonoBehaviour:
     newObjective: "Podejd\u017A do sto\u0142u i we\u017A leki"
     targetGameObject: {fileID: 2053325159}
     newActiveState: 1
+  - ContentType: 3
+    videoClip: {fileID: 32900000, guid: f696ff448ac90724bb63a6aa82e580f5, type: 3}
+    dialogGraph: {fileID: 11400000, guid: 16a293c310b51d349b0b6115040e7420, type: 2}
+    newObjective: "Podejd\u017A do sto\u0142u i we\u017A leki"
+    targetGameObject: {fileID: 1625284958}
+    newActiveState: 0
   isComplete: 0
 --- !u!65 &2146274111
 BoxCollider:
@@ -19161,6 +19178,10 @@ PrefabInstance:
     - target: {fileID: 21073706815323579, guid: 628a510b369e43840add2d708cd4f1fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874768203006773689, guid: 628a510b369e43840add2d708cd4f1fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4388131129092286572, guid: 628a510b369e43840add2d708cd4f1fa, type: 3}
       propertyPath: m_ScaleInLightmap
