@@ -68,7 +68,7 @@ public class MainMenu : MonoBehaviour
 
 
     public void PlayGame() {
-        SceneManager.LoadScene("Hospital");
+        FindObjectOfType<SaveGameSingleton>().LoadNewGame();
     }
     public void LoadGameFromSave() {
         FindObjectOfType<SaveGameSingleton>().LoadGame();

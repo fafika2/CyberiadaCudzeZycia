@@ -124,6 +124,12 @@ public class SaveGameSingleton : MonoBehaviour
         SceneManager.LoadScene(gameState.mapName);
     }
 
+    public void LoadNewGame()
+    {
+        gameState = new GameSaveData();
+        SceneManager.LoadScene("Hospital");
+    }
+
     private void LoadGameAfterMapEnter()
     {
         // setup character
