@@ -16,6 +16,13 @@
       },
       "hash": "553c6fa73386138a42aff8b00e096183149a4fbb"
     },
+    "com.fluid.unique-id": {
+      "version": "1.0.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
     "com.github.siccity.xnode": {
       "version": "https://github.com/siccity/xNode.git",
       "depth": 0,

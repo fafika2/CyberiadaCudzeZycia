@@ -75,6 +75,6 @@ public class pausemenu : MonoBehaviour
 
     public void SaveGame()
     {
-        SaveLoadGame.SaveGame();
+        FindObjectOfType<SaveGameSingleton>().SaveGame();
     }
 }

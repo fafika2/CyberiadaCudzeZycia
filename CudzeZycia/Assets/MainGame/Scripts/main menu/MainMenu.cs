@@ -71,7 +71,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Hospital");
     }
     public void LoadGameFromSave() {
-        SaveLoadGame.LoadGame();
+        FindObjectOfType<SaveGameSingleton>().LoadGame();
     }
     public void GoToSettingsMenu() {
         // OptionsContainer.SetActive(true);

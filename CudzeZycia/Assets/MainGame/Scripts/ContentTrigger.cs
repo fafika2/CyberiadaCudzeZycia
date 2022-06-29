@@ -3,6 +3,7 @@ using MyBox;
 using UnityEngine.Video;
 using Scripts.DialogSystem;
 using System.Threading.Tasks;
+using CleverCrow.Fluid.UniqueIds;
 
 public enum ContentTriggerType
 {
@@ -37,6 +38,9 @@ public class ContentTriggerItem
     }
 }
 
+
+
+[RequireComponent(typeof(UniqueId))]
 public class ContentTrigger : MonoBehaviour
 {
     public ContentTriggerItem[] scenarioList;
@@ -44,8 +48,10 @@ public class ContentTrigger : MonoBehaviour
     private MyVideoPlayer myVideoPlayer;
     private DialogWindow dialogWindow;
     private QuestManager qm;
+    private SaveGameSingleton saveGameInstance;
     private bool wasExecuted = false;
     public bool isComplete = false;
+
 
     void Start()
     {
@@ -66,6 +72,8 @@ public class ContentTrigger : MonoBehaviour
             if (!qm) { qm = FindObjectOfType<QuestManager>(); }
             if (!qm) { Debug.LogError("Nie znaleziono QuestManager, ContentTrigger nie bêd¹ dzia³aæ poprawnie"); }
         }
+
+        saveGameInstance = FindObjectOfType<SaveGameSingleton>();
     }
 
     void Update()
@@ -77,6 +85,12 @@ public class ContentTrigger : MonoBehaviour
             DebugSkip().ContinueWith(t => Debug.LogError(t.Exception), TaskContinuationOptions.OnlyOnFaulted);
         }
 #endif
+    }
+
+    public string GetUniqueId()
+    {
+        var uniqueId = this.GetComponent<UniqueId>();
+        return uniqueId.Id;
     }
 
     public async Task DebugSkip()
@@ -135,6 +149,7 @@ public class ContentTrigger : MonoBehaviour
 
         Debug.Log("ContentTrigger (" + gameObject.name + ") Done!");
         isComplete = true;
+        saveGameInstance.ContentTriggerUpdate(this);
         gameObject.SetActive(false);
     }
 }
