@@ -49,6 +49,7 @@ public class ContentTrigger : MonoBehaviour
     private DialogWindow dialogWindow;
     private QuestManager qm;
     private SaveGameSingleton saveGameInstance;
+    private pausemenu _pausemenuScript;
     private bool wasExecuted = false;
     public bool isComplete = false;
 
@@ -73,6 +74,9 @@ public class ContentTrigger : MonoBehaviour
             if (!qm) { Debug.LogError("Nie znaleziono QuestManager, ContentTrigger nie bêd¹ dzia³aæ poprawnie"); }
         }
 
+        _pausemenuScript = FindObjectOfType<pausemenu>();
+        if (!_pausemenuScript) { Debug.LogError("Nie znaleziono PauseMenu, ContentTrigger nie bêd¹ dzia³aæ poprawnie"); }
+
         saveGameInstance = FindObjectOfType<SaveGameSingleton>();
     }
 
@@ -95,11 +99,11 @@ public class ContentTrigger : MonoBehaviour
 
     public async Task DebugSkip()
     {
-        myVideoPlayer.Debug_Skip_On();
-        dialogWindow.Debug_Skip_On();
-        await Task.Delay(500); // wait for skip all
-        myVideoPlayer.Debug_Skip_Off();
-        dialogWindow.Debug_Skip_Off();
+        if(myVideoPlayer) myVideoPlayer.Debug_Skip_On();
+        if(dialogWindow) dialogWindow.Debug_Skip_On();
+        await Task.Delay(1000); // wait for skip all
+        if (myVideoPlayer) myVideoPlayer.Debug_Skip_Off();
+        if (dialogWindow) dialogWindow.Debug_Skip_Off();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -114,6 +118,7 @@ public class ContentTrigger : MonoBehaviour
     private async void Exec()
     {
         // Debug.Log("ContentTrigger ("+gameObject.name + ") Uruchomiono");
+        _pausemenuScript.openIsBlocked = true; // zablokuj otwierania menu pauzy
         foreach (var e in scenarioList)
         {
             if(e.ContentType == ContentTriggerType.Video)
@@ -146,6 +151,7 @@ public class ContentTrigger : MonoBehaviour
                 Debug.LogError("ContentTriggerType" + e.ContentType + " not implemented");
             }
         }
+        _pausemenuScript.openIsBlocked = false; // odblokuj otwieranie menu pauzy
 
         // Debug.Log("ContentTrigger (" + gameObject.name + ") Done!");
         isComplete = true;

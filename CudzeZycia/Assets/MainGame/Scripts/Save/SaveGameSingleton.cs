@@ -27,7 +27,7 @@ public class GameSaveData
 
 public class SaveGameSingleton : MonoBehaviour
 {
-    GameSaveData gameState;
+    public GameSaveData gameState;
     string saveGamePath = "";
 
     private bool isSaveLoading = false;
@@ -53,11 +53,23 @@ public class SaveGameSingleton : MonoBehaviour
         if (isSaveLoading)
         {
             isSaveLoading = false;
-            LoadGameAfterMapEnter();
+            // only after load save (setup player pos etc)
+
+            // setup character
+            var characterObj = GameObject.Find("Character");
+            characterObj.transform.position = gameState.characterTransform;
+            characterObj.transform.rotation = gameState.characterRotation;
         }
+
+        // after every map change (update current quest, etc, map setup)
 
         // update current map name
         gameState.mapName = SceneManager.GetActiveScene().name;
+
+        // Load current quest
+        var questManagerObj = GameObject.FindObjectOfType<QuestManager>();
+        if (questManagerObj) questManagerObj.UpdateCurrentQuestText(gameState.currentQuestText);
+        else Debug.LogError("QuestManager not found, cant update currentQuestText");
 
         // Load ContentTriggers
         foreach (var ct in Resources.FindObjectsOfTypeAll<ContentTrigger>())
@@ -128,17 +140,5 @@ public class SaveGameSingleton : MonoBehaviour
     {
         gameState = new GameSaveData();
         SceneManager.LoadScene("Hospital");
-    }
-
-    private void LoadGameAfterMapEnter()
-    {
-        // setup character
-        var characterObj = GameObject.Find("Character");
-        characterObj.transform.position = gameState.characterTransform;
-        characterObj.transform.rotation = gameState.characterRotation;
-
-        // setup quest
-        var questManagerObj = GameObject.FindObjectOfType<QuestManager>();
-        questManagerObj.UpdateCurrentQuestText(gameState.currentQuestText);
     }
 }
