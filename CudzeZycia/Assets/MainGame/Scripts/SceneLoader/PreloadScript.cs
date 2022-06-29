@@ -10,7 +10,7 @@ public class PreloadScript : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         if (LoadingSceneIntegration.otherScene > 0)
         {
-            Debug.Log("Returning again to the scene: " + LoadingSceneIntegration.otherScene);
+            // Debug.Log("Returning again to the scene: " + LoadingSceneIntegration.otherScene);
             SceneManager.LoadScene(LoadingSceneIntegration.otherScene);
         }
     }

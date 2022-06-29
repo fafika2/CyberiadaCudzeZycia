@@ -575,7 +575,7 @@ MonoBehaviour:
   runSpeed: 6
   runningKey: 304
   anim: {fileID: 4286032483174234776}
-  StartPosition: {fileID: 0}
+  StartPosition: {fileID: 11400000, guid: 9c20ced4ab7072c49ad62b4ec67f7298, type: 2}
 --- !u!1 &4257140935432558127
 GameObject:
   m_ObjectHideFlags: 0
