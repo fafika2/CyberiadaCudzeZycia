@@ -25,15 +25,21 @@ public class FirstPersonMovement : MonoBehaviour
 
     void Start()
     {
-        /*if (StartPosition)
+        // przechodzenie między mapami
+        if (StartPosition)
         {
-            transform.position = StartPosition.initialValue;
-            transform.eulerAngles = new Vector3(0, StartPosition.playerRotation, 0);
+            if (StartPosition.trans)
+            {
+                transform.position = StartPosition.initialValue;
+                transform.eulerAngles = new Vector3(0, StartPosition.playerRotation, 0);
+                StartPosition.trans = false;
+            }
+
         }
         else
         {
             Debug.LogWarning("Nie ustawiono pozycji startowej (StartPosition), gracz rozpoczyna grę w miejscu gdzie został pozostawiony GameObject Character");
-        }*/
+        }
         // _pause = GameObject.Find("Pause");
     }
 

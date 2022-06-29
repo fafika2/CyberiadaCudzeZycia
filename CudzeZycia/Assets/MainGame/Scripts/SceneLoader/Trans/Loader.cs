@@ -8,8 +8,8 @@ public class Loader : MonoBehaviour
     public Animator anim;
     void Start()
     {
-        Storage.trans = false;
-
+        // Nie ustawiaj na false bo wtedy gracza nie mo¿na przesuwaæ
+        // Storage.trans = false;
     }
 
     // Update is called once per frame
