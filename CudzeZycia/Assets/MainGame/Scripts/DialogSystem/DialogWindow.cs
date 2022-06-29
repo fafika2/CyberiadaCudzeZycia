@@ -33,6 +33,7 @@ namespace Scripts.DialogSystem
         private XNode.Node activeSegment;
         private DialogAvatarManager dialogAvatarManager;
         private bool dialogIsActive = false;
+        private bool skipAll = false;
 
 
         void Start()
@@ -71,6 +72,10 @@ namespace Scripts.DialogSystem
             while (dialogIsActive)
             {
                 await Task.Delay(500);
+                if (skipAll)
+                {
+                    CloseDialog();
+                }
             }
             return;
         }
@@ -193,6 +198,18 @@ namespace Scripts.DialogSystem
                 }));
             }
             
+        }
+
+
+
+        public void Debug_Skip_On()
+        {
+            skipAll = true;
+        }
+
+        public void Debug_Skip_Off()
+        {
+            skipAll = false;
         }
 
     }

@@ -2,12 +2,14 @@ using UnityEngine;
 using MyBox;
 using UnityEngine.Video;
 using Scripts.DialogSystem;
+using System.Threading.Tasks;
 
 public enum ContentTriggerType
 {
     Video,
     Dialogs,
-    ChangeObjective
+    ChangeObjective,
+    ChangeGameObjectState,
 }
 
 [System.Serializable]
@@ -23,6 +25,11 @@ public class ContentTriggerItem
 
     [ConditionalField(new[] { nameof(ContentType) }, new[] { false }, ContentTriggerType.ChangeObjective)]
     public string newObjective;
+
+    [ConditionalField(new[] { nameof(ContentType) }, new[] { false }, ContentTriggerType.ChangeGameObjectState)]
+    public GameObject targetGameObject;
+    [ConditionalField(new[] { nameof(ContentType) }, new[] { false }, ContentTriggerType.ChangeGameObjectState)]
+    public bool newActiveState;
 
     public double getVideoDurationSek()
     {
@@ -61,6 +68,26 @@ public class ContentTrigger : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.F11))
+        {
+            Debug.Log("WYKRYTO NACISNIECIE F11, SKIP CONTENT");
+            DebugSkip().ContinueWith(t => Debug.LogError(t.Exception), TaskContinuationOptions.OnlyOnFaulted);
+        }
+#endif
+    }
+
+    public async Task DebugSkip()
+    {
+        myVideoPlayer.Debug_Skip_On();
+        dialogWindow.Debug_Skip_On();
+        await Task.Delay(500); // wait for skip all
+        myVideoPlayer.Debug_Skip_Off();
+        dialogWindow.Debug_Skip_Off();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (wasExecuted) return; // dont run if was executed (run only one time)
@@ -91,6 +118,14 @@ public class ContentTrigger : MonoBehaviour
             {
                 Debug.Log("Nowy cel ("+ e.newObjective + ")");
                 qm.UpdateCurrentQuestText(e.newObjective);
+            }
+            else if (e.ContentType == ContentTriggerType.ChangeGameObjectState)
+            {
+                if(e.targetGameObject.activeSelf == e.newActiveState)
+                {
+                    Debug.Log("ChangeGameObjectState wybrany GameObject ma ju¿ docelowy stan (" + e.targetGameObject + ".active ju¿ jest " +(e.newActiveState? "on": "off") + ")");
+                }
+                e.targetGameObject.SetActive(e.newActiveState);
             }
             else
             {
