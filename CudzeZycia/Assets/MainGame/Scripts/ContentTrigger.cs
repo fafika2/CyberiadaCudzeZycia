@@ -113,31 +113,31 @@ public class ContentTrigger : MonoBehaviour
 
     private async void Exec()
     {
-        Debug.Log("ContentTrigger ("+gameObject.name + ") Uruchomiono");
+        // Debug.Log("ContentTrigger ("+gameObject.name + ") Uruchomiono");
         foreach (var e in scenarioList)
         {
             if(e.ContentType == ContentTriggerType.Video)
             {
                 if (!e.videoClip) { Debug.LogError("videoClip not set! Dont play video."); continue; }
-                Debug.Log("Uruchomiono Video (duration = " + e.videoClip.length + "sek)");
+                // Debug.Log("Uruchomiono Video (duration = " + e.videoClip.length + "sek)");
                 await myVideoPlayer.PlayVideo(e.videoClip);
             }
             else if (e.ContentType == ContentTriggerType.Dialogs)
             {
                 if (!e.dialogGraph) { Debug.LogError("dialogGraph not set! Dont start dialog."); continue; }
-                Debug.Log("Uruchomiono Dialog (name = " + e.dialogGraph.name + "; length = "+ e.dialogGraph.nodes.Count+ ")");
+                // Debug.Log("Uruchomiono Dialog (name = " + e.dialogGraph.name + "; length = "+ e.dialogGraph.nodes.Count+ ")");
                 await dialogWindow.OpenDialogAndWaitForClose(e.dialogGraph);
             }
             else if (e.ContentType == ContentTriggerType.ChangeObjective)
             {
-                Debug.Log("Nowy cel ("+ e.newObjective + ")");
+                // Debug.Log("Nowy cel ("+ e.newObjective + ")");
                 qm.UpdateCurrentQuestText(e.newObjective);
             }
             else if (e.ContentType == ContentTriggerType.ChangeGameObjectState)
             {
                 if(e.targetGameObject.activeSelf == e.newActiveState)
                 {
-                    Debug.Log("ChangeGameObjectState wybrany GameObject ma ju¿ docelowy stan (" + e.targetGameObject + ".active ju¿ jest " +(e.newActiveState? "on": "off") + ")");
+                    Debug.LogWarning("ChangeGameObjectState wybrany GameObject ma ju¿ docelowy stan (" + e.targetGameObject + ".active ju¿ jest " +(e.newActiveState? "on": "off") + ")");
                 }
                 e.targetGameObject.SetActive(e.newActiveState);
             }
@@ -147,7 +147,7 @@ public class ContentTrigger : MonoBehaviour
             }
         }
 
-        Debug.Log("ContentTrigger (" + gameObject.name + ") Done!");
+        // Debug.Log("ContentTrigger (" + gameObject.name + ") Done!");
         isComplete = true;
         saveGameInstance.ContentTriggerUpdate(this);
         gameObject.SetActive(false);

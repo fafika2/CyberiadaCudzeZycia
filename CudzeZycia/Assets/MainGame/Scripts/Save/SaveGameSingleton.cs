@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+
 
 [Serializable]
 public class SaveContentTrigger
@@ -18,7 +18,7 @@ public class GameSaveData
     public string mapName = "";
     public Vector3 characterTransform;
     public Quaternion characterRotation;
-    public List<SaveContentTrigger> contentTriggerList;
+    public List<SaveContentTrigger> contentTriggerList = new List<SaveContentTrigger>() { };
     public string currentQuestText = "";
     public DateTime saveCreateDateTime = DateTime.Now;
 }
@@ -32,13 +32,17 @@ public class SaveGameSingleton : MonoBehaviour
 
     private bool isSaveLoading = false;
 
-    void Awake()
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void Start()
     {
         saveGamePath = Application.persistentDataPath + "/" + "save.dat";
 
-        gameState.mapName = "";
-        gameState.contentTriggerList = new List<SaveContentTrigger>() { };
-        gameState.currentQuestText = "";
+        gameState = new GameSaveData();
+        gameState.mapName = SceneManager.GetActiveScene().name;
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -50,6 +54,20 @@ public class SaveGameSingleton : MonoBehaviour
         {
             isSaveLoading = false;
             LoadGameAfterMapEnter();
+        }
+
+        // update current map name
+        gameState.mapName = SceneManager.GetActiveScene().name;
+
+        // Load ContentTriggers
+        foreach (var ct in Resources.FindObjectsOfTypeAll<ContentTrigger>())
+        {
+            var saveContentTrigger = gameState.contentTriggerList.Find(sct => sct.id == ct.GetUniqueId());
+            if(saveContentTrigger != null)
+            {
+                ct.isComplete = saveContentTrigger.isComplete;
+                ct.gameObject.SetActive(!ct.isComplete);
+            }
         }
     }
 
@@ -116,13 +134,5 @@ public class SaveGameSingleton : MonoBehaviour
         // setup quest
         var questManagerObj = GameObject.FindObjectOfType<QuestManager>();
         questManagerObj.UpdateCurrentQuestText(gameState.currentQuestText);
-
-        // setup content triggers / TODO: move to OnSceneLoaded
-        foreach (var ct in Resources.FindObjectsOfTypeAll<ContentTrigger>())
-        {
-            var saveContentTrigger = gameState.contentTriggerList.Find(sct => sct.id == ct.GetUniqueId());
-            ct.isComplete = saveContentTrigger.isComplete;
-            ct.gameObject.SetActive(!ct.isComplete);
-        }
     }
 }

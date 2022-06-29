@@ -11,6 +11,12 @@ public class MoveMapAndScale : MonoBehaviour
 
     private void OnEnable()
     {
+        if(Cam == null)
+        {
+            Debug.LogError("MoveMapAndScale nie ma ustawione Cam (kamery), Ten skrypt nie bêdzie dzia³a³. GameObject.name = "+ gameObject.name+ ".");
+            enabled = false;
+            return;
+        }
         Cam.orthographicSize = 200f;
         Cam.transform.position = new Vector3(46.4f, 0, 132.9f);
         dragSpeed = 15;
