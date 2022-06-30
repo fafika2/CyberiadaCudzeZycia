@@ -121,7 +121,7 @@ public class ContentTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (wasExecuted) return; // dont run if was executed (run only one time)
-        if (other.name != "Character") return; // detect only player colisions
+        if (other.tag != "Collider") return; // detect only player colisions
 
         wasExecuted = true;
         Exec();
