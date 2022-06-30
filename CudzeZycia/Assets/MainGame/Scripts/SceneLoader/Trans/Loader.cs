@@ -9,14 +9,15 @@ public class Loader : MonoBehaviour
     void Start()
     {
         // Nie ustawiaj na false bo wtedy gracza nie mo¿na przesuwaæ
-        // Storage.trans = false;
+        // Storage.trans = false       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Storage.trans == true)
+        if(Storage.playMapExitAnimation == true)
         {
+            Storage.playMapExitAnimation = false;
             anim.SetBool("Start", true);
         }
     }

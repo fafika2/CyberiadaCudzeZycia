@@ -1,9 +1,12 @@
 using UnityEngine;
 using MyBox;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 using Scripts.DialogSystem;
 using System.Threading.Tasks;
 using CleverCrow.Fluid.UniqueIds;
+using System.Collections;
+using System.Collections.Generic;
 
 public enum ContentTriggerType
 {
@@ -11,6 +14,7 @@ public enum ContentTriggerType
     Dialogs,
     ChangeObjective,
     ChangeGameObjectState,
+    TeleportToMap,
 }
 
 [System.Serializable]
@@ -31,6 +35,14 @@ public class ContentTriggerItem
     public GameObject targetGameObject;
     [ConditionalField(new[] { nameof(ContentType) }, new[] { false }, ContentTriggerType.ChangeGameObjectState)]
     public bool newActiveState;
+
+    [ConditionalField(new[] { nameof(ContentType) }, new[] { false }, ContentTriggerType.TeleportToMap)]
+    public string sceneToLoad;
+    [ConditionalField(new[] { nameof(ContentType) }, new[] { false }, ContentTriggerType.TeleportToMap)]
+    public Vector3 playerPosition;
+    [ConditionalField(new[] { nameof(ContentType) }, new[] { false }, ContentTriggerType.TeleportToMap)]
+    public VectorValue playerStorage;
+
 
     public double getVideoDurationSek()
     {
@@ -72,7 +84,7 @@ public class ContentTrigger : MonoBehaviour
         {
             if (!qm) { qm = FindObjectOfType<QuestManager>(); }
             if (!qm) { Debug.LogError("Nie znaleziono QuestManager, ContentTrigger nie bêd¹ dzia³aæ poprawnie"); }
-        }
+        }      
 
         _pausemenuScript = FindObjectOfType<pausemenu>();
         if (!_pausemenuScript) { Debug.LogError("Nie znaleziono PauseMenu, ContentTrigger nie bêd¹ dzia³aæ poprawnie"); }
@@ -147,6 +159,10 @@ public class ContentTrigger : MonoBehaviour
                 }
                 e.targetGameObject.SetActive(e.newActiveState);
             }
+            else if (e.ContentType == ContentTriggerType.TeleportToMap)
+            {
+                sceneLoader(e);
+            }
             else
             {
                 Debug.LogError("ContentTriggerType" + e.ContentType + " not implemented");
@@ -159,5 +175,14 @@ public class ContentTrigger : MonoBehaviour
         isComplete = true;
         saveGameInstance.ContentTriggerUpdate(this);
         gameObject.SetActive(false);
+    }
+
+    private async void sceneLoader(ContentTriggerItem ct)
+    {
+        ct.playerStorage.trans = true;
+        ct.playerStorage.playMapExitAnimation = true;
+        ct.playerStorage.initialValue = ct.playerPosition;
+        await Task.Delay(2000);
+        SceneManager.LoadScene(ct.sceneToLoad);
     }
 }

@@ -34,6 +34,7 @@ public class SceneTransitionDoors : MonoBehaviour
     IEnumerator sceneLoader()
     {
         playerStorage.trans = true;
+        playerStorage.playMapExitAnimation = true;
         playerStorage.initialValue = playerPosition;
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(sceneToLoad);
