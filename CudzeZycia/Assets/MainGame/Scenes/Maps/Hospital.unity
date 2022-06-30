@@ -1939,6 +1939,104 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 668571797395349608, guid: 93952017bd7e85642970ce0a1b4bce08, type: 3}
   m_PrefabInstance: {fileID: 510449316}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &545501275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 545501279}
+  - component: {fileID: 545501278}
+  - component: {fileID: 545501277}
+  - component: {fileID: 545501276}
+  m_Layer: 0
+  m_Name: Faint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &545501276
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545501275}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &545501277
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545501275}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &545501278
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545501275}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &545501279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545501275}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.069, y: 0.94, z: -1.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &550237094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6304107367220222523, guid: 12596fc652e58784d8ad2d382a7784bf, type: 3}
@@ -18409,12 +18507,18 @@ MonoBehaviour:
     newObjective: "Wr\xF3\u0107 do domu (wyjdz z szpitala)"
     targetGameObject: {fileID: 0}
     newActiveState: 0
+    sceneToLoad: 
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerStorage: {fileID: 0}
   - ContentType: 3
     videoClip: {fileID: 32900000, guid: f696ff448ac90724bb63a6aa82e580f5, type: 3}
     dialogGraph: {fileID: 11400000, guid: 16a293c310b51d349b0b6115040e7420, type: 2}
     newObjective: "Wr\xF3\u0107 do domu (wyjdz z szpitala)"
     targetGameObject: {fileID: 1625284958}
     newActiveState: 1
+    sceneToLoad: 
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerStorage: {fileID: 0}
   isComplete: 0
 --- !u!65 &2053325161
 BoxCollider:
@@ -19052,36 +19156,54 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+    sceneToLoad: 
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerStorage: {fileID: 0}
   - ContentType: 0
     videoClip: {fileID: 32900000, guid: f696ff448ac90724bb63a6aa82e580f5, type: 3}
     dialogGraph: {fileID: 0}
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+    sceneToLoad: 
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerStorage: {fileID: 0}
   - ContentType: 1
     videoClip: {fileID: 32900000, guid: f696ff448ac90724bb63a6aa82e580f5, type: 3}
     dialogGraph: {fileID: 11400000, guid: 16a293c310b51d349b0b6115040e7420, type: 2}
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+    sceneToLoad: 
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerStorage: {fileID: 0}
   - ContentType: 2
     videoClip: {fileID: 32900000, guid: f696ff448ac90724bb63a6aa82e580f5, type: 3}
     dialogGraph: {fileID: 11400000, guid: 16a293c310b51d349b0b6115040e7420, type: 2}
     newObjective: "Podejd\u017A do sto\u0142u i we\u017A leki"
     targetGameObject: {fileID: 0}
     newActiveState: 0
+    sceneToLoad: 
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerStorage: {fileID: 0}
   - ContentType: 3
     videoClip: {fileID: 32900000, guid: f696ff448ac90724bb63a6aa82e580f5, type: 3}
     dialogGraph: {fileID: 11400000, guid: 16a293c310b51d349b0b6115040e7420, type: 2}
     newObjective: "Podejd\u017A do sto\u0142u i we\u017A leki"
     targetGameObject: {fileID: 2053325159}
     newActiveState: 1
+    sceneToLoad: 
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerStorage: {fileID: 0}
   - ContentType: 3
     videoClip: {fileID: 32900000, guid: f696ff448ac90724bb63a6aa82e580f5, type: 3}
     dialogGraph: {fileID: 11400000, guid: 16a293c310b51d349b0b6115040e7420, type: 2}
     newObjective: "Podejd\u017A do sto\u0142u i we\u017A leki"
     targetGameObject: {fileID: 1625284958}
     newActiveState: 0
+    sceneToLoad: 
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerStorage: {fileID: 0}
   isComplete: 0
 --- !u!65 &2146274111
 BoxCollider:
