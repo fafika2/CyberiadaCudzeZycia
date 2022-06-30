@@ -719,7 +719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &349833040
 Transform:
   m_ObjectHideFlags: 0
@@ -767,6 +767,18 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+  - ContentType: 2
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: c7b927fc90a941f4d84c8f63de2986f9, type: 2}
+    newObjective: "Podejd\u017A do lustra w \u0142azience"
+    targetGameObject: {fileID: 0}
+    newActiveState: 0
+  - ContentType: 3
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: c7b927fc90a941f4d84c8f63de2986f9, type: 2}
+    newObjective: "Podejd\u017A do lustra w \u0142azience"
+    targetGameObject: {fileID: 767234663}
+    newActiveState: 1
   isComplete: 0
 --- !u!114 &349833043
 MonoBehaviour:
@@ -1103,7 +1115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &455843219
 Transform:
   m_ObjectHideFlags: 0
@@ -1151,6 +1163,18 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+  - ContentType: 2
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: 94a37aa9c22641b4eb4bbf570e6b2b10, type: 2}
+    newObjective: "Podejd\u017A do tablicy"
+    targetGameObject: {fileID: 0}
+    newActiveState: 0
+  - ContentType: 3
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: 94a37aa9c22641b4eb4bbf570e6b2b10, type: 2}
+    newObjective: "Podejd\u017A do kuchni"
+    targetGameObject: {fileID: 1778618803}
+    newActiveState: 1
   isComplete: 0
 --- !u!114 &455843222
 MonoBehaviour:
@@ -1535,7 +1559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &718413397
 Transform:
   m_ObjectHideFlags: 0
@@ -1583,6 +1607,18 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+  - ContentType: 2
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: 60a0abde113b0f84e9f2ea7cf245c9b9, type: 2}
+    newObjective: "Podejd\u017A do okna w salonie"
+    targetGameObject: {fileID: 0}
+    newActiveState: 0
+  - ContentType: 3
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: 60a0abde113b0f84e9f2ea7cf245c9b9, type: 2}
+    newObjective: "Podejd\u017A do okna w salonie"
+    targetGameObject: {fileID: 1861651642}
+    newActiveState: 1
   isComplete: 0
 --- !u!114 &718413400
 MonoBehaviour:
@@ -1620,7 +1656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &767234664
 Transform:
   m_ObjectHideFlags: 0
@@ -1668,6 +1704,18 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+  - ContentType: 2
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: 9f18471f0c43cc2439f36686c849217a, type: 2}
+    newObjective: "Podejd\u017A do zdj\u0119cia w kuchni"
+    targetGameObject: {fileID: 0}
+    newActiveState: 0
+  - ContentType: 3
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: 9f18471f0c43cc2439f36686c849217a, type: 2}
+    newObjective: 
+    targetGameObject: {fileID: 827850793}
+    newActiveState: 1
   isComplete: 0
 --- !u!114 &767234667
 MonoBehaviour:
@@ -1700,7 +1748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &827850794
 Transform:
   m_ObjectHideFlags: 0
@@ -9180,7 +9228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1778618804
 Transform:
   m_ObjectHideFlags: 0
@@ -9228,6 +9276,18 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+  - ContentType: 2
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: bcb011a4900872445869f826b1ceadf5, type: 2}
+    newObjective: "Podejd\u017A do \u0142\xF3\u017Cka"
+    targetGameObject: {fileID: 0}
+    newActiveState: 0
+  - ContentType: 3
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: bcb011a4900872445869f826b1ceadf5, type: 2}
+    newObjective: 
+    targetGameObject: {fileID: 349833039}
+    newActiveState: 1
   isComplete: 0
 --- !u!114 &1778618807
 MonoBehaviour:
@@ -9348,6 +9408,18 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+  - ContentType: 2
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: 6a30b5a06dcab73499efb6689f16cd70, type: 2}
+    newObjective: "Podejd\u017A do kuchni"
+    targetGameObject: {fileID: 0}
+    newActiveState: 0
+  - ContentType: 3
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: 6a30b5a06dcab73499efb6689f16cd70, type: 2}
+    newObjective: "Podejd\u017A do kuchni"
+    targetGameObject: {fileID: 718413396}
+    newActiveState: 1
   isComplete: 0
 --- !u!114 &1850354500
 MonoBehaviour:
@@ -9380,7 +9452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1861651643
 Transform:
   m_ObjectHideFlags: 0
@@ -9428,6 +9500,18 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
+  - ContentType: 2
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: f1e515af5a0a54c4ea4334099cd95c2f, type: 2}
+    newObjective: "Podejd\u017A do Komputera"
+    targetGameObject: {fileID: 0}
+    newActiveState: 0
+  - ContentType: 3
+    videoClip: {fileID: 0}
+    dialogGraph: {fileID: 11400000, guid: f1e515af5a0a54c4ea4334099cd95c2f, type: 2}
+    newObjective: 
+    targetGameObject: {fileID: 455843218}
+    newActiveState: 1
   isComplete: 0
 --- !u!114 &1861651646
 MonoBehaviour:
