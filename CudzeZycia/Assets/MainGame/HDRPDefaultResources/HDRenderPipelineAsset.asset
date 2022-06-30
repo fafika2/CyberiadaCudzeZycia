@@ -54,14 +54,14 @@ MonoBehaviour:
     supportedRayTracingMode: 3
     lightLoopSettings:
       cookieAtlasSize: 2048
-      cookieFormat: 74
-      cookieAtlasLastValidMip: 0
+      cookieFormat: 48
+      cookieAtlasLastValidMip: 10
       cookieTexArraySize: 1
-      planarReflectionAtlasSize: 1024
+      planarReflectionAtlasSize: 2048
       reflectionProbeCacheSize: 64
-      reflectionCubemapSize: 256
+      reflectionCubemapSize: 512
       reflectionCacheCompressed: 0
-      reflectionProbeFormat: 74
+      reflectionProbeFormat: 48
       skyReflectionSize: 256
       skyLightingOverrideLayerMask:
         serializedVersion: 2
