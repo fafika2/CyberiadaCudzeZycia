@@ -119,6 +119,7 @@ public class ContentTrigger : MonoBehaviour
     {
         // Debug.Log("ContentTrigger ("+gameObject.name + ") Uruchomiono");
         _pausemenuScript.openIsBlocked = true; // zablokuj otwierania menu pauzy
+        _pausemenuScript.PauseGame(true);
         foreach (var e in scenarioList)
         {
             if(e.ContentType == ContentTriggerType.Video)
@@ -152,6 +153,7 @@ public class ContentTrigger : MonoBehaviour
             }
         }
         _pausemenuScript.openIsBlocked = false; // odblokuj otwieranie menu pauzy
+        _pausemenuScript.ResumeGame();
 
         // Debug.Log("ContentTrigger (" + gameObject.name + ") Done!");
         isComplete = true;

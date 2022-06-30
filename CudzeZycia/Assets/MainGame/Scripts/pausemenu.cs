@@ -27,7 +27,7 @@ public class pausemenu : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.Escape) && isGamePaused == false)
             {
-                PauseGame();
+                PauseGame(false);
             }
         }
 #if UNITY_EDITOR
@@ -40,11 +40,14 @@ public class pausemenu : MonoBehaviour
     }
 
 
-    public void PauseGame()
+    public void PauseGame(bool onlyFreeze)
     {
         isGamePaused = true;
         Time.timeScale = 0;
-        pauseObject.SetActive(true);
+        if (!onlyFreeze)
+        {
+            pauseObject.SetActive(true);
+        }
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         lockcamera.enabled = false;
