@@ -45,7 +45,7 @@ MonoBehaviour:
       _dynamic: 0
   AvatarName: 2
   AvatarPosition: 2
-  DialogText: "Nie s\u0142ysza\u0142em, \u017Ceby\u015B kiedykolwiek pisa\u0142 pami\u0119tniki"
+  DialogText: "Nie s\u0142ysza\u0142em, \u017Ceby\u015B kiedykolwiek pisa\u0142 pami\u0119tniki."
 --- !u!114 &-8374009141937523041
 MonoBehaviour:
   m_ObjectHideFlags: 0

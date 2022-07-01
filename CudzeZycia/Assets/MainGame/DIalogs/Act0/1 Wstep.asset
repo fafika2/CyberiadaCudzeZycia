@@ -2520,7 +2520,7 @@ MonoBehaviour:
       _dynamic: 0
   AvatarName: 2
   AvatarPosition: 2
-  DialogText: " Albo, albo\u2026 rusz palcem. B\u0119d\u0119 wiedzie\u0107, \u017Ce
+  DialogText: "Albo, albo\u2026 rusz palcem. B\u0119d\u0119 wiedzie\u0107, \u017Ce
     chcia\u0142by\u015B zatrzyma\u0107 prawo do milczenia! \r\n"
 --- !u!114 &5969891202831968319
 MonoBehaviour:
