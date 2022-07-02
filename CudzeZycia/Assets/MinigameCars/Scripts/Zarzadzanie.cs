@@ -14,6 +14,7 @@ public class Zarzadzanie : MonoBehaviour
     public GameObject MenuGlowne;
     public GameObject Statystyki;
 
+    public GameObject RequirementsGameObject;
     public GameObject ContinueButton;
     private TMP_Text ContinueButtonText;
     private Button ContinueButtonButton;
@@ -35,6 +36,10 @@ public class Zarzadzanie : MonoBehaviour
 
         ContinueButtonText = ContinueButton.GetComponentInChildren<TMP_Text>();
         ContinueButtonButton = ContinueButton.GetComponentInChildren<Button>();
+
+        // show cursor
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void Update()
@@ -59,11 +64,13 @@ public class Zarzadzanie : MonoBehaviour
             {
                 ContinueButtonText.color = Color.gray;
                 ContinueButtonButton.interactable = false;
+                RequirementsGameObject.SetActive(true);
             }
             else
             {
                 ContinueButtonText.color = Color.white;
                 ContinueButtonButton.interactable = true;
+                RequirementsGameObject.SetActive(false);
             }
         }
 
@@ -111,7 +118,8 @@ public class Zarzadzanie : MonoBehaviour
 
     public void menuexit()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("MainMenu");
         // Application.Quit();
     }
+
 }

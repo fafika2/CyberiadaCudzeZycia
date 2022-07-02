@@ -40,4 +40,10 @@ public class SceneTransitionDoors : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 
+    public void RunSceneLoader()
+    {
+        // used in Minigame in button Continue
+        StartCoroutine(sceneLoader());
+    }
+
 }
