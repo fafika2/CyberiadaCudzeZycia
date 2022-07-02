@@ -13,6 +13,7 @@ namespace Scripts.DialogSystem
         Faint = 2,
         Grey = 4,
         Ash = 8,
+        AshRight = 14,
 
         Zbir_Rick = 5,
         Zbir_Paul = 6,
@@ -25,6 +26,10 @@ namespace Scripts.DialogSystem
         Opiekunka = 11,
         Armen = 12,
         Erica = 13,
+
+        Jack = 15,
+        Rick = 16,
+        Sky = 17,
 
     }
 
