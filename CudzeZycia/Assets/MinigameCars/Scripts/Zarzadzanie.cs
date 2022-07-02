@@ -1,6 +1,9 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UI;
+
 
 public class Zarzadzanie : MonoBehaviour
 {
@@ -10,6 +13,12 @@ public class Zarzadzanie : MonoBehaviour
     public GameObject PunktyCanvas;
     public GameObject MenuGlowne;
     public GameObject Statystyki;
+
+    public GameObject ContinueButton;
+    private TMP_Text ContinueButtonText;
+    private Button ContinueButtonButton;
+
+    public int RequiredPointsToContinue = 2000;
 
     private bool courtineExe2 = false;
 
@@ -23,6 +32,9 @@ public class Zarzadzanie : MonoBehaviour
         SC.menuGlowne = true;
         SC.PunktyCanvas = false;
         SC.Statystyki = false;
+
+        ContinueButtonText = ContinueButton.GetComponentInChildren<TMP_Text>();
+        ContinueButtonButton = ContinueButton.GetComponentInChildren<Button>();
     }
 
     private void Update()
@@ -42,6 +54,17 @@ public class Zarzadzanie : MonoBehaviour
         if(SC.menuGlowne)
         {
             MenuGlowne.SetActive(true);
+
+            if(SC.OldRecordPoints < RequiredPointsToContinue)
+            {
+                ContinueButtonText.color = Color.gray;
+                ContinueButtonButton.interactable = false;
+            }
+            else
+            {
+                ContinueButtonText.color = Color.white;
+                ContinueButtonButton.interactable = true;
+            }
         }
 
         if(SC.Dead)
@@ -88,7 +111,7 @@ public class Zarzadzanie : MonoBehaviour
 
     public void menuexit()
     {
-        //SceneManager.LoadScene(2);
-        Application.Quit();
+        SceneManager.LoadScene(2);
+        // Application.Quit();
     }
 }
