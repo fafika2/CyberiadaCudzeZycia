@@ -64,7 +64,7 @@ namespace Scripts.DialogSystem
         public string GetAvatarName(DialogAvatarType dat)
         {
             var obj = Data.FirstOrDefault(x => x.Type == dat);
-            if (obj == null) { return "--MISSING CONFIG--"; }
+            if (obj == null) { return $"--MISSING CONFIG-- {dat.ToString()}"; }
             return obj.Name;
         }
 
