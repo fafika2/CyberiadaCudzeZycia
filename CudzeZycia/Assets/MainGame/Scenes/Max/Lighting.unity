@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.035890892, g: 0.03589697, b: 0.039298177, a: 1}
+  m_IndirectSpecularColor: {r: 0.021159217, g: 0.026068047, b: 0.03665188, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -198,6 +198,10 @@ PrefabInstance:
       propertyPath: m_ImportantGI
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f16567863eae4644f81a894c0e21879a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f16567863eae4644f81a894c0e21879a, type: 3}
       propertyPath: m_Name
       value: neon_big_cock
@@ -208,6 +212,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f16567863eae4644f81a894c0e21879a, type: 3}
+--- !u!23 &961911 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: f16567863eae4644f81a894c0e21879a, type: 3}
+  m_PrefabInstance: {fileID: 961910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &961912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f16567863eae4644f81a894c0e21879a, type: 3}
+  m_PrefabInstance: {fileID: 961910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3247023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lighting_LMA2
+  m_EditorClassIdentifier: 
+  resolution: 256
+  bitmask: 1
+  id: 2
+  sortingID: 2
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
 --- !u!1001 &31593524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -217,7 +268,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b8bb193db8df8bb4f9f1d542cc87bb54, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8bb193db8df8bb4f9f1d542cc87bb54, type: 3}
       propertyPath: m_LocalScale.x
@@ -275,6 +326,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8bb193db8df8bb4f9f1d542cc87bb54, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8bb193db8df8bb4f9f1d542cc87bb54, type: 3}
       propertyPath: m_Name
       value: "wenty_wersja_jaka\u015B_tam"
@@ -285,6 +340,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8bb193db8df8bb4f9f1d542cc87bb54, type: 3}
+--- !u!23 &31593525 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: b8bb193db8df8bb4f9f1d542cc87bb54, type: 3}
+  m_PrefabInstance: {fileID: 31593524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &31593526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b8bb193db8df8bb4f9f1d542cc87bb54, type: 3}
+  m_PrefabInstance: {fileID: 31593524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &40906792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -294,7 +359,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 79f33d4140d718145ab9e2bedbd42198, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79f33d4140d718145ab9e2bedbd42198, type: 3}
       propertyPath: m_LocalScale.x
@@ -352,6 +417,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 79f33d4140d718145ab9e2bedbd42198, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 79f33d4140d718145ab9e2bedbd42198, type: 3}
       propertyPath: m_Name
       value: tylko_antena
@@ -362,6 +431,265 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79f33d4140d718145ab9e2bedbd42198, type: 3}
+--- !u!23 &40906793 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 79f33d4140d718145ab9e2bedbd42198, type: 3}
+  m_PrefabInstance: {fileID: 40906792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &40906794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 79f33d4140d718145ab9e2bedbd42198, type: 3}
+  m_PrefabInstance: {fileID: 40906792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &216304019
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 216304021}
+  - component: {fileID: 216304020}
+  m_Layer: 0
+  m_Name: '!ftraceLightmaps'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &216304020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216304019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fa80e7116296f4eb4f49ec1544ee22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderSettingsBounces: 1
+  renderSettingsGISamples: 10
+  renderSettingsGIBackFaceWeight: 0
+  renderSettingsTileSize: 1024
+  renderSettingsPriority: 3
+  renderSettingsTexelsPerUnit: 10
+  renderSettingsForceRefresh: 1
+  renderSettingsForceRebuildGeometry: 1
+  renderSettingsPerformRendering: 1
+  renderSettingsUserRenderMode: 0
+  renderSettingsDistanceShadowmask: 1
+  renderSettingsSettingsMode: 0
+  renderSettingsFixSeams: 1
+  renderSettingsDenoise: 1
+  renderSettingsDenoise2x: 0
+  renderSettingsEncode: 1
+  renderSettingsEncodeMode: 0
+  renderSettingsOverwriteWarning: 0
+  renderSettingsAutoAtlas: 1
+  renderSettingsUnwrapUVs: 1
+  renderSettingsForceDisableUnwrapUVs: 0
+  renderSettingsMaxAutoResolution: 1024
+  renderSettingsMinAutoResolution: 16
+  renderSettingsUnloadScenes: 1
+  renderSettingsAdjustSamples: 1
+  renderSettingsGILODMode: 0
+  renderSettingsGILODModeEnabled: 0
+  renderSettingsCheckOverlaps: 0
+  renderSettingsSkipOutOfBoundsUVs: 1
+  renderSettingsHackEmissiveBoost: 1
+  renderSettingsHackIndirectBoost: 1
+  renderSettingsTempPath: F:/UnityTMP/Tmptest
+  renderSettingsOutPath: BakeryLightmaps
+  renderSettingsUseScenePath: 0
+  renderSettingsHackAOIntensity: 1
+  renderSettingsHackAOSamples: 16
+  renderSettingsHackAORadius: 1
+  renderSettingsShowAOSettings: 0
+  renderSettingsShowTasks: 1
+  renderSettingsShowTasks2: 0
+  renderSettingsShowPaths: 1
+  renderSettingsShowNet: 1
+  renderSettingsOcclusionProbes: 0
+  renderSettingsTexelsPerMap: 0
+  renderSettingsTexelsColor: 1
+  renderSettingsTexelsMask: 1
+  renderSettingsTexelsDir: 1
+  renderSettingsShowDirWarning: 1
+  renderSettingsRenderDirMode: 0
+  renderSettingsShowCheckerSettings: 0
+  renderSettingsSamplesWarning: 1
+  renderSettingsPrefabWarning: 1
+  renderSettingsSplitByScene: 0
+  renderSettingsUVPaddingMax: 0
+  renderSettingsPostPacking: 1
+  renderSettingsHoleFilling: 0
+  renderSettingsBeepOnFinish: 0
+  renderSettingsExportTerrainAsHeightmap: 1
+  renderSettingsRTXMode: 0
+  renderSettingsLightProbeMode: 1
+  renderSettingsClientMode: 0
+  renderSettingsServerAddress: 127.0.0.1
+  renderSettingsUnwrapper: 0
+  renderSettingsExportTerrainTrees: 0
+  renderSettingsShowPerf: 1
+  renderSettingsSampleDiv: 1
+  renderSettingsLegacyDenoiser: 0
+  renderSettingsAtlasPacker: 0
+  renderSettingsBatchPoints: 1
+  renderSettingsRTPVExport: 1
+  renderSettingsRTPVSceneView: 0
+  renderSettingsRTPVWidth: 640
+  renderSettingsRTPVHeight: 360
+  lastBakeTime: 21
+  enlightenWarningShown: 0
+  enlightenWarningShown2: 0
+  lightUIDs: 
+  lights: []
+  implicitGroups:
+  - {fileID: 854478685}
+  - {fileID: 854478685}
+  - {fileID: 854478685}
+  - {fileID: 854478685}
+  - {fileID: 844211075}
+  - {fileID: 3247023}
+  - {fileID: 854478685}
+  - {fileID: 854478685}
+  implicitGroupedObjects:
+  - {fileID: 961912}
+  - {fileID: 31593526}
+  - {fileID: 40906794}
+  - {fileID: 587338872}
+  - {fileID: 1923721842}
+  - {fileID: 1935523663}
+  - {fileID: 2017985907}
+  - {fileID: 2083862218}
+  bounds:
+  - m_Center: {x: -0.001, y: 0, z: 0.012}
+    m_Extent: {x: 10, y: 2.220446e-16, z: 10}
+  - m_Center: {x: 0.32999945, y: 3.0799997, z: 1.02841}
+    m_Extent: {x: 8.16, y: 3.1999998, z: 8.73841}
+  - m_Center: {x: 6.12, y: 0.84, z: -4.86}
+    m_Extent: {x: 1.35, y: 0.90000004, z: 1.35}
+  hasEmissive: 010101
+  uvBuffOffsets: 
+  uvBuffLengths: 
+  uvSrcBuff: []
+  uvDestBuff: []
+  lmrIndicesOffsets: 
+  lmrIndicesLengths: 
+  lmrIndicesBuff: 
+  lmGroupLODResFlags: 
+  lmGroupMinLOD: 
+  lmGroupLODMatrix: 
+  serverGetFileList: []
+  lightmapHasColor: 010101
+  lightmapHasMask: 000000
+  lightmapHasDir: 000000
+  lightmapHasRNM: 000000
+  modifiedAssetPathList:
+  - Assets/MainGame/Models/budynki_rodzaj_3_i_sex_shop/neon_big_cock/neon_big_cock.dae
+  - "Assets/MainGame/Models/Mieszkalny/Dach_rzeczy/wentyyy/wenty_wersja_jaka\u015B_tam.dae"
+  - Assets/MainGame/Models/Mieszkalny/Dach_rzeczy/tylko_antena/tylko_antena.dae
+  - Assets/MainGame/Models/Mieszkalny/Dach_rzeczy/Winda_Dach/pomieszczenie_winda.dae
+  - Assets/MainGame/Models/Mieszkalny/Dach_rzeczy/wenty_albo_serwery/wento_serwer.dae
+  - "Assets/MainGame/Models/Mieszkalny/Dach_rzeczy/NEON_HOLO_I_JAKIE\u015A_RURKI/NEON_I_RURKI.dae"
+  - Assets/MainGame/Models/props/bankomat/bankomat.dae
+  modifiedAssets:
+  - meshName:
+    - Content
+    padding: 2c000000
+    unwrapper: 00000000
+  - meshName:
+    - Content
+    padding: 19000000
+    unwrapper: 00000000
+  - meshName:
+    - Content
+    padding: 1a000000
+    unwrapper: 00000000
+  - meshName:
+    - Content
+    padding: 0d000000
+    unwrapper: 00000000
+  - meshName:
+    - Content
+    padding: 11000000
+    unwrapper: 00000000
+  - meshName:
+    - Content
+    padding: 17000000
+    unwrapper: 00000000
+  - meshName:
+    - Content
+    padding: 27000000
+    unwrapper: 00000000
+  debugTex: {fileID: 0}
+  debugRT: {fileID: 0}
+  maps: []
+  masks: []
+  dirMaps: []
+  rnmMaps0: []
+  rnmMaps1: []
+  rnmMaps2: []
+  mapsMode: 
+  bakedRenderers:
+  - {fileID: 961911}
+  - {fileID: 31593525}
+  - {fileID: 40906793}
+  - {fileID: 587338871}
+  - {fileID: 1923721844}
+  - {fileID: 1935523662}
+  - {fileID: 2017985906}
+  - {fileID: 2083862217}
+  bakedIDs: 0100000001000000010000000100000000000000020000000100000001000000
+  bakedScaleOffset:
+  - {x: 0.19693038, y: 0.19625561, z: 0.80577767, w: 0.34102735}
+  - {x: 0.31663743, y: 0.3165423, z: -0.0018131107, w: 0.60163635}
+  - {x: 0.30865803, y: 0.30865803, z: 0.31496668, w: 0.60152745}
+  - {x: 0.6032486, y: 0.6032476, z: -0.0017411343, w: -0.0017411219}
+  - {x: 0.9877525, y: 0.9877525, z: 0.0061237244, w: 0.0061237244}
+  - {x: 1.0001739, y: 1.0001957, z: -0.004156522, w: -0.0041568847}
+  - {x: 0.34548602, y: 0.34542954, z: 0.6016559, w: -0.0018413764}
+  - {x: 0.20487739, y: 0.2048732, z: 0.6016129, w: 0.34165743}
+  bakedVertexOffset: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  bakedVertexColorMesh:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  nonBakedRenderers: []
+  bakedLights: []
+  bakedLightChannels: 
+  bakedRenderersTerrain: []
+  bakedIDsTerrain: 
+  bakedScaleOffsetTerrain: []
+  assetList: []
+  uvOverlapAssetList: 
+  idremap: 000000000100000002000000
+  usesRealtimeGI: 0
+  emptyDirectionTex: {fileID: 0}
+--- !u!4 &216304021
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216304019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &587338870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -371,7 +699,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ea6341d2bf42be1408e409b4a5a7a32e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea6341d2bf42be1408e409b4a5a7a32e, type: 3}
       propertyPath: m_LocalScale.x
@@ -429,6 +757,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea6341d2bf42be1408e409b4a5a7a32e, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ea6341d2bf42be1408e409b4a5a7a32e, type: 3}
       propertyPath: m_Name
       value: pomieszczenie_winda
@@ -439,6 +771,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea6341d2bf42be1408e409b4a5a7a32e, type: 3}
+--- !u!23 &587338871 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: ea6341d2bf42be1408e409b4a5a7a32e, type: 3}
+  m_PrefabInstance: {fileID: 587338870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &587338872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ea6341d2bf42be1408e409b4a5a7a32e, type: 3}
+  m_PrefabInstance: {fileID: 587338870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &844211075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lighting_LM0
+  m_EditorClassIdentifier: 
+  resolution: 512
+  bitmask: 1
+  id: 0
+  sortingID: 0
+  isImplicit: 1
+  area: 4911.4775
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
+--- !u!114 &854478685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lighting_LMA1
+  m_EditorClassIdentifier: 
+  resolution: 512
+  bitmask: 1
+  id: 1
+  sortingID: 1
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
 --- !u!1 &1218751681
 GameObject:
   m_ObjectHideFlags: 1
@@ -516,7 +932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d4c39ea8eca1c748acc1cbe7e528989, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.151
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d4c39ea8eca1c748acc1cbe7e528989, type: 3}
       propertyPath: m_LocalPosition.z
@@ -801,7 +1217,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1796994948
 MonoBehaviour:
@@ -1004,7 +1420,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 3
   m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
@@ -1051,7 +1467,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fc1482fae16350246997d2933753f834, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc1482fae16350246997d2933753f834, type: 3}
       propertyPath: m_LocalScale.x
@@ -1109,6 +1525,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fc1482fae16350246997d2933753f834, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fc1482fae16350246997d2933753f834, type: 3}
       propertyPath: m_Name
       value: wento_serwer
@@ -1119,6 +1539,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc1482fae16350246997d2933753f834, type: 3}
+--- !u!23 &1935523662 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: fc1482fae16350246997d2933753f834, type: 3}
+  m_PrefabInstance: {fileID: 1935523661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1935523663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fc1482fae16350246997d2933753f834, type: 3}
+  m_PrefabInstance: {fileID: 1935523661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2017985905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1128,7 +1558,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0d11c9d7ff1d55e448925c19a236df69, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0d11c9d7ff1d55e448925c19a236df69, type: 3}
       propertyPath: m_LocalScale.x
@@ -1186,6 +1616,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0d11c9d7ff1d55e448925c19a236df69, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d11c9d7ff1d55e448925c19a236df69, type: 3}
       propertyPath: m_Name
       value: NEON_I_RURKI
@@ -1196,6 +1630,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d11c9d7ff1d55e448925c19a236df69, type: 3}
+--- !u!23 &2017985906 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 0d11c9d7ff1d55e448925c19a236df69, type: 3}
+  m_PrefabInstance: {fileID: 2017985905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2017985907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0d11c9d7ff1d55e448925c19a236df69, type: 3}
+  m_PrefabInstance: {fileID: 2017985905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2083862216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1205,7 +1649,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 32906806fad8a4b4d8cb0fab3a829124, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32906806fad8a4b4d8cb0fab3a829124, type: 3}
       propertyPath: m_LocalScale.x
@@ -1263,6 +1707,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 32906806fad8a4b4d8cb0fab3a829124, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 32906806fad8a4b4d8cb0fab3a829124, type: 3}
       propertyPath: m_Name
       value: bankomat
@@ -1273,3 +1721,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32906806fad8a4b4d8cb0fab3a829124, type: 3}
+--- !u!23 &2083862217 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 32906806fad8a4b4d8cb0fab3a829124, type: 3}
+  m_PrefabInstance: {fileID: 2083862216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2083862218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 32906806fad8a4b4d8cb0fab3a829124, type: 3}
+  m_PrefabInstance: {fileID: 2083862216}
+  m_PrefabAsset: {fileID: 0}

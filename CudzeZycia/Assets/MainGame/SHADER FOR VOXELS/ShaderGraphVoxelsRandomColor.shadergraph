@@ -1676,10 +1676,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1384.9998779296875,
-            "y": 483.9999694824219,
-            "width": 144.9998779296875,
-            "height": 105.99996948242188
+            "x": -1415.000244140625,
+            "y": 455.9999694824219,
+            "width": 170.0001220703125,
+            "height": 34.000030517578128
         }
     },
     "m_Slots": [
@@ -2032,7 +2032,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"54c295c69eb9e4b4eab84d636f378796\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -2098,10 +2098,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1124.9998779296875,
-            "y": 483.9999694824219,
-            "width": 207.99993896484376,
-            "height": 434.9999694824219
+            "x": -1155.0001220703125,
+            "y": 455.9999694824219,
+            "width": 208.00006103515626,
+            "height": 435.0000305175781
         }
     },
     "m_Slots": [
@@ -2290,10 +2290,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1384.9998779296875,
-            "y": 606.0,
+            "x": -1415.000244140625,
+            "y": 577.9999389648438,
             "width": 208.0,
-            "height": 312.99993896484377
+            "height": 313.00006103515627
         }
     },
     "m_Slots": [
