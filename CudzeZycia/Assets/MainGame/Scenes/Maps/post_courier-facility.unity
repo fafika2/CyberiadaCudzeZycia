@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000016598497, g: 0.000017398736, b: 0.000025261194, a: 1}
+  m_IndirectSpecularColor: {r: 0.000015568221, g: 0.000015303493, b: 0.000018438557, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2923,7 +2923,7 @@ MonoBehaviour:
     targetGameObject: {fileID: 0}
     newActiveState: 0
     sceneToLoad: baza_zbirow_interior
-    playerPosition: {x: 0, y: 0, z: 0}
+    playerPosition: {x: -1.169747, y: 0, z: 5.47901}
     playerStorage: {fileID: 11400000, guid: 9c20ced4ab7072c49ad62b4ec67f7298, type: 2}
   isComplete: 0
 --- !u!114 &624462841
