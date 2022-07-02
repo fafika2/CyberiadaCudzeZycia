@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.9402647, g: 1.9554749, b: 2.7009964, a: 1}
+  m_IndirectSpecularColor: {r: 1.9409761, g: 1.9561291, b: 2.7016754, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9776,7 +9776,7 @@ GameObject:
   - component: {fileID: 1461653409}
   - component: {fileID: 1461653408}
   m_Layer: 0
-  m_Name: CT- Teleport do A1
+  m_Name: "CT- Teleport do A1 (Zau\u0142ek w mie\u015Bcie)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9817,7 +9817,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461653406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ba344dfb78690845b8b4f79aca5bfb8, type: 3}
   m_Name: 
@@ -9829,8 +9829,8 @@ MonoBehaviour:
     newObjective: 
     targetGameObject: {fileID: 0}
     newActiveState: 0
-    sceneToLoad: Hospital
-    playerPosition: {x: 0, y: 0, z: 0}
+    sceneToLoad: MainMap
+    playerPosition: {x: -71.955, y: 0.706, z: 138.7}
     playerStorage: {fileID: 11400000, guid: 9c20ced4ab7072c49ad62b4ec67f7298, type: 2}
   isComplete: 0
 --- !u!114 &1461653410
