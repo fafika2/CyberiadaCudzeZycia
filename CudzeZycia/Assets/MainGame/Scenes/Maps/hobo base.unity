@@ -51898,7 +51898,7 @@ MonoBehaviour:
   - ContentType: 2
     videoClip: {fileID: 0}
     dialogGraph: {fileID: 11400000, guid: 7e548c63285705e45947f729e5d1a0ad, type: 2}
-    newObjective: "Podjedz do b\u0142\u0119dnika"
+    newObjective: "Podejd\u017A do b\u0142\u0119dnika"
     targetGameObject: {fileID: 0}
     newActiveState: 0
     sceneToLoad: 
