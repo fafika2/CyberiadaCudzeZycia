@@ -10,6 +10,12 @@ public class SceneTransitionDoors : MonoBehaviour
     public VectorValue playerStorage;
 
     int EClick = 0;
+    private DoorOpenCanvasController uiController;
+
+    private void Start()
+    {
+        uiController = FindObjectOfType<DoorOpenCanvasController>();
+    }
 
     private void Update()
     {
@@ -22,6 +28,23 @@ public class SceneTransitionDoors : MonoBehaviour
             EClick = 0;
         }
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Collider"))
+        {
+            uiController.ShowDoorOpenUI();
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Collider"))
+        {
+            uiController.HideDoorOpenUI();
+        }
+    }
+
 
     public void OnTriggerStay(Collider other)
     {
@@ -37,6 +60,7 @@ public class SceneTransitionDoors : MonoBehaviour
         playerStorage.playMapExitAnimation = true;
         playerStorage.initialValue = playerPosition;
         yield return new WaitForSeconds(2);
+        uiController.HideDoorOpenUI();
         SceneManager.LoadScene(sceneToLoad);
     }
 
