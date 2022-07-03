@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayMusic : MonoBehaviour
 {
-    [StringInList(typeof(PropertyDrawersHelper), "AllSongNames")]
+    [StringInList(typeof(AllSongNames), "GetAllSongNames")]
     public string songName;
 
     public bool isAmbientOrBackgroundSong = true;
